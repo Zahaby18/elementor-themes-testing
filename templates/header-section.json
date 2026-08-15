@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "8uz2kwo",
+      "id": "3w7bqyy",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -50,7 +50,7 @@
       },
       "elements": [
         {
-          "id": "gw5ihzy",
+          "id": "yx20dfk",
           "elType": "column",
           "settings": {
             "_column_size": 30,
@@ -58,7 +58,7 @@
           },
           "elements": [
             {
-              "id": "08u912p",
+              "id": "73eirtm",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -109,7 +109,7 @@
           "isInner": false
         },
         {
-          "id": "roh4erj",
+          "id": "h8ur94n",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -117,7 +117,7 @@
           },
           "elements": [
             {
-              "id": "gvahd2m",
+              "id": "sw1ja8h",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

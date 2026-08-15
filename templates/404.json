@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "ymnilzt",
+      "id": "bg1git4",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -37,7 +37,7 @@
         },
         "background_background": "classic",
         "background_image": {
-          "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80",
+          "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img01.jpg",
           "id": 0,
           "alt": ""
         },
@@ -54,7 +54,7 @@
       },
       "elements": [
         {
-          "id": "ou75doi",
+          "id": "sfx026w",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -62,7 +62,7 @@
           },
           "elements": [
             {
-              "id": "xd328uu",
+              "id": "7dt20n3",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -108,7 +108,7 @@
               }
             },
             {
-              "id": "f0zpr22",
+              "id": "d57xhqr",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -125,7 +125,7 @@
               }
             },
             {
-              "id": "xpn97vg",
+              "id": "lh8yvhe",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -171,7 +171,7 @@
               }
             },
             {
-              "id": "fh3wjtc",
+              "id": "f2f3vbk",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -188,7 +188,7 @@
               }
             },
             {
-              "id": "iagfj0b",
+              "id": "w5ms8hu",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -223,7 +223,7 @@
               }
             },
             {
-              "id": "p3b6tnb",
+              "id": "jf0n8df",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -240,7 +240,7 @@
               }
             },
             {
-              "id": "47mhuki",
+              "id": "marsr1a",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
