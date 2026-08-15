@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "as4a5ff",
+      "id": "ymnilzt",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,7 +54,7 @@
       },
       "elements": [
         {
-          "id": "4kixrn4",
+          "id": "ou75doi",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -62,7 +62,7 @@
           },
           "elements": [
             {
-              "id": "hjb12fr",
+              "id": "xd328uu",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -108,7 +108,7 @@
               }
             },
             {
-              "id": "l5da2pc",
+              "id": "f0zpr22",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -125,7 +125,7 @@
               }
             },
             {
-              "id": "owusz30",
+              "id": "xpn97vg",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -171,7 +171,7 @@
               }
             },
             {
-              "id": "r3urwqc",
+              "id": "fh3wjtc",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -188,7 +188,7 @@
               }
             },
             {
-              "id": "u3z270v",
+              "id": "iagfj0b",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -223,7 +223,7 @@
               }
             },
             {
-              "id": "v9wo6sd",
+              "id": "p3b6tnb",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -240,7 +240,7 @@
               }
             },
             {
-              "id": "whhbl7q",
+              "id": "47mhuki",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

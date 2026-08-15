@@ -413,11 +413,11 @@ def home():
     srv_widgets = [icon_box(i, t, d, link="#services") for i, t, d in services]
     els.append(section([
         col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
-        spacer(40, 24),
+        col([spacer(40, 24)], 100),
         card_col([srv_widgets[0]]),
         card_col([srv_widgets[1]]),
         card_col([srv_widgets[2]]),
-        spacer(30, 20),
+        col([spacer(30, 20)], 100),
         card_col([srv_widgets[3]]),
         card_col([srv_widgets[4]]),
         card_col([srv_widgets[5]]),
@@ -449,7 +449,7 @@ def home():
     # TESTIMONIALS
     els.append(section([
         col(sec_head("Testimonials", "What our clients say"), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         col([testimonial("“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”",
                          "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333),
         col([testimonial("“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”",
@@ -467,7 +467,7 @@ def home():
     ]
     els.append(section([
         col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else — just ask us."), 100),
-        spacer(24, 16),
+        col([spacer(24, 16)], 100),
         col([accordion(faq)], 75, settings={"content_position": "center"}),
     ], bg=LIGHT, pad_top=100, pad_bottom=100, anchor="faq"))
 
@@ -514,7 +514,7 @@ def about():
     ]
     els.append(section([
         col(sec_head("Our Values", "What we stand for"), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         col([icon_box(vals[0][0], vals[0][1], vals[0][2])], 33.3333),
         col([icon_box(vals[1][0], vals[1][1], vals[1][2])], 33.3333),
         col([icon_box(vals[2][0], vals[2][1], vals[2][2])], 33.3333),
@@ -537,7 +537,7 @@ def about():
         ], 25))
     els.append(section([
         col(sec_head("Meet the Team", "The people behind the pixels"), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         *team_cols,
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
@@ -569,11 +569,11 @@ def services():
     ]
     els.append(section([
         col(sec_head("What We Do", "Six services, one partner"), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         card_col([icon_box(*services[0], link="#contact")]),
         card_col([icon_box(*services[1], link="#contact")]),
         card_col([icon_box(*services[2], link="#contact")]),
-        spacer(30, 20),
+        col([spacer(30, 20)], 100),
         card_col([icon_box(*services[3], link="#contact")]),
         card_col([icon_box(*services[4], link="#contact")]),
         card_col([icon_box(*services[5], link="#contact")]),
@@ -588,7 +588,7 @@ def services():
     ]
     els.append(section([
         col(sec_head("Our Process", "How we work together"), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         *[col([heading(num, "h3", ACCENT, "center", 40, "800", 1.1), spacer(10, 6),
                heading(title_, "h4", INK, "center", 19, "700", 1.3),
                text(f"<p style='text-align:center;'>{desc}</p>", BODY, "center", 15, "400", 1.65)], 25)
@@ -634,13 +634,13 @@ def portfolio():
 
     els.append(section([
         col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands — built for clients who cared about the details."), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         col([gallery([U["w1"], U["w2"], U["w3"]])], 100),
-        spacer(24, 16),
+        col([spacer(24, 16)], 100),
         col([gallery([U["w4"], U["w5"], U["w6"]])], 100),
-        spacer(30, 20),
+        col([spacer(30, 20)], 100),
         col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15)], 100),
-        spacer(16, 10),
+        col([spacer(16, 10)], 100),
         col([btn("Request Case Studies", "#contact", "center")], 100),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
@@ -669,11 +669,11 @@ def blog():
     ]
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
-        spacer(36, 20),
+        col([spacer(36, 20)], 100),
         col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3])], 33.3333),
         col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3])], 33.3333),
         col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3])], 33.3333),
-        spacer(24, 16),
+        col([spacer(24, 16)], 100),
         col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add the Posts widget (Elementor Pro) or use your theme's blog template.</p>",
                   MUTED, "center", 14)], 100),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
@@ -823,6 +823,32 @@ def footer_section():
     }
 
 # ---------------------------------------------------------------- build
+def validate_structure(templates):
+    """Elementor schema: section children = columns only; column children = widgets / inner sections; inner section children = columns."""
+    errors = []
+    def walk(elems, container, path):
+        for i, el in enumerate(elems):
+            p = f"{path}[{i}]"
+            et = el.get('elType')
+            if et not in ('section', 'column', 'widget'):
+                errors.append(f"{p}: bad elType {et!r}")
+                continue
+            if et == 'widget' and not el.get('widgetType'):
+                errors.append(f"{p}: widget without widgetType")
+            children = el.get('elements', [])
+            if container in ('section', 'inner-section') and et == 'widget':
+                errors.append(f"{p}: widget directly inside {container} (must be inside a column)")
+            if et == 'section':
+                if 'isInner' in el:
+                    walk(children, 'inner-section', p + '>')
+                else:
+                    walk(children, 'section', p + '>')
+            elif et == 'column':
+                walk(children, 'column', p + '>')
+    for name, data in templates.items():
+        walk(data['content'], 'section', name)
+    return errors
+
 def main():
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
     tdir = os.path.join(out_dir, "templates")
@@ -841,6 +867,14 @@ def main():
         "contact.json": contact(),
         "404.json": p404(),
     }
+
+    errors = validate_structure(templates)
+    if errors:
+        print("STRUCTURE ERRORS:")
+        for e in errors:
+            print("  -", e)
+        raise SystemExit(1)
+    print("structure OK ✅")
 
     manifest_templates = []
     for fname, data in templates.items():
