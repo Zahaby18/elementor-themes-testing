@@ -45,17 +45,17 @@ Kit ini pakai **Elementor Free** + 2 plugin gratis:
 
 | Plugin | Buat apa |
 |---|---|
-| **Jeg Elementor Kit** (free) | Blog grid (`jkit_post_block` — jalan di halaman) + nav menu (`jkit_nav_menu`) |
-| **Happy Elementor Addons** (free) | **Theme Builder** (single post, archive, header, footer global) + widget dinamis (`ha-post-title`, `ha-post-content`, dll) |
+| **Essential Addons for Elementor** (free) | Blog grid (`eael-post-grid` — jalan di halaman) |
+| **Happy Elementor Addons** (free) | **Theme Builder** (single, header, footer global) + widget dinamis (`ha-post-title`, `ha-post-content`, `ha-navigation-menu`, dll) |
 
 > ✅ Keduanya **aman** untuk import (nggak hang — Royal Elementor Addons yang bermasalah, hindari).
 
 **Cara pakai (2 langkah):**
-1. Install & aktifkan **Jeg Elementor Kit** + **Happy Elementor Addons** (gratis) → import kit
+1. Install & aktifkan **Essential Addons** + **Happy Elementor Addons** (gratis) → import kit
 2. Bikin template dinamis via **Happy Addons → Theme Builder**:
-   - **Single** → `ha-post-title` + `ha-post-featured-image` + `ha-post-content`
+   - **Single** → `ha-post-title` + `ha-post-info` + `ha-post-content`
    - **Header/Footer** → assign global
-   - (Blog grid di halaman `blog.json` udah dinamis via Jeg `jkit_post_block`)
+   - (Blog grid di halaman `blog.json` udah dinamis via EA `eael-post-grid`)
 
 > ℹ️ Halaman di kit (Home/About/Services/Portfolio/Blog/Contact/404) import langsung. Template single/header/footer global dibuat via Theme Builder Happy Addons.
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.

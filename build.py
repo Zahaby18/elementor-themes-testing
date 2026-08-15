@@ -937,50 +937,32 @@ def blog():
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
-    # LATEST ARTICLES — Jeg Elementor Kit Post Block (dynamic grid, works on page)
+    # LATEST ARTICLES — Essential Addons Post Grid (dynamic)
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
     els.append(section([
-        col([widget("jkit_post_block", {
-            "sg_content_postblock_type": "type-3",
-            "sg_content_column": 3,
-            "sg_content_number_post": 6,
-            "pagination_mode": "loadmore",
-            "post_type": "post",
-            "sort_by": "latest",
-            "number_post": {"unit": "px", "size": 3, "sizes": []},
-            "sg_content_element_order": "title,meta,excerpt,read",
-            "sg_content_title_html_tag": "h3",
-            "sg_content_excerpt_enable": "yes",
-            "sg_content_excerpt_length": {"unit": "px", "size": 20, "sizes": []},
-            "sg_content_excerpt_more": "...",
-            "sg_content_readmore_enable": "yes",
-            "sg_content_readmore_text": "Read More",
-            "sg_content_readmore_icon_position": "after",
-            "sg_content_meta_enable": "yes",
-            "sg_content_meta_author_enable": "yes",
-            "sg_content_meta_author_by_text": "by",
-            "sg_content_meta_date_enable": "yes",
-            "sg_content_meta_date_format": "default",
-            "sg_content_meta_date_format_custom": "F j, Y",
-            "sg_content_category_enable": "yes",
-            "sg_content_comment_enable": "yes",
-            "sg_content_breakpoint": "tablet",
-            "sg_content_image_size_imagesize_size": "large",
-            "sg_content_column_responsive": {"unit": "px", "size": 3, "sizes": []},
-            "sg_content_column_responsive_tablet": {"unit": "px", "size": 1, "sizes": []},
-            "st_post_item_gap_responsive": {"unit": "px", "size": 40, "sizes": []},
-            "st_post_item_boxshadow_box_shadow_box_shadow_type": "yes",
-            "st_post_item_boxshadow_box_shadow_box_shadow": {"horizontal": 0, "vertical": 11, "blur": 29, "spread": -20, "color": "rgba(0, 0, 0, 0.21)"},
-            "st_post_item_border_radius_responsive": {"unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": True},
-            "st_thumbnail_border_radius_responsive": {"unit": "px", "top": "20", "right": "20", "bottom": "0", "left": "0", "isLinked": False},
-            "st_thumbnail_container_height_responsive": {"unit": "px", "size": 300, "sizes": []},
-            "st_content_padding_responsive": {"unit": "px", "top": "5", "right": "10", "bottom": "10", "left": "10", "isLinked": False},
-            "st_content_alignment_responsive": "left",
-            "st_category_position": "center",
-            "st_category_color_responsive": "#3E3E3E",
-            "st_meta_bottom_alignment_responsive": "space-between",
+        col([widget("eael-post-grid", {
+            "layout_mode": "grid",
+            "eael_post_grid_columns": "eael-col-3",
+            "show_load_more": "yes",
+            "show_load_more_text": "Load More",
+            "excerpt_expanison_indicator": "...",
+            "read_more_button_text": "Read More",
+            "posts_per_page": 6,
+            "image_size": "large",
+            "postgrid_image_height": {"unit": "px", "size": 217, "sizes": []},
+            "eael_post_grid_border_radius": {"unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": True},
+            "eael_post_grid_thumbnail_radius": {"unit": "px", "top": "10", "right": "10", "bottom": "0", "left": "0", "isLinked": False},
+            "eael_post_grid_title_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "10", "left": "0", "isLinked": False},
+            "eael_post_grid_excerpt_margin": {"unit": "px", "top": "0", "right": "0", "bottom": "20", "left": "0", "isLinked": False},
+            "eael_post_grid_read_more_alignment": "center",
+            "eael_post_read_more_btn_color": "#FFFFFF",
+            "read_more_btn_background_background": "classic",
+            "read_more_btn_background_color": "#17209B",
+            "read_more_btn_border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
+            "eael_post_read_more_btn_padding": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
+            "eael_post_grid_load_more_btn_margin": {"unit": "px", "top": "30", "right": "0", "bottom": "0", "left": "0", "isLinked": False},
         })], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
@@ -1090,12 +1072,12 @@ def p404():
     return page("404", els)
 
 def header_section():
-    # Header — logo + Jeg nav menu
+    # Header — logo + Happy Addons nav menu
     return {
         "content": [
             section([
                 col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 40, center=True),
-                col([widget("jkit_nav_menu", {"sg_menu_direction": "horizontal"})], 60, center=True),
+                col([widget("ha-navigation-menu", {})], 60, center=True),
             ], bg=WHITE, pad_top=16, pad_bottom=16,
                settings={"border_border": "solid", "border_width": dim(0, 0, 1, 0, False), "border_color": BORDER}),
         ],

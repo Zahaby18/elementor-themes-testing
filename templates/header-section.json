@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "rk56s9p",
+      "id": "1jm459m",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -78,7 +78,7 @@
       },
       "elements": [
         {
-          "id": "jx2qnl7",
+          "id": "lk5bn0h",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -128,7 +128,7 @@
           },
           "elements": [
             {
-              "id": "j77r5zf",
+              "id": "onm98c2",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -182,7 +182,7 @@
           "isInner": true
         },
         {
-          "id": "h4yu320",
+          "id": "zn81nkm",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -232,12 +232,10 @@
           },
           "elements": [
             {
-              "id": "x3uu75u",
+              "id": "quf6e65",
               "elType": "widget",
-              "widgetType": "jkit_nav_menu",
-              "settings": {
-                "sg_menu_direction": "horizontal"
-              }
+              "widgetType": "ha-navigation-menu",
+              "settings": {}
             }
           ],
           "isInner": true
