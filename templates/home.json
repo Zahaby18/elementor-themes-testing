@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "6yuyqys",
+      "id": "9u8s4us",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -89,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "87iiuqu",
+          "id": "bl173d1",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -139,7 +139,7 @@
           },
           "elements": [
             {
-              "id": "9tv7ajj",
+              "id": "1hdqhpw",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -186,7 +186,7 @@
               }
             },
             {
-              "id": "ovu4yd3",
+              "id": "g2ij0vw",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -203,7 +203,7 @@
               }
             },
             {
-              "id": "ev21isd",
+              "id": "qtwtsn3",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -244,7 +244,7 @@
               }
             },
             {
-              "id": "fajqksr",
+              "id": "sjkvkrd",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -261,7 +261,7 @@
               }
             },
             {
-              "id": "fexhzj1",
+              "id": "znuxf6l",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -297,7 +297,7 @@
               },
               "elements": [
                 {
-                  "id": "bui2blo",
+                  "id": "lo3zjq2",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -358,7 +358,7 @@
                   }
                 },
                 {
-                  "id": "2atjpvb",
+                  "id": "ogh3lxe",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -434,7 +434,7 @@
           "isInner": true
         },
         {
-          "id": "5pnaqtx",
+          "id": "xnu4kxj",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -484,7 +484,7 @@
           },
           "elements": [
             {
-              "id": "dmgw1ih",
+              "id": "0agfbk8",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -531,7 +531,7 @@
       "isInner": false
     },
     {
-      "id": "bjmplos",
+      "id": "cy4wvec",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -598,7 +598,7 @@
       },
       "elements": [
         {
-          "id": "aw1zvqu",
+          "id": "ow5dhzc",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -648,7 +648,7 @@
           },
           "elements": [
             {
-              "id": "chfkhb7",
+              "id": "mnkg4tc",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -689,7 +689,7 @@
       "isInner": false
     },
     {
-      "id": "rv21ypv",
+      "id": "bqncjk7",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -757,7 +757,7 @@
       },
       "elements": [
         {
-          "id": "4z8hu68",
+          "id": "tsq7me0",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -807,7 +807,7 @@
           },
           "elements": [
             {
-              "id": "ndm3s1r",
+              "id": "953ei9z",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -843,7 +843,7 @@
               }
             },
             {
-              "id": "jilif84",
+              "id": "7xge8ei",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -890,7 +890,7 @@
               }
             },
             {
-              "id": "0k3e4hv",
+              "id": "rsuwrw6",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -937,7 +937,7 @@
       "isInner": false
     },
     {
-      "id": "zafipqq",
+      "id": "a1rkae3",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1004,7 +1004,7 @@
       },
       "elements": [
         {
-          "id": "l87gewz",
+          "id": "svihpmk",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1090,7 +1090,7 @@
           },
           "elements": [
             {
-              "id": "jewf489",
+              "id": "6erepj4",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1151,7 +1151,7 @@
           "isInner": true
         },
         {
-          "id": "f80pkp3",
+          "id": "h18w6cr",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1237,7 +1237,7 @@
           },
           "elements": [
             {
-              "id": "chlwai1",
+              "id": "m9pzpvg",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1303,7 +1303,7 @@
           "isInner": true
         },
         {
-          "id": "qlsbi5i",
+          "id": "66a099r",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1389,7 +1389,7 @@
           },
           "elements": [
             {
-              "id": "fjnr5uj",
+              "id": "s65euy6",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1458,7 +1458,7 @@
       "isInner": false
     },
     {
-      "id": "ssnzxhp",
+      "id": "vdrxgo6",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1525,7 +1525,7 @@
       },
       "elements": [
         {
-          "id": "bkxotsp",
+          "id": "5ghf7a7",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1611,7 +1611,7 @@
           },
           "elements": [
             {
-              "id": "88lzn91",
+              "id": "g7igtph",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1672,7 +1672,7 @@
           "isInner": true
         },
         {
-          "id": "6xlyh6z",
+          "id": "w7wh7cr",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1758,7 +1758,7 @@
           },
           "elements": [
             {
-              "id": "f91ba48",
+              "id": "m6x1b96",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1824,7 +1824,7 @@
           "isInner": true
         },
         {
-          "id": "jmvv0oz",
+          "id": "lt1v88b",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1910,7 +1910,7 @@
           },
           "elements": [
             {
-              "id": "kgibrfz",
+              "id": "olpnzvp",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1979,7 +1979,7 @@
       "isInner": false
     },
     {
-      "id": "2ux08d6",
+      "id": "s3sisz7",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2046,7 +2046,7 @@
       },
       "elements": [
         {
-          "id": "v0rasdh",
+          "id": "nvad0mc",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2096,7 +2096,7 @@
           },
           "elements": [
             {
-              "id": "2eesxce",
+              "id": "ubaepr1",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -2135,7 +2135,7 @@
           "isInner": true
         },
         {
-          "id": "r20sii5",
+          "id": "y66jo9k",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2185,13 +2185,13 @@
           },
           "elements": [
             {
-              "id": "8bsl1cn",
+              "id": "k0cxnqf",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
                 "title": "About Us",
                 "header_size": "h5",
-                "align": "center",
+                "align": "left",
                 "title_color": "#4F46E5",
                 "typography_typography": "custom",
                 "typography_font_family": "Inter",
@@ -2221,7 +2221,7 @@
               }
             },
             {
-              "id": "idan2j3",
+              "id": "ajx4711",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2238,7 +2238,7 @@
               }
             },
             {
-              "id": "th337bx",
+              "id": "vbdu429",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2285,7 +2285,7 @@
               }
             },
             {
-              "id": "um4rmtr",
+              "id": "4mzg41h",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2302,7 +2302,7 @@
               }
             },
             {
-              "id": "jnc6o03",
+              "id": "4zipb2g",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -2343,7 +2343,7 @@
               }
             },
             {
-              "id": "6z58s8h",
+              "id": "j8391iq",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2360,13 +2360,13 @@
               }
             },
             {
-              "id": "bk3e1by",
+              "id": "vvbe8x0",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "9tr9hgh",
+                    "_id": "kdi7071",
                     "text": "Senior talent on every project",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2380,7 +2380,7 @@
                     }
                   },
                   {
-                    "_id": "7dxvpoo",
+                    "_id": "nuqjeef",
                     "text": "Transparent pricing, no surprises",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2394,7 +2394,7 @@
                     }
                   },
                   {
-                    "_id": "63hc3d8",
+                    "_id": "axivuqx",
                     "text": "Launch in weeks, not months",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2431,7 +2431,7 @@
               }
             },
             {
-              "id": "7tneksy",
+              "id": "wc33p1w",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2448,7 +2448,7 @@
               }
             },
             {
-              "id": "oxwbmnl",
+              "id": "epne4i4",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -2515,7 +2515,7 @@
       "isInner": false
     },
     {
-      "id": "yo7lco3",
+      "id": "bt06kjw",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2589,7 +2589,7 @@
       },
       "elements": [
         {
-          "id": "072lpqf",
+          "id": "wsyjsv3",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2639,7 +2639,7 @@
           },
           "elements": [
             {
-              "id": "0rjveu0",
+              "id": "eo3e8c0",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2672,7 +2672,7 @@
           "isInner": true
         },
         {
-          "id": "6lqjq6k",
+          "id": "c43vlhz",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2722,7 +2722,7 @@
           },
           "elements": [
             {
-              "id": "gfx44q8",
+              "id": "0l57iv4",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2760,7 +2760,7 @@
           "isInner": true
         },
         {
-          "id": "jqvrklr",
+          "id": "oliy3gh",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2810,7 +2810,7 @@
           },
           "elements": [
             {
-              "id": "0pftwtr",
+              "id": "ys5x9v9",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2848,7 +2848,7 @@
           "isInner": true
         },
         {
-          "id": "udv0qyg",
+          "id": "wybsudl",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2898,7 +2898,7 @@
           },
           "elements": [
             {
-              "id": "s01j6jd",
+              "id": "3bhhl1h",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2939,7 +2939,7 @@
       "isInner": false
     },
     {
-      "id": "7deixd4",
+      "id": "8wr8ep4",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3006,7 +3006,7 @@
       },
       "elements": [
         {
-          "id": "vjuiyx1",
+          "id": "sk3lnt7",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3056,7 +3056,7 @@
           },
           "elements": [
             {
-              "id": "xjinwab",
+              "id": "643zugd",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3092,7 +3092,7 @@
               }
             },
             {
-              "id": "4opctw6",
+              "id": "1k7mc4l",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3145,7 +3145,7 @@
       "isInner": false
     },
     {
-      "id": "3e8w2rf",
+      "id": "dironme",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3213,7 +3213,7 @@
       },
       "elements": [
         {
-          "id": "4pe8zex",
+          "id": "ekonxyd",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3299,7 +3299,7 @@
           },
           "elements": [
             {
-              "id": "m1sg9hh",
+              "id": "do42ocu",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -3318,24 +3318,7 @@
               }
             },
             {
-              "id": "st916cm",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 10,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "cv4n1mw",
+              "id": "ekg06jh",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3371,24 +3354,7 @@
               }
             },
             {
-              "id": "bgeoyb6",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 18,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "l2j58no",
+              "id": "siy2hlh",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3424,7 +3390,7 @@
               },
               "elements": [
                 {
-                  "id": "8n1jlpz",
+                  "id": "uo6blsp",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3474,7 +3440,7 @@
                   },
                   "elements": [
                     {
-                      "id": "y1orbol",
+                      "id": "2dgqpqg",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -3510,7 +3476,7 @@
                       }
                     },
                     {
-                      "id": "zqvhrw9",
+                      "id": "1vdiv09",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -3548,7 +3514,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "lroxlsf",
+                  "id": "9uar55b",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3598,7 +3564,7 @@
                   },
                   "elements": [
                     {
-                      "id": "9pijn3d",
+                      "id": "dj2u3jx",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -3633,7 +3599,7 @@
           "isInner": true
         },
         {
-          "id": "4b44u58",
+          "id": "w9y6f4h",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3719,7 +3685,7 @@
           },
           "elements": [
             {
-              "id": "1526fho",
+              "id": "rx1ub9g",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -3738,24 +3704,7 @@
               }
             },
             {
-              "id": "0zk2w7p",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 10,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "iyi5i4h",
+              "id": "5aarvt7",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3796,24 +3745,7 @@
               }
             },
             {
-              "id": "nwq55b5",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 18,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "oogj06j",
+              "id": "87xgrsg",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3849,7 +3781,7 @@
               },
               "elements": [
                 {
-                  "id": "rgvgq46",
+                  "id": "9dhts9t",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3899,7 +3831,7 @@
                   },
                   "elements": [
                     {
-                      "id": "q4qz47p",
+                      "id": "ier6y7w",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -3935,7 +3867,7 @@
                       }
                     },
                     {
-                      "id": "ejjr6nq",
+                      "id": "uomy7yi",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -3973,7 +3905,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "9iyo4zu",
+                  "id": "opv42ex",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -4023,7 +3955,7 @@
                   },
                   "elements": [
                     {
-                      "id": "zw85at3",
+                      "id": "3ydz5w9",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -4058,7 +3990,7 @@
           "isInner": true
         },
         {
-          "id": "jmnzggv",
+          "id": "4uhl9nw",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4144,7 +4076,7 @@
           },
           "elements": [
             {
-              "id": "deg44km",
+              "id": "0qt311c",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -4163,24 +4095,7 @@
               }
             },
             {
-              "id": "sw1b804",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 10,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "d0a3ldw",
+              "id": "cio1r9s",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4221,24 +4136,7 @@
               }
             },
             {
-              "id": "4e9gds3",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 18,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "98bdhoo",
+              "id": "s86d06w",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -4274,7 +4172,7 @@
               },
               "elements": [
                 {
-                  "id": "8u3tt6b",
+                  "id": "a699d4x",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -4324,7 +4222,7 @@
                   },
                   "elements": [
                     {
-                      "id": "b5zianm",
+                      "id": "peudtq3",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -4360,7 +4258,7 @@
                       }
                     },
                     {
-                      "id": "742190q",
+                      "id": "wnag4jt",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -4398,7 +4296,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "btiqv1x",
+                  "id": "m6tygaj",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -4448,7 +4346,7 @@
                   },
                   "elements": [
                     {
-                      "id": "m0a9h76",
+                      "id": "fktrjpo",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -4486,7 +4384,7 @@
       "isInner": false
     },
     {
-      "id": "9nap5mx",
+      "id": "hxmbl60",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4554,7 +4452,7 @@
       },
       "elements": [
         {
-          "id": "p8m7bep",
+          "id": "mvyqt88",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4604,7 +4502,7 @@
           },
           "elements": [
             {
-              "id": "ye97k5t",
+              "id": "gglht81",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4640,7 +4538,7 @@
               }
             },
             {
-              "id": "518f66w",
+              "id": "8swp0bk",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4687,7 +4585,7 @@
               }
             },
             {
-              "id": "ged9h02",
+              "id": "bq19qeq",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4734,7 +4632,7 @@
       "isInner": false
     },
     {
-      "id": "xhuhoof",
+      "id": "34ifadd",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4801,7 +4699,7 @@
       },
       "elements": [
         {
-          "id": "tr854st",
+          "id": "haobazx",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4851,28 +4749,28 @@
           },
           "elements": [
             {
-              "id": "djvietk",
+              "id": "vz9y5z0",
               "elType": "widget",
               "widgetType": "accordion",
               "settings": {
                 "tabs": [
                   {
-                    "_id": "51fkzlf",
+                    "_id": "kziefcv",
                     "tab_title": "How much does a project cost?",
                     "tab_content": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>"
                   },
                   {
-                    "_id": "0ibcquy",
+                    "_id": "81cn87u",
                     "tab_title": "How long does it take to launch?",
                     "tab_content": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>"
                   },
                   {
-                    "_id": "k8pae4p",
+                    "_id": "7nr8rih",
                     "tab_title": "Do you work with existing brands?",
                     "tab_content": "<p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p>"
                   },
                   {
-                    "_id": "b7uvskb",
+                    "_id": "22azlms",
                     "tab_title": "What happens after launch?",
                     "tab_content": "<p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p>"
                   }
@@ -4927,7 +4825,7 @@
       "isInner": false
     },
     {
-      "id": "0ymvhoy",
+      "id": "1qgb7r8",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4993,7 +4891,7 @@
       },
       "elements": [
         {
-          "id": "ylx5p9o",
+          "id": "09kk3nm",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -5070,7 +4968,7 @@
           },
           "elements": [
             {
-              "id": "qoymvf8",
+              "id": "xfa9u2e",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -5117,7 +5015,7 @@
               }
             },
             {
-              "id": "r726hnt",
+              "id": "jx8fwyg",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -5158,7 +5056,7 @@
               }
             },
             {
-              "id": "3b68uxu",
+              "id": "llsyaao",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

@@ -211,8 +211,8 @@ def heading(text_, tag="h2", color=INK, align="left", px=40, weight="700", line=
         s.update(extra)
     return widget("heading", s)
 
-def eyebrow(text_):
-    return heading(text_, "h5", ACCENT, "center", 14, "700", 1.2,
+def eyebrow(text_, align="center"):
+    return heading(text_, "h5", ACCENT, align, 14, "700", 1.2,
                    extra={"typography_text_transform": "uppercase",
                           "typography_letter_spacing": {"unit": "px", "size": 2.5, "sizes": []}})
 
@@ -364,9 +364,7 @@ def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0):
             qextra["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     els = [
         icon_widget("fas fa-quote-left", "#E2E8F0", 28, "left"),
-        spacer(14, 10),
         text(f"<p><em>{content_}</em></p>", BODY, "left", 15, "400", 1.75, extra=qextra),
-        spacer(18, 12),
         person,
     ]
     return col(els, 33.3333, settings=card_settings)
@@ -573,7 +571,7 @@ def home():
     els.append(section([
         col([img(U["collab"], "Our team collaborating", 100, 16, shadow(), anim="fadeIn")], 50, center=True),
         col([
-            eyebrow("About Us"), spacer(12, 8),
+            eyebrow("About Us", "left"), spacer(12, 8),
             heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
                     extra={"_animation": "fadeInLeft"}),
             spacer(12, 8),
