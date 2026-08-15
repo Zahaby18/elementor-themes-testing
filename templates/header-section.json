@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "4wksnwy",
+      "id": "rk56s9p",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -78,7 +78,7 @@
       },
       "elements": [
         {
-          "id": "v1fce5x",
+          "id": "jx2qnl7",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -128,7 +128,7 @@
           },
           "elements": [
             {
-              "id": "87yx7sp",
+              "id": "j77r5zf",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -182,7 +182,7 @@
           "isInner": true
         },
         {
-          "id": "s9uopzm",
+          "id": "h4yu320",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -232,7 +232,7 @@
           },
           "elements": [
             {
-              "id": "g13nvdn",
+              "id": "x3uu75u",
               "elType": "widget",
               "widgetType": "jkit_nav_menu",
               "settings": {

@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "3psdums",
+      "id": "lx267bz",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -89,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "4yar73p",
+          "id": "q1t4g1d",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -139,127 +139,69 @@
           },
           "elements": [
             {
-              "id": "ebrxvm6",
+              "id": "og59qet",
               "elType": "widget",
-              "widgetType": "heading",
+              "widgetType": "ha-post-title",
               "settings": {
-                "title": "Insight",
-                "header_size": "h5",
-                "align": "left",
-                "title_color": "#4F46E5",
-                "typography_typography": "custom",
-                "typography_font_family": "Inter",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 14,
-                  "sizes": []
-                },
-                "typography_font_weight": "700",
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.2,
-                  "sizes": []
-                },
-                "typography_text_transform": "uppercase",
-                "typography_font_style": "normal",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 2.5,
-                  "sizes": []
-                },
-                "typography_word_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                }
+                "post_title_tag": "h1",
+                "align": "center",
+                "post_title_color": "#FFFFFF",
+                "post_title_typography_typography": "custom",
+                "post_title_typography_font_family": "Inter",
+                "post_title_typography_font_weight": "700"
               }
             },
             {
-              "id": "9n479kt",
+              "id": "etwa0v4",
               "elType": "widget",
-              "widgetType": "heading",
+              "widgetType": "ha-post-info",
               "settings": {
-                "title": "10 Conversion Lessons from 100+ Landing Pages",
-                "header_size": "h1",
-                "align": "left",
-                "title_color": "#FFFFFF",
-                "typography_typography": "custom",
-                "typography_font_family": "Inter",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 44,
-                  "sizes": []
-                },
-                "typography_font_weight": "800",
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.2,
-                  "sizes": []
-                },
-                "typography_text_transform": "",
-                "typography_font_style": "normal",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "typography_word_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "typography_font_size_tablet": {
-                  "unit": "px",
-                  "size": 34,
-                  "sizes": []
-                },
-                "typography_font_size_mobile": {
-                  "unit": "px",
-                  "size": 28,
-                  "sizes": []
-                },
-                "_animation": "fadeInLeft"
-              }
-            },
-            {
-              "id": "9a3yctp",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<p>By Andi Kurniawan · 6 min read · August 2026</p>",
-                "text_color": "#CBD5E1",
-                "align": "left",
-                "typography_typography": "custom",
-                "typography_font_family": "Inter",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 15,
-                  "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.7,
-                  "sizes": []
-                },
-                "typography_text_transform": "",
-                "typography_font_style": "normal",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "typography_word_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "_animation": "fadeInLeft",
-                "_animation_delay": {
-                  "unit": "px",
-                  "size": 120,
-                  "sizes": []
-                }
+                "icon_list": [
+                  {
+                    "type": "author",
+                    "selected_icon": {
+                      "value": "far fa-user-circle",
+                      "library": "fa-regular"
+                    },
+                    "_id": "ex46nhp",
+                    "custom_date_format": "F j, Y",
+                    "custom_time_format": "g:i a"
+                  },
+                  {
+                    "selected_icon": {
+                      "value": "fas fa-calendar",
+                      "library": "fa-solid"
+                    },
+                    "_id": "dwb5kd5",
+                    "custom_date_format": "F j, Y",
+                    "custom_time_format": "g:i a"
+                  },
+                  {
+                    "type": "time",
+                    "selected_icon": {
+                      "value": "far fa-clock",
+                      "library": "fa-regular"
+                    },
+                    "_id": "nxj0hfr",
+                    "custom_date_format": "F j, Y",
+                    "custom_time_format": "g:i a"
+                  },
+                  {
+                    "type": "comments",
+                    "selected_icon": {
+                      "value": "far fa-comment-dots",
+                      "library": "fa-regular"
+                    },
+                    "_id": "nt6e3vc",
+                    "custom_date_format": "F j, Y",
+                    "custom_time_format": "g:i a"
+                  }
+                ],
+                "icon_align": "center",
+                "icon_color": "#FFFFFF",
+                "text_color": "#FFFFFF",
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "Inter"
               }
             }
           ],
@@ -269,7 +211,7 @@
       "isInner": false
     },
     {
-      "id": "a35pw7v",
+      "id": "sv0tb11",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -336,7 +278,7 @@
       },
       "elements": [
         {
-          "id": "msyx6zy",
+          "id": "9hjib6j",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -386,39 +328,10 @@
           },
           "elements": [
             {
-              "id": "q6bi2d7",
+              "id": "9wptggr",
               "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<p>We analyzed the patterns that separate high-converting landing pages from the rest. Over the last year, we audited more than a hundred pages across industries — and the results were remarkably consistent.</p><p>The pages that convert share a handful of traits: a single clear headline, one primary call to action, social proof placed early, and a friction-free form. The pages that don't, tend to try to do too much at once.</p><p>This is a demo single-post layout. For a fully dynamic single-post template, apply it via Elementor Pro Theme Builder.</p>",
-                "text_color": "#475569",
-                "align": "left",
-                "typography_typography": "custom",
-                "typography_font_family": "Inter",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 17,
-                  "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.7,
-                  "sizes": []
-                },
-                "typography_text_transform": "",
-                "typography_font_style": "normal",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "typography_word_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                }
-              }
+              "widgetType": "ha-post-content",
+              "settings": {}
             }
           ],
           "isInner": true
@@ -427,7 +340,7 @@
       "isInner": false
     },
     {
-      "id": "5nu55vn",
+      "id": "2dovkr4",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -492,7 +405,7 @@
       },
       "elements": [
         {
-          "id": "6i54r7p",
+          "id": "7x2lf1k",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -569,7 +482,7 @@
           },
           "elements": [
             {
-              "id": "chtu8fi",
+              "id": "9id3sgw",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -616,7 +529,7 @@
               }
             },
             {
-              "id": "8ymtz6y",
+              "id": "d2txxhy",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -657,7 +570,7 @@
               }
             },
             {
-              "id": "c7z5psp",
+              "id": "tn16izk",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -733,6 +646,6 @@
   ],
   "page_settings": [],
   "version": "0.4",
-  "title": "Single Post (Demo)",
+  "title": "Single Post",
   "type": "page"
 }

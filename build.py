@@ -990,29 +990,41 @@ def blog():
 
 def single():
     els = []
-    # HERO (static demo — dynamic single post butuh Elementor Pro Theme Builder)
+    # HERO — post title + meta (dynamic Happy Addons)
     els.append(section([
         col([
-            eyebrow("Insight", "left"),
-            heading("10 Conversion Lessons from 100+ Landing Pages", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
-                    extra={"_animation": "fadeInLeft"}),
-            text("<p>By Andi Kurniawan · 6 min read · August 2026</p>", "#CBD5E1", "left", 15,
-                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
+            widget("ha-post-title", {
+                "post_title_tag": "h1",
+                "align": "center",
+                "post_title_color": WHITE,
+                "post_title_typography_typography": "custom",
+                "post_title_typography_font_family": FONT,
+                "post_title_typography_font_weight": "700",
+            }),
+            widget("ha-post-info", {
+                "icon_list": [
+                    {"type": "author", "selected_icon": {"value": "far fa-user-circle", "library": "fa-regular"}, "_id": eid(), "custom_date_format": "F j, Y", "custom_time_format": "g:i a"},
+                    {"selected_icon": {"value": "fas fa-calendar", "library": "fa-solid"}, "_id": eid(), "custom_date_format": "F j, Y", "custom_time_format": "g:i a"},
+                    {"type": "time", "selected_icon": {"value": "far fa-clock", "library": "fa-regular"}, "_id": eid(), "custom_date_format": "F j, Y", "custom_time_format": "g:i a"},
+                    {"type": "comments", "selected_icon": {"value": "far fa-comment-dots", "library": "fa-regular"}, "_id": eid(), "custom_date_format": "F j, Y", "custom_time_format": "g:i a"},
+                ],
+                "icon_align": "center",
+                "icon_color": WHITE,
+                "text_color": WHITE,
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": FONT,
+            }),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w2"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
-    # CONTENT
+    # CONTENT — post content (dynamic)
     els.append(section([
-        col([
-            text("<p>We analyzed the patterns that separate high-converting landing pages from the rest. Over the last year, we audited more than a hundred pages across industries — and the results were remarkably consistent.</p>"
-                 "<p>The pages that convert share a handful of traits: a single clear headline, one primary call to action, social proof placed early, and a friction-free form. The pages that don't, tend to try to do too much at once.</p>"
-                 "<p>This is a demo single-post layout. For a fully dynamic single-post template, apply it via Elementor Pro Theme Builder.</p>"),
-        ], 75),
-    ], bg=WHITE, pad_top=80, pad_bottom=80, settings={"flex_justify_content": "center"}))
+        col([widget("ha-post-content", {})], 75),
+    ], bg=WHITE, pad_top=80, pad_bottom=80, settings={"flex_justify_content": "center"}, pad_mobile=(0, 16, 50, 16)))
 
     # CTA
     els.append(cta_box("Enjoyed this article?", "There's more where that came from. One email a month, no spam.", "Subscribe"))
-    return page("Single Post (Demo)", els)
+    return page("Single Post", els)
 
 def contact():
     els = []
