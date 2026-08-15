@@ -59,7 +59,7 @@ Tapi **Single Post, Header, Footer, dan Blog grid** memakai widget **Royal Eleme
    - `Footer` → Footer
 4. Untuk menu header, pilih menu di setting widget `wpr-nav-menu`
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
-- **Gambar**: demo images disimpan di `assets/img/` (di-host via GitHub raw agar stabil). Ganti dengan aset milikmu di editor (upload ke Media Library → pilih di widget).
+- **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat — gambar demo bakal tetap kebaca dari URL.*
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
 
 ## Struktur Repo

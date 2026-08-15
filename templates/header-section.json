@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "0ae8wof",
+      "id": "8op33rl",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -78,7 +78,7 @@
       },
       "elements": [
         {
-          "id": "06vul13",
+          "id": "7bs0bal",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -128,7 +128,7 @@
           },
           "elements": [
             {
-              "id": "bg6sqm7",
+              "id": "hydrq7d",
               "elType": "widget",
               "widgetType": "wpr-logo",
               "settings": {}
@@ -137,7 +137,7 @@
           "isInner": true
         },
         {
-          "id": "40k8hpj",
+          "id": "jlf2ct8",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -187,7 +187,7 @@
           },
           "elements": [
             {
-              "id": "5mbj7gq",
+              "id": "hl88rrv",
               "elType": "widget",
               "widgetType": "wpr-nav-menu",
               "settings": {

@@ -17,7 +17,7 @@ BORDER = "#E2E8F0"   # slate-200
 WHITE  = "#FFFFFF"
 FONT   = "Inter"
 
-RAW = "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/"
+RAW = "https://cdn.jsdelivr.net/gh/Zahaby18/elementor-themes-testing@main/assets/img/"
 
 U = {
     "team":     RAW + "img11.jpg",

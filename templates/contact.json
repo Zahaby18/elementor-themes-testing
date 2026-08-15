@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "behnkv7",
+      "id": "yckopfz",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -65,7 +65,7 @@
         },
         "background_background": "classic",
         "background_image": {
-          "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img10.jpg",
+          "url": "https://cdn.jsdelivr.net/gh/Zahaby18/elementor-themes-testing@main/assets/img/img10.jpg",
           "id": 0,
           "alt": ""
         },
@@ -89,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "6m5be82",
+          "id": "mvaa6m4",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -139,7 +139,7 @@
           },
           "elements": [
             {
-              "id": "vbp8jkd",
+              "id": "8sg0tyb",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -186,7 +186,7 @@
               }
             },
             {
-              "id": "8nlzjpw",
+              "id": "ns2corm",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -233,7 +233,7 @@
       "isInner": false
     },
     {
-      "id": "5somcrw",
+      "id": "r0hqoql",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -300,7 +300,7 @@
       },
       "elements": [
         {
-          "id": "lzga69l",
+          "id": "1lknnc0",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -400,7 +400,7 @@
           },
           "elements": [
             {
-              "id": "ttd84j7",
+              "id": "7lko5j8",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -455,7 +455,7 @@
           "isInner": true
         },
         {
-          "id": "le3tbkt",
+          "id": "autu1fx",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -555,7 +555,7 @@
           },
           "elements": [
             {
-              "id": "2lodkop",
+              "id": "v34nzi6",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -615,7 +615,7 @@
           "isInner": true
         },
         {
-          "id": "8u2mxnj",
+          "id": "vr4tpu4",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -715,7 +715,7 @@
           },
           "elements": [
             {
-              "id": "xp9lht4",
+              "id": "b6cz6se",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -778,7 +778,7 @@
       "isInner": false
     },
     {
-      "id": "pea23wj",
+      "id": "5m0v5nf",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -845,7 +845,7 @@
       },
       "elements": [
         {
-          "id": "0xgu0l4",
+          "id": "7jwlvh5",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -895,7 +895,7 @@
           },
           "elements": [
             {
-              "id": "vqtk208",
+              "id": "40o97th",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -931,7 +931,7 @@
               }
             },
             {
-              "id": "sfbasv1",
+              "id": "kx4dnvu",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -948,7 +948,7 @@
               }
             },
             {
-              "id": "uso76r5",
+              "id": "7r0gw45",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -995,7 +995,7 @@
               }
             },
             {
-              "id": "g9ou4fo",
+              "id": "d6skl5q",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1036,13 +1036,13 @@
               }
             },
             {
-              "id": "ll5qaqr",
+              "id": "3crgzx3",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "nnlzp5w",
+                    "_id": "oz4ab7l",
                     "text": "hello@agenzy.studio",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -1056,7 +1056,7 @@
                     }
                   },
                   {
-                    "_id": "5ugaobv",
+                    "_id": "2z4nfej",
                     "text": "+62 812 3456 7890",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -1070,7 +1070,7 @@
                     }
                   },
                   {
-                    "_id": "kpz42s8",
+                    "_id": "yrgv1do",
                     "text": "Jl. Sudirman Kav. 52-53, Jakarta",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -1107,7 +1107,7 @@
               }
             },
             {
-              "id": "amt687g",
+              "id": "2m214bz",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -1173,7 +1173,7 @@
           "isInner": true
         },
         {
-          "id": "hd7bt48",
+          "id": "5if042x",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1223,7 +1223,7 @@
           },
           "elements": [
             {
-              "id": "uyl2rd0",
+              "id": "wubd2sl",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1259,7 +1259,7 @@
               }
             },
             {
-              "id": "xbhy0qz",
+              "id": "kuv2zv0",
               "elType": "widget",
               "widgetType": "html",
               "settings": {
@@ -1273,7 +1273,7 @@
       "isInner": false
     },
     {
-      "id": "vyp3kd9",
+      "id": "92kvdcg",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1338,7 +1338,7 @@
       },
       "elements": [
         {
-          "id": "25zkhnx",
+          "id": "qom0mis",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1415,7 +1415,7 @@
           },
           "elements": [
             {
-              "id": "xz5cw8d",
+              "id": "aj9plhe",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1462,7 +1462,7 @@
               }
             },
             {
-              "id": "8qar76t",
+              "id": "khk2epi",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1503,7 +1503,7 @@
               }
             },
             {
-              "id": "cg9yp1x",
+              "id": "vazqu79",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
