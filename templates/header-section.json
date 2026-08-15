@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "cxap5fy",
+      "id": "5bl48ii",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -50,7 +50,7 @@
       },
       "elements": [
         {
-          "id": "h9tvn6u",
+          "id": "4z341qf",
           "elType": "column",
           "settings": {
             "_column_size": 30,
@@ -58,7 +58,7 @@
           },
           "elements": [
             {
-              "id": "gjmfut3",
+              "id": "jjs0goz",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -102,15 +102,14 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
           "isInner": false
         },
         {
-          "id": "adw606f",
+          "id": "gtio9k6",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -118,7 +117,7 @@
           },
           "elements": [
             {
-              "id": "3p0jiqr",
+              "id": "wg2wbyi",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

@@ -190,14 +190,13 @@ def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", 
         "description_typography_font_size": size(15),
         "description_typography_font_weight": "400",
         "description_typography_line_height": {"unit": "em", "size": 1.65, "sizes": []},
-        "icon_primary_color": icon_color,
     }
     if link:
         s["link"] = {"url": link, "is_external": "", "nofollow": "", "custom_attributes": ""}
     return widget("icon-box", s)
 
 def icon_list(items, icon="fas fa-check", icon_color=ACCENT, text_color=BODY, px=16):
-    lst = [{"text": t, "selected_icon": {"value": icon, "library": "fa-solid"},
+    lst = [{"_id": eid(), "text": t, "selected_icon": {"value": icon, "library": "fa-solid"},
             "link": {"url": "", "is_external": "", "nofollow": "", "custom_attributes": ""}} for t in items]
     return widget("icon-list", {
         "icon_list": lst,
@@ -237,7 +236,7 @@ def testimonial(content_, name_, job_, img=None):
     return widget("testimonial", s)
 
 def accordion(items):
-    tabs = [{"tab_title": t, "tab_content": f"<p>{c}</p>"} for t, c in items]
+    tabs = [{"_id": eid(), "tab_title": t, "tab_content": f"<p>{c}</p>"} for t, c in items]
     return widget("accordion", {
         "tabs": tabs,
         "title_color": INK,
@@ -322,7 +321,7 @@ def social_icons(icons=None, bg="rgba(255,255,255,0.10)", color=WHITE, px=15):
         ("fab fa-instagram", "#"),
         ("fab fa-linkedin-in", "#"),
     ]
-    lst = [{"social_icon": {"value": i, "library": "fa-brands"},
+    lst = [{"_id": eid(), "social_icon": {"value": i, "library": "fa-brands"},
             "link": {"url": u, "is_external": "", "nofollow": "", "custom_attributes": ""}} for i, u in icons]
     return widget("social-icons", {
         "social_icon_list": lst,
@@ -479,7 +478,7 @@ def home():
             spacer(14, 10),
             text("<p style='text-align:center;'>Let's talk about what we can build together. Free consultation, no strings attached.</p>", "#CBD5E1", "center", 17, "400", 1.7),
             spacer(22, 14),
-            col([btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 100),
+            btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36),
         ], 70, center=True),
     ], bg=ACCENT, pad_top=90, pad_bottom=90, anchor="contact",
        settings={"border_radius": dim(24, 24, 24, 24, True)}))
@@ -545,7 +544,7 @@ def about():
     els.append(section([
         col([heading("Want to join the team?", "h2", WHITE, "center", 34, "700", 1.25, tablet=28, mobile=24),
              spacer(18, 12),
-             col([btn("See Open Roles", "#contact", "center", WHITE, INK, "#E2E8F0")], 100)], 70, center=True),
+             btn("See Open Roles", "#contact", "center", WHITE, INK, "#E2E8F0")], 70, center=True),
     ], bg=INK, pad_top=80, pad_bottom=80))
 
     return page("About", els)
@@ -618,7 +617,7 @@ def services():
     els.append(section([
         col([heading("Not sure which service you need?", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
              spacer(16, 10),
-             col([btn("Book a Free Call", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 100)], 70, center=True),
+             btn("Book a Free Call", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
     ], bg=ACCENT, pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
 
     return page("Services", els)
@@ -648,7 +647,7 @@ def portfolio():
     els.append(section([
         col([heading("Your project could be next", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
              spacer(16, 10),
-             col([btn("Start a Project", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 100)], 70, center=True),
+             btn("Start a Project", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
     ], bg=INK, pad_top=80, pad_bottom=80))
 
     return page("Portfolio", els)
@@ -684,7 +683,7 @@ def blog():
              spacer(16, 10),
              text("<p style='text-align:center;'>One email a month. No spam, ever.</p>", "#CBD5E1", "center", 16),
              spacer(18, 12),
-             col([btn("Subscribe", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 100)], 70, center=True),
+             btn("Subscribe", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
     ], bg=ACCENT, pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
 
     return page("Blog", els)
@@ -737,7 +736,7 @@ def contact():
              spacer(14, 10),
              text("<p style='text-align:center;'>Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget — it takes one minute.</p>", "#CBD5E1", "center", 16),
              spacer(18, 12),
-             col([btn("Get the Shortcode Guide", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 100)], 70, center=True),
+             btn("Get the Shortcode Guide", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
     ], bg=INK, pad_top=80, pad_bottom=80))
 
     return page("Contact", els)
@@ -752,7 +751,7 @@ def p404():
             spacer(14, 10),
             text("<p style='text-align:center;'>The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>", "#CBD5E1", "center", 17),
             spacer(24, 16),
-            col([btn("Back to Home", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 100),
+            btn("Back to Home", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36),
         ], 70, center=True),
     ], bg=None, pad_top=140, pad_bottom=140, overlay=dark_hero_bg(U["meeting"], 0.92)))
 

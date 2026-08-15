@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "3jeai33",
+      "id": "as4a5ff",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,7 +54,7 @@
       },
       "elements": [
         {
-          "id": "tqrihpz",
+          "id": "4kixrn4",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -62,7 +62,7 @@
           },
           "elements": [
             {
-              "id": "drgnr56",
+              "id": "hjb12fr",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -108,7 +108,7 @@
               }
             },
             {
-              "id": "g1ndel1",
+              "id": "l5da2pc",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -125,7 +125,7 @@
               }
             },
             {
-              "id": "khxgnbk",
+              "id": "owusz30",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -171,7 +171,7 @@
               }
             },
             {
-              "id": "cxueeo5",
+              "id": "r3urwqc",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -188,7 +188,7 @@
               }
             },
             {
-              "id": "16wvbhs",
+              "id": "u3z270v",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -223,7 +223,7 @@
               }
             },
             {
-              "id": "q3n6rtm",
+              "id": "v9wo6sd",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -240,74 +240,64 @@
               }
             },
             {
-              "id": "8mn5kxl",
-              "elType": "column",
+              "id": "whhbl7q",
+              "elType": "widget",
+              "widgetType": "button",
               "settings": {
-                "_column_size": 100
-              },
-              "elements": [
-                {
-                  "id": "kdiit25",
-                  "elType": "widget",
-                  "widgetType": "button",
-                  "settings": {
-                    "text": "Back to Home",
-                    "link": {
-                      "url": "#",
-                      "is_external": "",
-                      "nofollow": "",
-                      "custom_attributes": ""
-                    },
-                    "align": "center",
-                    "background_color": "#FFFFFF",
-                    "button_text_color": "#0F172A",
-                    "hover_color": "#0F172A",
-                    "button_background_hover_color": "#E2E8F0",
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "8",
-                      "right": "8",
-                      "bottom": "8",
-                      "left": "8",
-                      "isLinked": true
-                    },
-                    "text_padding": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "36",
-                      "bottom": "16",
-                      "left": "36",
-                      "isLinked": false
-                    },
-                    "typography_typography": "custom",
-                    "typography_font_family": "Inter",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 16,
-                      "sizes": []
-                    },
-                    "typography_font_weight": "600",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1,
-                      "sizes": []
-                    },
-                    "typography_text_transform": "",
-                    "typography_font_style": "normal",
-                    "typography_letter_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    },
-                    "typography_word_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    }
-                  }
+                "text": "Back to Home",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "center",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#0F172A",
+                "hover_color": "#0F172A",
+                "button_background_hover_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "36",
+                  "bottom": "16",
+                  "left": "36",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                },
+                "typography_text_transform": "",
+                "typography_font_style": "normal",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "typography_word_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
                 }
-              ],
-              "isInner": false
+              }
             }
           ],
           "isInner": false

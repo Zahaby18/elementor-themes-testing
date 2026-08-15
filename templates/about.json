@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "qpf9m9r",
+      "id": "p1msmg3",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,14 +54,14 @@
       },
       "elements": [
         {
-          "id": "phthf8a",
+          "id": "7qfvumx",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "255zen7",
+              "id": "s7gnf2q",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -107,7 +107,7 @@
               }
             },
             {
-              "id": "3tg95od",
+              "id": "cxyah5x",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -124,7 +124,7 @@
               }
             },
             {
-              "id": "88mou9f",
+              "id": "oyg1v1j",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -165,7 +165,7 @@
       "isInner": false
     },
     {
-      "id": "yl5wo7k",
+      "id": "i25kpa1",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -204,7 +204,7 @@
       },
       "elements": [
         {
-          "id": "i3346xx",
+          "id": "h7o0gqk",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -212,7 +212,7 @@
           },
           "elements": [
             {
-              "id": "hl97a79",
+              "id": "5z5j94m",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -250,7 +250,7 @@
           "isInner": false
         },
         {
-          "id": "p4mdybi",
+          "id": "dxwpbns",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -258,7 +258,7 @@
           },
           "elements": [
             {
-              "id": "oq97rmm",
+              "id": "z3xjrtx",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -294,7 +294,7 @@
               }
             },
             {
-              "id": "4fdx2nf",
+              "id": "nzqbyau",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -311,7 +311,7 @@
               }
             },
             {
-              "id": "gudgacr",
+              "id": "8oq2xmy",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -357,7 +357,7 @@
               }
             },
             {
-              "id": "ccqcuxd",
+              "id": "in6wdq5",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -374,7 +374,7 @@
               }
             },
             {
-              "id": "ad7re69",
+              "id": "t7ws4yy",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -415,7 +415,7 @@
       "isInner": false
     },
     {
-      "id": "fw7q8eg",
+      "id": "ky28qml",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -454,14 +454,14 @@
       },
       "elements": [
         {
-          "id": "nkb720n",
+          "id": "dbyierj",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "85j03et",
+              "id": "f4v0mgc",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -497,7 +497,7 @@
               }
             },
             {
-              "id": "683vssq",
+              "id": "cqy31cy",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -546,7 +546,7 @@
           "isInner": false
         },
         {
-          "id": "intxxgw",
+          "id": "vcg476r",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -563,14 +563,14 @@
           }
         },
         {
-          "id": "v03g74z",
+          "id": "4eljil6",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "z57d4ad",
+              "id": "dlzkj24",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -614,22 +614,21 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
           "isInner": false
         },
         {
-          "id": "wraheli",
+          "id": "r7lmqq2",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "l3vq9wd",
+              "id": "r6tvldx",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -673,22 +672,21 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
           "isInner": false
         },
         {
-          "id": "9j9hizq",
+          "id": "gvpvpd7",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "87lsz9b",
+              "id": "lnhaoit",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -732,8 +730,7 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
@@ -743,7 +740,7 @@
       "isInner": false
     },
     {
-      "id": "qpv3xh8",
+      "id": "wzkjcra",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -782,14 +779,14 @@
       },
       "elements": [
         {
-          "id": "upzz7fk",
+          "id": "77giaoh",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "lze96sz",
+              "id": "bwbrdp2",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -825,7 +822,7 @@
               }
             },
             {
-              "id": "f61i9bm",
+              "id": "agyr9uq",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -874,7 +871,7 @@
           "isInner": false
         },
         {
-          "id": "th5ggwt",
+          "id": "iu69un7",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -891,14 +888,14 @@
           }
         },
         {
-          "id": "hospoip",
+          "id": "63au57i",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "w5xm0go",
+              "id": "afp6ra9",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -925,7 +922,7 @@
               }
             },
             {
-              "id": "lgv316f",
+              "id": "wz65lrf",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -942,7 +939,7 @@
               }
             },
             {
-              "id": "6f49bug",
+              "id": "qt5ir8b",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -978,7 +975,7 @@
               }
             },
             {
-              "id": "eocs4lc",
+              "id": "q9h5daw",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1016,14 +1013,14 @@
           "isInner": false
         },
         {
-          "id": "zn2cpdz",
+          "id": "bhgmr3o",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "zuatchf",
+              "id": "o797bvl",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -1050,7 +1047,7 @@
               }
             },
             {
-              "id": "wwbh5au",
+              "id": "jxb7pjq",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1067,7 +1064,7 @@
               }
             },
             {
-              "id": "hbs5q68",
+              "id": "ihg27s7",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1103,7 +1100,7 @@
               }
             },
             {
-              "id": "mtryip4",
+              "id": "tsajvjr",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1141,14 +1138,14 @@
           "isInner": false
         },
         {
-          "id": "axq13w7",
+          "id": "n0toudr",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "sld8bp2",
+              "id": "kojwt2l",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -1175,7 +1172,7 @@
               }
             },
             {
-              "id": "p3rgx7v",
+              "id": "jn2zaf9",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1192,7 +1189,7 @@
               }
             },
             {
-              "id": "u0hgctd",
+              "id": "hopfqmd",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1228,7 +1225,7 @@
               }
             },
             {
-              "id": "ihvnfln",
+              "id": "j9dgbed",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1266,14 +1263,14 @@
           "isInner": false
         },
         {
-          "id": "vax8vit",
+          "id": "u0o45gg",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "wcli3zr",
+              "id": "8b5e1kz",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -1300,7 +1297,7 @@
               }
             },
             {
-              "id": "fe7qz3i",
+              "id": "4yr2avu",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1317,7 +1314,7 @@
               }
             },
             {
-              "id": "vi343kh",
+              "id": "ralowd6",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1353,7 +1350,7 @@
               }
             },
             {
-              "id": "45xpetg",
+              "id": "2mr1frx",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1394,7 +1391,7 @@
       "isInner": false
     },
     {
-      "id": "3ae5btr",
+      "id": "ugzsuvh",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -1433,7 +1430,7 @@
       },
       "elements": [
         {
-          "id": "nntsqi0",
+          "id": "1o7wzk0",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -1441,7 +1438,7 @@
           },
           "elements": [
             {
-              "id": "z3g4w85",
+              "id": "t0g36fk",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1487,7 +1484,7 @@
               }
             },
             {
-              "id": "cwfh6pi",
+              "id": "74mjpki",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1504,74 +1501,64 @@
               }
             },
             {
-              "id": "zha6wnj",
-              "elType": "column",
+              "id": "q0d4wnk",
+              "elType": "widget",
+              "widgetType": "button",
               "settings": {
-                "_column_size": 100
-              },
-              "elements": [
-                {
-                  "id": "lua8znp",
-                  "elType": "widget",
-                  "widgetType": "button",
-                  "settings": {
-                    "text": "See Open Roles",
-                    "link": {
-                      "url": "#contact",
-                      "is_external": "",
-                      "nofollow": "",
-                      "custom_attributes": ""
-                    },
-                    "align": "center",
-                    "background_color": "#FFFFFF",
-                    "button_text_color": "#0F172A",
-                    "hover_color": "#0F172A",
-                    "button_background_hover_color": "#E2E8F0",
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "8",
-                      "right": "8",
-                      "bottom": "8",
-                      "left": "8",
-                      "isLinked": true
-                    },
-                    "text_padding": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "32",
-                      "bottom": "16",
-                      "left": "32",
-                      "isLinked": false
-                    },
-                    "typography_typography": "custom",
-                    "typography_font_family": "Inter",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 16,
-                      "sizes": []
-                    },
-                    "typography_font_weight": "600",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1,
-                      "sizes": []
-                    },
-                    "typography_text_transform": "",
-                    "typography_font_style": "normal",
-                    "typography_letter_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    },
-                    "typography_word_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    }
-                  }
+                "text": "See Open Roles",
+                "link": {
+                  "url": "#contact",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "center",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#0F172A",
+                "hover_color": "#0F172A",
+                "button_background_hover_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "32",
+                  "bottom": "16",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                },
+                "typography_text_transform": "",
+                "typography_font_style": "normal",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "typography_word_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
                 }
-              ],
-              "isInner": false
+              }
             }
           ],
           "isInner": false

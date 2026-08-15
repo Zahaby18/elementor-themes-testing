@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "4l7dg63",
+      "id": "w7v6220",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,14 +54,14 @@
       },
       "elements": [
         {
-          "id": "ainugrc",
+          "id": "0ijtzy5",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "8h1moi0",
+              "id": "114u2b9",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -107,7 +107,7 @@
               }
             },
             {
-              "id": "4rb2dzh",
+              "id": "oszsgqg",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -124,7 +124,7 @@
               }
             },
             {
-              "id": "4ocnt6t",
+              "id": "rprfw3i",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -165,7 +165,7 @@
       "isInner": false
     },
     {
-      "id": "gdpt750",
+      "id": "pnebz7a",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -204,14 +204,14 @@
       },
       "elements": [
         {
-          "id": "v5a7zuu",
+          "id": "2sqkyk2",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "k5zdx7a",
+              "id": "ut2p6x3",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -247,7 +247,7 @@
               }
             },
             {
-              "id": "pwwgftv",
+              "id": "y0i74ls",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -293,7 +293,7 @@
               }
             },
             {
-              "id": "c5atw8f",
+              "id": "fm0efjn",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -331,7 +331,7 @@
           "isInner": false
         },
         {
-          "id": "b3xliu3",
+          "id": "whdzjvh",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -348,14 +348,14 @@
           }
         },
         {
-          "id": "smav8wq",
+          "id": "w09sv1j",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "w2lla2y",
+              "id": "5p5hehq",
               "elType": "widget",
               "widgetType": "image-gallery",
               "settings": {
@@ -396,7 +396,7 @@
           "isInner": false
         },
         {
-          "id": "ll8j18j",
+          "id": "nlzptr0",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -413,14 +413,14 @@
           }
         },
         {
-          "id": "24grkqy",
+          "id": "thbd3p7",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "mucufeu",
+              "id": "qgau6dr",
               "elType": "widget",
               "widgetType": "image-gallery",
               "settings": {
@@ -461,7 +461,7 @@
           "isInner": false
         },
         {
-          "id": "bmxw4nt",
+          "id": "tfts9mw",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -478,14 +478,14 @@
           }
         },
         {
-          "id": "08k5b1y",
+          "id": "x4kuguo",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "zr13c7a",
+              "id": "x2ybngs",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -523,7 +523,7 @@
           "isInner": false
         },
         {
-          "id": "n6gf06h",
+          "id": "aos8dmg",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -540,14 +540,14 @@
           }
         },
         {
-          "id": "6bhe7zp",
+          "id": "aysxb8f",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "q9elkyv",
+              "id": "reaw93r",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -613,7 +613,7 @@
       "isInner": false
     },
     {
-      "id": "bylst82",
+      "id": "nmmv7ge",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -652,7 +652,7 @@
       },
       "elements": [
         {
-          "id": "ruwsnwt",
+          "id": "uoakins",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -660,7 +660,7 @@
           },
           "elements": [
             {
-              "id": "suf1yzz",
+              "id": "vitv4j3",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -706,7 +706,7 @@
               }
             },
             {
-              "id": "r7q5wou",
+              "id": "ksugwp6",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -723,74 +723,64 @@
               }
             },
             {
-              "id": "x7m8m8e",
-              "elType": "column",
+              "id": "6ushqhz",
+              "elType": "widget",
+              "widgetType": "button",
               "settings": {
-                "_column_size": 100
-              },
-              "elements": [
-                {
-                  "id": "my3x9qe",
-                  "elType": "widget",
-                  "widgetType": "button",
-                  "settings": {
-                    "text": "Start a Project",
-                    "link": {
-                      "url": "#contact",
-                      "is_external": "",
-                      "nofollow": "",
-                      "custom_attributes": ""
-                    },
-                    "align": "center",
-                    "background_color": "#FFFFFF",
-                    "button_text_color": "#0F172A",
-                    "hover_color": "#0F172A",
-                    "button_background_hover_color": "#E2E8F0",
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "8",
-                      "right": "8",
-                      "bottom": "8",
-                      "left": "8",
-                      "isLinked": true
-                    },
-                    "text_padding": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "36",
-                      "bottom": "16",
-                      "left": "36",
-                      "isLinked": false
-                    },
-                    "typography_typography": "custom",
-                    "typography_font_family": "Inter",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 16,
-                      "sizes": []
-                    },
-                    "typography_font_weight": "600",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1,
-                      "sizes": []
-                    },
-                    "typography_text_transform": "",
-                    "typography_font_style": "normal",
-                    "typography_letter_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    },
-                    "typography_word_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    }
-                  }
+                "text": "Start a Project",
+                "link": {
+                  "url": "#contact",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "center",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#0F172A",
+                "hover_color": "#0F172A",
+                "button_background_hover_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "36",
+                  "bottom": "16",
+                  "left": "36",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                },
+                "typography_text_transform": "",
+                "typography_font_style": "normal",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "typography_word_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
                 }
-              ],
-              "isInner": false
+              }
             }
           ],
           "isInner": false

@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "iyhl4ye",
+      "id": "xk6chz8",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,7 +54,7 @@
       },
       "elements": [
         {
-          "id": "9zl64mc",
+          "id": "rbzt5zk",
           "elType": "column",
           "settings": {
             "_column_size": 55,
@@ -62,7 +62,7 @@
           },
           "elements": [
             {
-              "id": "wsvw9sl",
+              "id": "cm9xrt6",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -108,7 +108,7 @@
               }
             },
             {
-              "id": "add6cne",
+              "id": "ytddeh9",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -125,7 +125,7 @@
               }
             },
             {
-              "id": "l24y93h",
+              "id": "4at3s70",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -160,7 +160,7 @@
               }
             },
             {
-              "id": "ygqsv5s",
+              "id": "p76nbih",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -177,7 +177,7 @@
               }
             },
             {
-              "id": "pqmior6",
+              "id": "3s24vs7",
               "elType": "section",
               "isInner": true,
               "settings": {
@@ -190,14 +190,14 @@
               },
               "elements": [
                 {
-                  "id": "mgwaazs",
+                  "id": "m4jt66q",
                   "elType": "column",
                   "settings": {
                     "_column_size": 50
                   },
                   "elements": [
                     {
-                      "id": "jifu7a4",
+                      "id": "w55cxgc",
                       "elType": "widget",
                       "widgetType": "button",
                       "settings": {
@@ -260,14 +260,14 @@
                   "isInner": false
                 },
                 {
-                  "id": "asy3951",
+                  "id": "9o70khh",
                   "elType": "column",
                   "settings": {
                     "_column_size": 50
                   },
                   "elements": [
                     {
-                      "id": "sarenje",
+                      "id": "tgt8o9c",
                       "elType": "widget",
                       "widgetType": "button",
                       "settings": {
@@ -345,7 +345,7 @@
           "isInner": false
         },
         {
-          "id": "jlsq6ho",
+          "id": "0ccaq43",
           "elType": "column",
           "settings": {
             "_column_size": 45,
@@ -353,7 +353,7 @@
           },
           "elements": [
             {
-              "id": "npdqzdv",
+              "id": "gys07eo",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -394,7 +394,7 @@
       "isInner": false
     },
     {
-      "id": "1pfjujh",
+      "id": "ukr7lq2",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -433,14 +433,14 @@
       },
       "elements": [
         {
-          "id": "7ix0qne",
+          "id": "eugrhc7",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "13c6pdv",
+              "id": "d6njpsv",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -481,7 +481,7 @@
       "isInner": false
     },
     {
-      "id": "za3c03a",
+      "id": "44ym8vr",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -521,14 +521,14 @@
       },
       "elements": [
         {
-          "id": "64cpkqh",
+          "id": "km29nbt",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "2ivp8if",
+              "id": "pnp53j2",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -564,7 +564,7 @@
               }
             },
             {
-              "id": "jshdocw",
+              "id": "acozp04",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -610,7 +610,7 @@
               }
             },
             {
-              "id": "us3b6to",
+              "id": "meypnz8",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -648,7 +648,7 @@
           "isInner": false
         },
         {
-          "id": "xs5k6k4",
+          "id": "8b34xkb",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -665,7 +665,7 @@
           }
         },
         {
-          "id": "rfg7r1b",
+          "id": "egzo2fy",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333,
@@ -698,7 +698,7 @@
           },
           "elements": [
             {
-              "id": "hobwxsc",
+              "id": "bnajnzo",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -743,7 +743,6 @@
                   "size": 1.65,
                   "sizes": []
                 },
-                "icon_primary_color": "#4F46E5",
                 "link": {
                   "url": "#services",
                   "is_external": "",
@@ -756,7 +755,7 @@
           "isInner": false
         },
         {
-          "id": "m40zjtn",
+          "id": "cqwsw2p",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333,
@@ -789,7 +788,7 @@
           },
           "elements": [
             {
-              "id": "jeynruy",
+              "id": "e5xasz7",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -834,7 +833,6 @@
                   "size": 1.65,
                   "sizes": []
                 },
-                "icon_primary_color": "#4F46E5",
                 "link": {
                   "url": "#services",
                   "is_external": "",
@@ -847,7 +845,7 @@
           "isInner": false
         },
         {
-          "id": "5r2ti3n",
+          "id": "vwgliee",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333,
@@ -880,7 +878,7 @@
           },
           "elements": [
             {
-              "id": "zih94nb",
+              "id": "4kl6bqa",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -925,7 +923,6 @@
                   "size": 1.65,
                   "sizes": []
                 },
-                "icon_primary_color": "#4F46E5",
                 "link": {
                   "url": "#services",
                   "is_external": "",
@@ -938,7 +935,7 @@
           "isInner": false
         },
         {
-          "id": "jl0wsrs",
+          "id": "he7fxsa",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -955,7 +952,7 @@
           }
         },
         {
-          "id": "s5hs2cv",
+          "id": "6k2u3c6",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333,
@@ -988,7 +985,7 @@
           },
           "elements": [
             {
-              "id": "4h7gaj0",
+              "id": "w1976z2",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1033,7 +1030,6 @@
                   "size": 1.65,
                   "sizes": []
                 },
-                "icon_primary_color": "#4F46E5",
                 "link": {
                   "url": "#services",
                   "is_external": "",
@@ -1046,7 +1042,7 @@
           "isInner": false
         },
         {
-          "id": "me2ler0",
+          "id": "xq3nft1",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333,
@@ -1079,7 +1075,7 @@
           },
           "elements": [
             {
-              "id": "moyb3fr",
+              "id": "u50m3dv",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1124,7 +1120,6 @@
                   "size": 1.65,
                   "sizes": []
                 },
-                "icon_primary_color": "#4F46E5",
                 "link": {
                   "url": "#services",
                   "is_external": "",
@@ -1137,7 +1132,7 @@
           "isInner": false
         },
         {
-          "id": "t0xfra0",
+          "id": "zc9m0s3",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333,
@@ -1170,7 +1165,7 @@
           },
           "elements": [
             {
-              "id": "vp2945h",
+              "id": "3z3zip9",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1215,7 +1210,6 @@
                   "size": 1.65,
                   "sizes": []
                 },
-                "icon_primary_color": "#4F46E5",
                 "link": {
                   "url": "#services",
                   "is_external": "",
@@ -1231,7 +1225,7 @@
       "isInner": false
     },
     {
-      "id": "fz96c2g",
+      "id": "ptdrcja",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -1270,7 +1264,7 @@
       },
       "elements": [
         {
-          "id": "t65e2c2",
+          "id": "ynt7wsg",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -1278,7 +1272,7 @@
           },
           "elements": [
             {
-              "id": "bt6axfz",
+              "id": "4n83pgd",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -1316,7 +1310,7 @@
           "isInner": false
         },
         {
-          "id": "g8ipbmx",
+          "id": "jclxfet",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -1324,7 +1318,7 @@
           },
           "elements": [
             {
-              "id": "yi9mm2z",
+              "id": "ddq1fpw",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1360,7 +1354,7 @@
               }
             },
             {
-              "id": "xim1eo9",
+              "id": "k5hmdx0",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1377,7 +1371,7 @@
               }
             },
             {
-              "id": "a0py0oh",
+              "id": "69qik18",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1423,7 +1417,7 @@
               }
             },
             {
-              "id": "uy2snr0",
+              "id": "me8c6ww",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1440,7 +1434,7 @@
               }
             },
             {
-              "id": "os7d9va",
+              "id": "xr604zb",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1475,7 +1469,7 @@
               }
             },
             {
-              "id": "ldlf0mg",
+              "id": "8h1ugib",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1492,12 +1486,13 @@
               }
             },
             {
-              "id": "pp2r11p",
+              "id": "ixl049f",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
+                    "_id": "vqbb806",
                     "text": "Senior talent on every project",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -1511,6 +1506,7 @@
                     }
                   },
                   {
+                    "_id": "at6puvs",
                     "text": "Transparent pricing, no surprises",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -1524,6 +1520,7 @@
                     }
                   },
                   {
+                    "_id": "o1vlzbv",
                     "text": "Launch in weeks, not months",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -1560,7 +1557,7 @@
               }
             },
             {
-              "id": "3gd5qho",
+              "id": "ocv8c9i",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1577,7 +1574,7 @@
               }
             },
             {
-              "id": "zqkpzjt",
+              "id": "qbd4t4r",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -1643,7 +1640,7 @@
       "isInner": false
     },
     {
-      "id": "7oqw42c",
+      "id": "99f2sxc",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -1682,14 +1679,14 @@
       },
       "elements": [
         {
-          "id": "4esd7gi",
+          "id": "5p3diri",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "vvxsouf",
+              "id": "zi1ogt2",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -1721,14 +1718,14 @@
           "isInner": false
         },
         {
-          "id": "7k1uche",
+          "id": "yx9ahxi",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "xlfxxaz",
+              "id": "fkr8ewa",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -1760,14 +1757,14 @@
           "isInner": false
         },
         {
-          "id": "urnm1dr",
+          "id": "2131dcp",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "sfqpnw4",
+              "id": "n2oke4h",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -1799,14 +1796,14 @@
           "isInner": false
         },
         {
-          "id": "5n8vj6t",
+          "id": "wny1sxb",
           "elType": "column",
           "settings": {
             "_column_size": 25
           },
           "elements": [
             {
-              "id": "5v63zrd",
+              "id": "5y4t6k2",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -1841,7 +1838,7 @@
       "isInner": false
     },
     {
-      "id": "tpclexh",
+      "id": "7jrt5bm",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -1881,14 +1878,14 @@
       },
       "elements": [
         {
-          "id": "uhxx9jk",
+          "id": "a80he4o",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "z3pmm5e",
+              "id": "9mr1xzh",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1924,7 +1921,7 @@
               }
             },
             {
-              "id": "z1o01bu",
+              "id": "osbv0hg",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1973,7 +1970,7 @@
           "isInner": false
         },
         {
-          "id": "q2cdd9t",
+          "id": "9wx41cg",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -1990,14 +1987,14 @@
           }
         },
         {
-          "id": "yltnly6",
+          "id": "y0umrqr",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "mamun10",
+              "id": "3qft8l4",
               "elType": "widget",
               "widgetType": "testimonial",
               "settings": {
@@ -2046,14 +2043,14 @@
           "isInner": false
         },
         {
-          "id": "bm3h296",
+          "id": "14eoa00",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "vqrkg55",
+              "id": "ugw4b7o",
               "elType": "widget",
               "widgetType": "testimonial",
               "settings": {
@@ -2102,14 +2099,14 @@
           "isInner": false
         },
         {
-          "id": "y9t0jqc",
+          "id": "2o9h3ju",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "yu7zzd4",
+              "id": "2dtw71z",
               "elType": "widget",
               "widgetType": "testimonial",
               "settings": {
@@ -2161,7 +2158,7 @@
       "isInner": false
     },
     {
-      "id": "py2rxsq",
+      "id": "1bl44az",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -2201,14 +2198,14 @@
       },
       "elements": [
         {
-          "id": "4gghxgd",
+          "id": "7x9h8rm",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "2iarir7",
+              "id": "s1pzf7x",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2244,7 +2241,7 @@
               }
             },
             {
-              "id": "6i5r0wy",
+              "id": "an139mq",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2290,7 +2287,7 @@
               }
             },
             {
-              "id": "bsn8xl1",
+              "id": "20kqarq",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -2328,7 +2325,7 @@
           "isInner": false
         },
         {
-          "id": "hefj8h2",
+          "id": "2wzr2c2",
           "elType": "widget",
           "widgetType": "spacer",
           "settings": {
@@ -2345,7 +2342,7 @@
           }
         },
         {
-          "id": "4uiv4bb",
+          "id": "gdbbib4",
           "elType": "column",
           "settings": {
             "_column_size": 75,
@@ -2353,24 +2350,28 @@
           },
           "elements": [
             {
-              "id": "dhg7fc7",
+              "id": "itl74fy",
               "elType": "widget",
               "widgetType": "accordion",
               "settings": {
                 "tabs": [
                   {
+                    "_id": "z21j174",
                     "tab_title": "How much does a project cost?",
                     "tab_content": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>"
                   },
                   {
+                    "_id": "eer0fx0",
                     "tab_title": "How long does it take to launch?",
                     "tab_content": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>"
                   },
                   {
+                    "_id": "2al4d94",
                     "tab_title": "Do you work with existing brands?",
                     "tab_content": "<p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p>"
                   },
                   {
+                    "_id": "ed5om62",
                     "tab_title": "What happens after launch?",
                     "tab_content": "<p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p>"
                   }
@@ -2424,7 +2425,7 @@
       "isInner": false
     },
     {
-      "id": "ygmf3tf",
+      "id": "2at8oel",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -2472,7 +2473,7 @@
       },
       "elements": [
         {
-          "id": "2itm9wz",
+          "id": "xm34vv4",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -2480,7 +2481,7 @@
           },
           "elements": [
             {
-              "id": "lnptm1u",
+              "id": "budp3gr",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2526,7 +2527,7 @@
               }
             },
             {
-              "id": "f15n8qg",
+              "id": "bnaldea",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2543,7 +2544,7 @@
               }
             },
             {
-              "id": "jj1rf24",
+              "id": "3zrxjzv",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -2578,7 +2579,7 @@
               }
             },
             {
-              "id": "xtkeao9",
+              "id": "iuwj9p5",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2595,74 +2596,64 @@
               }
             },
             {
-              "id": "8r38fsl",
-              "elType": "column",
+              "id": "1h877ie",
+              "elType": "widget",
+              "widgetType": "button",
               "settings": {
-                "_column_size": 100
-              },
-              "elements": [
-                {
-                  "id": "wtvtrmb",
-                  "elType": "widget",
-                  "widgetType": "button",
-                  "settings": {
-                    "text": "Let's Talk",
-                    "link": {
-                      "url": "#contact",
-                      "is_external": "",
-                      "nofollow": "",
-                      "custom_attributes": ""
-                    },
-                    "align": "center",
-                    "background_color": "#FFFFFF",
-                    "button_text_color": "#0F172A",
-                    "hover_color": "#0F172A",
-                    "button_background_hover_color": "#E2E8F0",
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "8",
-                      "right": "8",
-                      "bottom": "8",
-                      "left": "8",
-                      "isLinked": true
-                    },
-                    "text_padding": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "36",
-                      "bottom": "16",
-                      "left": "36",
-                      "isLinked": false
-                    },
-                    "typography_typography": "custom",
-                    "typography_font_family": "Inter",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 16,
-                      "sizes": []
-                    },
-                    "typography_font_weight": "600",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1,
-                      "sizes": []
-                    },
-                    "typography_text_transform": "",
-                    "typography_font_style": "normal",
-                    "typography_letter_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    },
-                    "typography_word_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    }
-                  }
+                "text": "Let's Talk",
+                "link": {
+                  "url": "#contact",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "center",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#0F172A",
+                "hover_color": "#0F172A",
+                "button_background_hover_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "36",
+                  "bottom": "16",
+                  "left": "36",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                },
+                "typography_text_transform": "",
+                "typography_font_style": "normal",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "typography_word_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
                 }
-              ],
-              "isInner": false
+              }
             }
           ],
           "isInner": false

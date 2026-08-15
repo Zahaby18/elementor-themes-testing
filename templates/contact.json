@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "akvh3yx",
+      "id": "18wls8c",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,14 +54,14 @@
       },
       "elements": [
         {
-          "id": "d931ogy",
+          "id": "ia6dcei",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "4u9t81u",
+              "id": "3m10dhf",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -107,7 +107,7 @@
               }
             },
             {
-              "id": "1y5b9jr",
+              "id": "tp8fcvv",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -124,7 +124,7 @@
               }
             },
             {
-              "id": "2sh3t9o",
+              "id": "l6xplpj",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -165,7 +165,7 @@
       "isInner": false
     },
     {
-      "id": "j9aoe82",
+      "id": "a95n1s1",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -204,14 +204,14 @@
       },
       "elements": [
         {
-          "id": "dw4cebp",
+          "id": "ljqavmw",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "bpgv7xj",
+              "id": "8sxxjph",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -255,22 +255,21 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
           "isInner": false
         },
         {
-          "id": "kv9huqy",
+          "id": "tcnci06",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "td6e4x9",
+              "id": "lmatovi",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -314,22 +313,21 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
           "isInner": false
         },
         {
-          "id": "oo0sjh6",
+          "id": "qaawyid",
           "elType": "column",
           "settings": {
             "_column_size": 33.3333
           },
           "elements": [
             {
-              "id": "0gt9eel",
+              "id": "y94vju8",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -373,8 +371,7 @@
                   "unit": "em",
                   "size": 1.65,
                   "sizes": []
-                },
-                "icon_primary_color": "#4F46E5"
+                }
               }
             }
           ],
@@ -384,7 +381,7 @@
       "isInner": false
     },
     {
-      "id": "h7kmlfr",
+      "id": "70tm1fs",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -423,7 +420,7 @@
       },
       "elements": [
         {
-          "id": "ypqq1s7",
+          "id": "k77jez5",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -431,7 +428,7 @@
           },
           "elements": [
             {
-              "id": "0fnz696",
+              "id": "mthh3mt",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -467,7 +464,7 @@
               }
             },
             {
-              "id": "cbtuvhe",
+              "id": "np1soww",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -484,7 +481,7 @@
               }
             },
             {
-              "id": "ffcw6jk",
+              "id": "ok8jq82",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -530,7 +527,7 @@
               }
             },
             {
-              "id": "icjhcii",
+              "id": "zriujqx",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -547,7 +544,7 @@
               }
             },
             {
-              "id": "7yzmkc3",
+              "id": "6m2pfsw",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -582,7 +579,7 @@
               }
             },
             {
-              "id": "pbl8rm7",
+              "id": "vgqsm5x",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -599,12 +596,13 @@
               }
             },
             {
-              "id": "ns7y6bz",
+              "id": "9qx6ff7",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
+                    "_id": "ottxklx",
                     "text": "hello@agenzy.studio",
                     "selected_icon": {
                       "value": "fas fa-circle-check",
@@ -618,6 +616,7 @@
                     }
                   },
                   {
+                    "_id": "in8m90d",
                     "text": "+62 812 3456 7890",
                     "selected_icon": {
                       "value": "fas fa-circle-check",
@@ -631,6 +630,7 @@
                     }
                   },
                   {
+                    "_id": "kzpc018",
                     "text": "Jl. Sudirman Kav. 52-53, Jakarta",
                     "selected_icon": {
                       "value": "fas fa-circle-check",
@@ -667,7 +667,7 @@
               }
             },
             {
-              "id": "yqwwvkp",
+              "id": "cklr9ye",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -684,7 +684,7 @@
               }
             },
             {
-              "id": "pqqf1a0",
+              "id": "eymgxst",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -747,7 +747,7 @@
           "isInner": false
         },
         {
-          "id": "lwvqdne",
+          "id": "n9tr042",
           "elType": "column",
           "settings": {
             "_column_size": 50,
@@ -755,7 +755,7 @@
           },
           "elements": [
             {
-              "id": "wmyaokf",
+              "id": "v3eq1cx",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -791,7 +791,7 @@
               }
             },
             {
-              "id": "ailc6ed",
+              "id": "bvkm3qw",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -808,7 +808,7 @@
               }
             },
             {
-              "id": "xgf7xzd",
+              "id": "j1pszjt",
               "elType": "widget",
               "widgetType": "html",
               "settings": {
@@ -822,7 +822,7 @@
       "isInner": false
     },
     {
-      "id": "cg27uze",
+      "id": "6lihbl9",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -861,7 +861,7 @@
       },
       "elements": [
         {
-          "id": "pbeh1pb",
+          "id": "2cum9pp",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -869,7 +869,7 @@
           },
           "elements": [
             {
-              "id": "rshcer8",
+              "id": "ryykb6m",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -915,7 +915,7 @@
               }
             },
             {
-              "id": "fisgsto",
+              "id": "irwej2c",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -932,7 +932,7 @@
               }
             },
             {
-              "id": "kghhjzj",
+              "id": "oaih3t9",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -967,7 +967,7 @@
               }
             },
             {
-              "id": "qchho1m",
+              "id": "typsslm",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -984,74 +984,64 @@
               }
             },
             {
-              "id": "wj7efs3",
-              "elType": "column",
+              "id": "p8jznop",
+              "elType": "widget",
+              "widgetType": "button",
               "settings": {
-                "_column_size": 100
-              },
-              "elements": [
-                {
-                  "id": "cpem87p",
-                  "elType": "widget",
-                  "widgetType": "button",
-                  "settings": {
-                    "text": "Get the Shortcode Guide",
-                    "link": {
-                      "url": "#",
-                      "is_external": "",
-                      "nofollow": "",
-                      "custom_attributes": ""
-                    },
-                    "align": "center",
-                    "background_color": "#FFFFFF",
-                    "button_text_color": "#0F172A",
-                    "hover_color": "#0F172A",
-                    "button_background_hover_color": "#E2E8F0",
-                    "border_radius": {
-                      "unit": "px",
-                      "top": "8",
-                      "right": "8",
-                      "bottom": "8",
-                      "left": "8",
-                      "isLinked": true
-                    },
-                    "text_padding": {
-                      "unit": "px",
-                      "top": "16",
-                      "right": "36",
-                      "bottom": "16",
-                      "left": "36",
-                      "isLinked": false
-                    },
-                    "typography_typography": "custom",
-                    "typography_font_family": "Inter",
-                    "typography_font_size": {
-                      "unit": "px",
-                      "size": 16,
-                      "sizes": []
-                    },
-                    "typography_font_weight": "600",
-                    "typography_line_height": {
-                      "unit": "em",
-                      "size": 1,
-                      "sizes": []
-                    },
-                    "typography_text_transform": "",
-                    "typography_font_style": "normal",
-                    "typography_letter_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    },
-                    "typography_word_spacing": {
-                      "unit": "px",
-                      "size": 0,
-                      "sizes": []
-                    }
-                  }
+                "text": "Get the Shortcode Guide",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
+                },
+                "align": "center",
+                "background_color": "#FFFFFF",
+                "button_text_color": "#0F172A",
+                "hover_color": "#0F172A",
+                "button_background_hover_color": "#E2E8F0",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "isLinked": true
+                },
+                "text_padding": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "36",
+                  "bottom": "16",
+                  "left": "36",
+                  "isLinked": false
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1,
+                  "sizes": []
+                },
+                "typography_text_transform": "",
+                "typography_font_style": "normal",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
+                },
+                "typography_word_spacing": {
+                  "unit": "px",
+                  "size": 0,
+                  "sizes": []
                 }
-              ],
-              "isInner": false
+              }
             }
           ],
           "isInner": false
