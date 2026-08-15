@@ -1,0 +1,73 @@
+{
+  "title": "Agenzy — Digital Agency Template Kit",
+  "description": "A clean, simple, fully responsive digital agency website kit built with Elementor Free widgets only. No extra plugins needed. Includes 7 pages plus header & footer sections.",
+  "preview": "",
+  "templates": [
+    {
+      "source": "templates/header-section.json",
+      "type": "section",
+      "title": "Header",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/footer-section.json",
+      "type": "section",
+      "title": "Footer",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/home.json",
+      "type": "page",
+      "title": "Home",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/about.json",
+      "type": "page",
+      "title": "About",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/services.json",
+      "type": "page",
+      "title": "Services",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/portfolio.json",
+      "type": "page",
+      "title": "Portfolio",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/blog.json",
+      "type": "page",
+      "title": "Blog",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/contact.json",
+      "type": "page",
+      "title": "Contact",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/404.json",
+      "type": "page",
+      "title": "404",
+      "thumbnail": ""
+    }
+  ],
+  "categories": [
+    "business",
+    "agency"
+  ],
+  "keywords": [
+    "digital agency",
+    "agency",
+    "business",
+    "portfolio",
+    "responsive"
+  ],
+  "settings": {}
+}
