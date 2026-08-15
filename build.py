@@ -192,11 +192,9 @@ def btn_row(buttons):
 
 def sec_head(eyebrow_, title_, sub_=None, align="center"):
     els = [eyebrow(eyebrow_)]
-    els.append(heading(title_, "h2", INK, align, 38, "700", 1.25, tablet=30, mobile=26,
-                       extra={"_animation": "fadeInUp"}))
+    els.append(heading(title_, "h2", INK, align, 38, "700", 1.25, tablet=30, mobile=26))
     if sub_:
-        els.append(text(f"<p>{sub_}</p>", BODY, align, 17, "400", 1.7,
-                        extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}))
+        els.append(text(f"<p>{sub_}</p>", BODY, align, 17, "400", 1.7))
     return els
 
 def heading(text_, tag="h2", color=INK, align="left", px=40, weight="700", line=1.2, tablet=None, mobile=None, extra=None):
@@ -460,15 +458,14 @@ def home():
     els.append(section([
         col([
             heading("We Build Digital Products That Grow Your Business", "h1", WHITE, "left", 52, "800", 1.15,
-                    tablet=40, mobile=32, extra={"_animation": "fadeInLeft"}),
+                    tablet=40, mobile=32),
             spacer(16, 12),
             text("<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>",
-                 "#CBD5E1", "left", 18, "400", 1.7,
-                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
+                 "#CBD5E1", "left", 18, "400", 1.7),
             spacer(24, 16),
             btn_row([btn("Explore Services", "#services", "left"), ghost_btn("Start a Project", "#contact", "left")]),
         ], 55, center=True),
-        col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"), anim="fadeIn", anim_delay=200)], 45, center=True),
+        col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"))], 45, center=True),
     ], bg=None, pad_top=120, pad_bottom=120, overlay=dark_hero_bg(U["team"], 0.9)))
 
     # TRUST BAR
@@ -491,26 +488,24 @@ def home():
         col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
     els.append(section([
-        card_col([srv_widgets[0]], anim="fadeInUp", anim_delay=0),
-        card_col([srv_widgets[1]], anim="fadeInUp", anim_delay=100),
-        card_col([srv_widgets[2]], anim="fadeInUp", anim_delay=200),
+        card_col([srv_widgets[0]]),
+        card_col([srv_widgets[1]]),
+        card_col([srv_widgets[2]]),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
-        card_col([srv_widgets[3]], anim="fadeInUp", anim_delay=0),
-        card_col([srv_widgets[4]], anim="fadeInUp", anim_delay=100),
-        card_col([srv_widgets[5]], anim="fadeInUp", anim_delay=200),
+        card_col([srv_widgets[3]]),
+        card_col([srv_widgets[4]]),
+        card_col([srv_widgets[5]]),
     ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     # ABOUT PREVIEW
     els.append(section([
-        col([img(U["collab"], "Our team collaborating", 100, 16, shadow(), anim="fadeIn")], 50, center=True),
+        col([img(U["collab"], "Our team collaborating", 100, 16, shadow())], 50, center=True),
         col([
             eyebrow("About Us"), spacer(12, 8),
-            heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
-                    extra={"_animation": "fadeInLeft"}),
+            heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24),
             spacer(12, 8),
-            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>",
-                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
+            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>"),
             spacer(16, 10),
             icon_list(["Senior talent on every project", "Transparent pricing, no surprises", "Launch in weeks, not months"]),
             spacer(24, 16),
@@ -531,11 +526,11 @@ def home():
     ], bg=WHITE, pad_top=100, pad_bottom=30))
     els.append(section([
         col([testimonial("“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”",
-                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333, anim="fadeInUp", anim_delay=0),
+                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333),
         col([testimonial("“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”",
-                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""})], 33.3333, anim="fadeInUp", anim_delay=100),
+                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""})], 33.3333),
         col([testimonial("“They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.”",
-                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""})], 33.3333, anim="fadeInUp", anim_delay=200),
+                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""})], 33.3333),
     ], bg=WHITE, pad_top=0, pad_bottom=100, anchor="testimonials"))
 
     # FAQ (2 sections: heading + accordion)
@@ -957,15 +952,7 @@ def main():
     os.makedirs(cdir, exist_ok=True)
 
     templates = {
-        "header-section.json": header_section(),
-        "footer-section.json": footer_section(),
         "home.json": home(),
-        "about.json": about(),
-        "services.json": services(),
-        "portfolio.json": portfolio(),
-        "blog.json": blog(),
-        "contact.json": contact(),
-        "404.json": p404(),
     }
 
     errors = validate_structure(templates)
@@ -975,6 +962,13 @@ def main():
             print("  -", e)
         raise SystemExit(1)
     print("structure OK ✅")
+
+    # remove stale template files from previous builds
+    keep = set(templates.keys())
+    for old in os.listdir(tdir):
+        if old.endswith('.json') and old not in keep:
+            os.remove(os.path.join(tdir, old))
+            print(f"  removed stale {old}")
 
     manifest_templates = []
     for fname, data in templates.items():

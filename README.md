@@ -8,15 +8,9 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 
 | Template | Type | Isi |
 |---|---|---|
-| `templates/header-section.json` | Section | Header simple: logo + CTA button |
-| `templates/footer-section.json` | Section | Footer 3 kolom + social icons + copyright |
-| `templates/home.json` | Page | Hero, services, about preview, stats, testimonials, FAQ, CTA |
-| `templates/about.json` | Page | Story, values, team, CTA |
-| `templates/services.json` | Page | 6 services, process 4 langkah, what's included |
-| `templates/portfolio.json` | Page | Gallery grid 2 baris + CTA |
-| `templates/blog.json` | Page | Blog cards statis + newsletter band |
-| `templates/contact.json` | Page | Info cards, detail kontak, peta (OpenStreetMap) |
-| `templates/404.json` | Page | Halaman 404 |
+| `templates/home.json` | Page | Hero, services (6 kartu), about preview, stats, testimonials, FAQ, CTA |
+
+> ⚠️ **Status: revisi tahap 1** — kit sedang difokuskan ke homepage dulu. Template lain (about/services/portfolio/blog/contact) akan menyusul setelah desain homepage disetujui.
 
 ## Cara Pakai (Import)
 
