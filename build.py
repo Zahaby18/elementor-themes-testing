@@ -73,61 +73,130 @@ def widget(wtype, settings, elements=None):
     return w
 
 # ---------------------------------------------------------------- element builders
-def section(elements, settings=None, bg=None, pad_top=100, pad_bottom=100, anchor=None, overlay=None):
+def flex_gap(px, tablet=20, mobile=16):
+    g = {"unit": "px", "column": px, "row": px, "sizes": [], "isLinked": True}
+    return {"gap": g, "gap_tablet": {"unit": "px", "column": tablet, "row": tablet, "sizes": [], "isLinked": True},
+            "gap_mobile": {"unit": "px", "column": mobile, "row": mobile, "sizes": [], "isLinked": True}}
+
+def container(elements, settings=None, bg=None, gradient=None, pad_top=100, pad_bottom=100, anchor=None,
+              overlay=None, radius=None, shadow_=None, anim=None, anim_delay=0):
+    """Elementor Flexbox Container (boxed 1140px)."""
     s = {
-        "layout": "full_width",
-        "content_width": size(1140),
-        "gap": "default",
-        "padding": dim(pad_top, 0, pad_bottom, 0, False),
+        "container_type": "flex",
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1140, "sizes": []},
+        "flex_direction": "row",
+        "flex_direction_tablet": "row",
+        "flex_direction_mobile": "column",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "flex-start",
+        "flex_align_items": "stretch",
+        "padding": dim(pad_top, 20, pad_bottom, 20, False),
         "padding_tablet": dim(70, 20, 70, 20, False),
-        "padding_mobile": dim(50, 20, 50, 20, False),
+        "padding_mobile": dim(50, 16, 50, 16, False),
+        **flex_gap(24, 20, 16),
     }
     if bg:
         s.update({"background_background": "classic", "background_color": bg})
+    if gradient:
+        s.update({
+            "background_background": "gradient",
+            "background_color": gradient[0],
+            "background_color_b": gradient[1],
+            "background_gradient_type": "linear",
+            "background_gradient_angle": {"unit": "deg", "size": gradient[2] if len(gradient) > 2 else 135, "sizes": []},
+        })
     if overlay:
         s.update(overlay)
     if anchor:
         s["_element_id"] = anchor
+    if radius:
+        s["border_radius"] = dim(radius, radius, radius, radius, True)
+    if shadow_:
+        s["box_shadow_box_shadow_type"] = "yes"
+        s["box_shadow_box_shadow"] = shadow_
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     if settings:
         s.update(settings)
-    return {"id": eid(), "elType": "section", "settings": s, "elements": elements, "isInner": False}
+    return {"id": eid(), "elType": "container", "settings": s, "elements": elements, "isInner": False}
+
+# Backwards-compatible alias: template code calls section(...)
+section = container
 
 def dark_hero_bg(img_url, opacity=0.88):
+    """Photo + navy→indigo gradient overlay."""
     return {
         "background_background": "classic",
         "background_image": {"url": img_url, "id": 0, "alt": ""},
         "background_position": "center center",
         "background_size": "cover",
         "background_repeat": "no-repeat",
-        "background_overlay_background": "classic",
-        "background_overlay_color": INK,
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "#0F172A",
+        "background_overlay_color_b": "#1E1B4B",
+        "background_overlay_gradient_type": "linear",
+        "background_overlay_gradient_angle": {"unit": "deg", "size": 135, "sizes": []},
         "background_overlay_opacity": {"unit": "px", "size": opacity, "sizes": []},
     }
 
-def col(elements, width=50, settings=None, center=False):
-    s = {"_column_size": width}
-    if center:
-        s["content_position"] = "center"
+def col(elements, width=50, settings=None, center=False, anim=None, anim_delay=0):
+    """Inner Flexbox Container (was column). Column direction."""
+    s = {
+        "container_type": "flex",
+        "content_width": "full",
+        "width": {"unit": "%", "size": width, "sizes": []},
+        "width_tablet": {"unit": "%", "size": 100, "sizes": []},
+        "width_mobile": {"unit": "%", "size": 100, "sizes": []},
+        "flex_direction": "column",
+        "flex_direction_tablet": "column",
+        "flex_direction_mobile": "column",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center" if center else "flex-start",
+        "flex_align_items": "stretch",
+        **flex_gap(16, 14, 12),
+    }
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     if settings:
         s.update(settings)
-    return {"id": eid(), "elType": "column", "settings": s, "elements": elements, "isInner": False}
+    return {"id": eid(), "elType": "container", "settings": s, "elements": elements, "isInner": True}
 
-def card_col(widgets, bg=LIGHT, radius=16):
-    return col(widgets, 33.3333, {
+def card_col(widgets, bg=LIGHT, radius=16, anim=None, anim_delay=0):
+    """Card = inner container with bg, radius, shadow, hover lift via box-shadow."""
+    s = {
         "background_background": "classic",
         "background_color": bg,
         "border_radius": dim(radius, radius, radius, radius, True),
         "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": shadow(16, 32, -12, "rgba(15,23,42,0.08)"),
-        "padding": dim(36, 30, 36, 30, False),
-    })
+        "box_shadow_box_shadow": shadow(20, 40, -12, "rgba(15,23,42,0.10)"),
+        "padding": dim(34, 28, 34, 28, False),
+    }
+    return col(widgets, 33.3333, settings=s, anim=anim, anim_delay=anim_delay)
 
 def btn_row(buttons):
-    """Two+ buttons side by side (inner section)."""
-    cols = [col([b], 50) for b in buttons]
-    inner = {"id": eid(), "elType": "section", "isInner": True,
-             "settings": {"gap": "default", "content_width": size(1140)}, "elements": cols}
+    """Buttons side by side (inner flex container row)."""
+    cols = [col([b], 50, center=True) for b in buttons]
+    inner = {"id": eid(), "elType": "container", "isInner": True,
+             "settings": {"container_type": "flex", "content_width": "full",
+                          "flex_direction": "row", "flex_direction_tablet": "row",
+                          "flex_direction_mobile": "column", "flex_wrap": "wrap",
+                          "flex_justify_content": "flex-start", "flex_align_items": "center",
+                          **flex_gap(12, 12, 10)}, "elements": cols}
     return inner
+
+def sec_head(eyebrow_, title_, sub_=None, align="center"):
+    els = [eyebrow(eyebrow_)]
+    els.append(heading(title_, "h2", INK, align, 38, "700", 1.25, tablet=30, mobile=26,
+                       extra={"_animation": "fadeInUp"}))
+    if sub_:
+        els.append(text(f"<p>{sub_}</p>", BODY, align, 17, "400", 1.7,
+                        extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}))
+    return els
 
 def heading(text_, tag="h2", color=INK, align="left", px=40, weight="700", line=1.2, tablet=None, mobile=None, extra=None):
     s = {"title": text_, "header_size": tag, "align": align, "title_color": color, **typo(px, weight, line)}
@@ -172,7 +241,7 @@ def ghost_btn(text_, url="#", align="left", fg=WHITE, border="#334155"):
                extra={"border_border": "solid", "border_width": dim(1, 1, 1, 1, True), "border_color": border,
                       "button_background_hover_color": "rgba(255,255,255,0.08)", "hover_color": WHITE})
 
-def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", align="center"):
+def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", align="center", anim=None, anim_delay=0):
     s = {
         "selected_icon": {"value": icon, "library": "fa-solid"},
         "title_text": title_,
@@ -180,6 +249,7 @@ def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", 
         "position": position,
         "icon_color": icon_color,
         "icon_size": size(32),
+        "hover_animation": "grow",
         "title_color": INK,
         "description_color": BODY,
         "title_typography_typography": "custom",
@@ -193,6 +263,10 @@ def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", 
         "description_typography_font_weight": "400",
         "description_typography_line_height": {"unit": "em", "size": 1.65, "sizes": []},
     }
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     if link:
         s["link"] = {"url": link, "is_external": "", "nofollow": "", "custom_attributes": ""}
     return widget("icon-box", s)
@@ -319,7 +393,7 @@ def counter(n, suffix, title_, dark=True):
 def social_icons(icons=None, bg="rgba(255,255,255,0.10)", color=WHITE, px=15):
     icons = icons or [
         ("fab fa-facebook-f", "#"),
-        ("fab fa-x-twitter", "#"),
+        ("fab fa-twitter", "#"),
         ("fab fa-instagram", "#"),
         ("fab fa-linkedin-in", "#"),
     ]
@@ -370,13 +444,6 @@ def osm_map():
                 'style="border:0;width:100%;height:420px;border-radius:16px;" loading="lazy"></iframe>'
     })
 
-def sec_head(eyebrow_, title_, sub_=None, align="center"):
-    els = [eyebrow(eyebrow_)]
-    els.append(heading(title_, "h2", INK, align, 38, "700", 1.25, tablet=30, mobile=26))
-    if sub_:
-        els.append(text(f"<p>{sub_}</p>", BODY, align, 17, "400", 1.7))
-    return els
-
 def page(title, elements, ptype="page"):
     return {"content": elements, "page_settings": [], "version": "0.4", "title": title, "type": ptype}
 
@@ -406,7 +473,7 @@ def home():
     # SERVICES (3 sections = 3 rows: heading, row 1, row 2)
     services = [
         ("fas fa-bullseye", "Digital Strategy", "Market research, positioning, and roadmaps that turn your business goals into a clear plan of action."),
-        ("fas fa-pen-ruler", "UI/UX Design", "Research-driven interfaces that look sharp and convert — web, mobile, and product design."),
+        ("fas fa-pencil-ruler", "UI/UX Design", "Research-driven interfaces that look sharp and convert — web, mobile, and product design."),
         ("fas fa-code", "Web Development", "Fast, secure, and scalable websites and web apps built with modern technology."),
         ("fas fa-chart-line", "SEO & Growth", "Technical SEO, content strategy, and performance marketing that compound over time."),
         ("fas fa-palette", "Brand Identity", "Logos, guidelines, and visual systems that make your brand impossible to ignore."),
@@ -417,14 +484,14 @@ def home():
         col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
     els.append(section([
-        card_col([srv_widgets[0]]),
-        card_col([srv_widgets[1]]),
-        card_col([srv_widgets[2]]),
+        card_col([srv_widgets[0]], anim="fadeInUp", anim_delay=0),
+        card_col([srv_widgets[1]], anim="fadeInUp", anim_delay=100),
+        card_col([srv_widgets[2]], anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
-        card_col([srv_widgets[3]]),
-        card_col([srv_widgets[4]]),
-        card_col([srv_widgets[5]]),
+        card_col([srv_widgets[3]], anim="fadeInUp", anim_delay=0),
+        card_col([srv_widgets[4]], anim="fadeInUp", anim_delay=100),
+        card_col([srv_widgets[5]], anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     # ABOUT PREVIEW
@@ -448,19 +515,18 @@ def home():
         col([counter(85, "+", "Happy Clients")], 25),
         col([counter(6, "+", "Years Experience")], 25),
         col([counter(15, "+", "Industry Awards")], 25),
-    ], bg=INK, pad_top=80, pad_bottom=80))
-
+    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
     # TESTIMONIALS (2 sections: heading + row)
     els.append(section([
         col(sec_head("Testimonials", "What our clients say"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30))
     els.append(section([
         col([testimonial("“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”",
-                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333),
+                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333, anim="fadeInUp", anim_delay=0),
         col([testimonial("“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”",
-                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""})], 33.3333),
+                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""})], 33.3333, anim="fadeInUp", anim_delay=100),
         col([testimonial("“They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.”",
-                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""})], 33.3333),
+                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""})], 33.3333, anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=100, anchor="testimonials"))
 
     # FAQ (2 sections: heading + accordion)
@@ -486,7 +552,7 @@ def home():
             spacer(22, 14),
             btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36),
         ], 70, center=True),
-    ], bg=ACCENT, pad_top=90, pad_bottom=90, anchor="contact",
+    ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=90, pad_bottom=90, anchor="contact",
        settings={"border_radius": dim(24, 24, 24, 24, True)}))
 
     return page("Home", els)
@@ -522,9 +588,9 @@ def about():
         col(sec_head("Our Values", "What we stand for"), 100),
     ], bg=LIGHT, pad_top=100, pad_bottom=30))
     els.append(section([
-        col([icon_box(vals[0][0], vals[0][1], vals[0][2])], 33.3333),
-        col([icon_box(vals[1][0], vals[1][1], vals[1][2])], 33.3333),
-        col([icon_box(vals[2][0], vals[2][1], vals[2][2])], 33.3333),
+        col([icon_box(vals[0][0], vals[0][1], vals[0][2])], 33.3333, anim="fadeInUp", anim_delay=0),
+        col([icon_box(vals[1][0], vals[1][1], vals[1][2])], 33.3333, anim="fadeInUp", anim_delay=100),
+        col([icon_box(vals[2][0], vals[2][1], vals[2][2])], 33.3333, anim="fadeInUp", anim_delay=200),
     ], bg=LIGHT, pad_top=0, pad_bottom=100))
 
     # TEAM (2 sections: heading + row)
@@ -535,13 +601,13 @@ def about():
         (U["p4"], "Nadia Putri", "Growth & SEO Lead"),
     ]
     team_cols = []
-    for turl, name_, role in team:
+    for i, (turl, name_, role) in enumerate(team):
         team_cols.append(col([
             img(turl, name_, 100, 12),
             spacer(14, 10),
             heading(name_, "h4", INK, "center", 19, "700", 1.3),
             text(f"<p style='text-align:center;'>{role}</p>", MUTED, "center", 14, "400", 1.5),
-        ], 25))
+        ], 25, anim="fadeInUp", anim_delay=i * 100))
     els.append(section([
         col(sec_head("Meet the Team", "The people behind the pixels"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30))
@@ -553,8 +619,7 @@ def about():
         col([heading("Want to join the team?", "h2", WHITE, "center", 34, "700", 1.25, tablet=28, mobile=24),
              spacer(18, 12),
              btn("See Open Roles", "#contact", "center", WHITE, INK, "#E2E8F0")], 70, center=True),
-    ], bg=INK, pad_top=80, pad_bottom=80))
-
+    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
     return page("About", els)
 
 def services():
@@ -569,7 +634,7 @@ def services():
 
     services = [
         ("fas fa-bullseye", "Digital Strategy", "Positioning, research, and roadmaps that make sure every dollar you spend has a purpose."),
-        ("fas fa-pen-ruler", "UI/UX Design", "Interfaces that balance beauty and usability. Prototyped, tested, and iterated with real users."),
+        ("fas fa-pencil-ruler", "UI/UX Design", "Interfaces that balance beauty and usability. Prototyped, tested, and iterated with real users."),
         ("fas fa-code", "Web Development", "Lightning-fast websites and web apps on modern stacks. Clean code, easy to hand over."),
         ("fas fa-chart-line", "SEO & Growth", "Technical audits, content engines, and performance marketing that deliver compounding results."),
         ("fas fa-palette", "Brand Identity", "From logo to full brand guidelines — a visual identity your audience will remember."),
@@ -579,14 +644,14 @@ def services():
         col(sec_head("What We Do", "Six services, one partner"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
     els.append(section([
-        card_col([icon_box(*services[0], link="#contact")]),
-        card_col([icon_box(*services[1], link="#contact")]),
-        card_col([icon_box(*services[2], link="#contact")]),
+        card_col([icon_box(*services[0], link="#contact")], anim="fadeInUp", anim_delay=0),
+        card_col([icon_box(*services[1], link="#contact")], anim="fadeInUp", anim_delay=100),
+        card_col([icon_box(*services[2], link="#contact")], anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
-        card_col([icon_box(*services[3], link="#contact")]),
-        card_col([icon_box(*services[4], link="#contact")]),
-        card_col([icon_box(*services[5], link="#contact")]),
+        card_col([icon_box(*services[3], link="#contact")], anim="fadeInUp", anim_delay=0),
+        card_col([icon_box(*services[4], link="#contact")], anim="fadeInUp", anim_delay=100),
+        card_col([icon_box(*services[5], link="#contact")], anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     # PROCESS
@@ -618,7 +683,7 @@ def services():
                 "Performance & security best practices baked in",
                 "Documentation and full ownership handover",
                 "30 days of post-launch support free",
-            ], icon="fas fa-circle-check"),
+            ], icon="fas fa-check-circle"),
             spacer(24, 16),
             btn("Start Your Project", "#contact", "left"),
         ], 55, center=True),
@@ -629,7 +694,7 @@ def services():
         col([heading("Not sure which service you need?", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
              spacer(16, 10),
              btn("Book a Free Call", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], bg=ACCENT, pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
+    ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
 
     return page("Services", els)
 
@@ -662,8 +727,7 @@ def portfolio():
         col([heading("Your project could be next", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
              spacer(16, 10),
              btn("Start a Project", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], bg=INK, pad_top=80, pad_bottom=80))
-
+    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
     return page("Portfolio", els)
 
 def blog():
@@ -685,9 +749,9 @@ def blog():
         col(sec_head("Latest Articles", "From the blog"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30))
     els.append(section([
-        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3])], 33.3333),
-        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3])], 33.3333),
-        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3])], 33.3333),
+        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3])], 33.3333, anim="fadeInUp", anim_delay=0),
+        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3])], 33.3333, anim="fadeInUp", anim_delay=100),
+        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3])], 33.3333, anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
         col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add the Posts widget (Elementor Pro) or use your theme's blog template.</p>",
@@ -700,7 +764,7 @@ def blog():
              text("<p style='text-align:center;'>One email a month. No spam, ever.</p>", "#CBD5E1", "center", 16),
              spacer(18, 12),
              btn("Subscribe", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], bg=ACCENT, pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
+    ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
 
     return page("Blog", els)
 
@@ -715,7 +779,7 @@ def contact():
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["office"], 0.85)))
 
     info = [
-        ("fas fa-location-dot", "Visit Us", "Jl. Sudirman Kav. 52-53, Jakarta Selatan, Indonesia"),
+        ("fas fa-map-marker-alt", "Visit Us", "Jl. Sudirman Kav. 52-53, Jakarta Selatan, Indonesia"),
         ("fas fa-envelope", "Email Us", "hello@agenzy.studio"),
         ("fas fa-phone", "Call Us", "+62 812 3456 7890"),
     ]
@@ -736,7 +800,7 @@ def contact():
                 "hello@agenzy.studio",
                 "+62 812 3456 7890",
                 "Jl. Sudirman Kav. 52-53, Jakarta",
-            ], icon="fas fa-circle-check"),
+            ], icon="fas fa-check-circle"),
             spacer(24, 16),
             btn("Email Us Directly", "mailto:hello@agenzy.studio", "left"),
         ], 50, center=True),
@@ -753,8 +817,7 @@ def contact():
              text("<p style='text-align:center;'>Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget — it takes one minute.</p>", "#CBD5E1", "center", 16),
              spacer(18, 12),
              btn("Get the Shortcode Guide", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], bg=INK, pad_top=80, pad_bottom=80))
-
+    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
     return page("Contact", els)
 
 def p404():
@@ -803,7 +866,7 @@ def footer_section():
     contact_items = [
         ("fas fa-envelope", "hello@agenzy.studio"),
         ("fas fa-phone", "+62 812 3456 7890"),
-        ("fas fa-location-dot", "Jakarta Selatan, Indonesia"),
+        ("fas fa-map-marker-alt", "Jakarta Selatan, Indonesia"),
     ]
     col1 = col([
         heading("Agenzy", "h4", WHITE, "left", 22, "700", 1.3),
@@ -820,7 +883,7 @@ def footer_section():
     col3 = col([
         heading("Contact", "h4", WHITE, "left", 18, "700", 1.3),
         spacer(14, 8),
-        icon_list([c for _, c in contact_items], icon="fas fa-circle-check", icon_color=ACCENT, text_color="#CBD5E1", px=15),
+        icon_list([c for _, c in contact_items], icon="fas fa-check-circle", icon_color=ACCENT, text_color="#CBD5E1", px=15),
     ], 30)
     bottom = col([
         divider(color="#1E293B", width_pct=100),
@@ -840,37 +903,35 @@ def footer_section():
 
 # ---------------------------------------------------------------- build
 def validate_structure(templates):
-    """Elementor schema: section children = columns only; column children = widgets / inner sections; inner section children = columns. Column widths per row must sum <= 100%."""
+    """Elementor schema: containers only; widgets must have widgetType; inner-container widths per row must sum <= 100%."""
     errors = []
-    def walk(elems, container, path):
+    def walk(elems, path, is_row_ctx):
         widths = []
         for i, el in enumerate(elems):
             p = f"{path}[{i}]"
             et = el.get('elType')
-            if et not in ('section', 'column', 'widget'):
-                errors.append(f"{p}: bad elType {et!r}")
+            if et not in ('container', 'widget'):
+                errors.append(f"{p}: bad elType {et!r} (should be container)")
                 continue
-            if et == 'widget' and not el.get('widgetType'):
-                errors.append(f"{p}: widget without widgetType")
-            children = el.get('elements', [])
-            if container in ('section', 'inner-section') and et == 'widget':
-                errors.append(f"{p}: widget directly inside {container} (must be inside a column)")
-            if et == 'column':
-                w = float(el.get('settings', {}).get('_column_size', 100))
+            if et == 'widget':
+                if not el.get('widgetType'):
+                    errors.append(f"{p}: widget without widgetType")
+                continue
+            # container
+            settings = el.get('settings', {})
+            if el.get('isInner') and is_row_ctx:
+                w = float(settings.get('width', {}).get('size', 100) if isinstance(settings.get('width'), dict) else 100)
                 widths.append(w)
-            if et == 'section':
-                if 'isInner' in el:
-                    walk(children, 'inner-section', p + '>')
-                else:
-                    walk(children, 'section', p + '>')
-            elif et == 'column':
-                walk(children, 'column', p + '>')
-        if container in ('section', 'inner-section'):
+            children = el.get('elements', [])
+            # row context for children: if this container is row-direction
+            child_row_ctx = settings.get('flex_direction', 'row') == 'row'
+            walk(children, p + '>', child_row_ctx)
+        if is_row_ctx:
             total = sum(widths)
             if total > 100.01:
-                errors.append(f"{path}: column widths sum {total:.1f}% > 100% (Elementor tidak wrap kolom — harus 1 baris per section)")
+                errors.append(f"{path}: inner container widths sum {total:.1f}% > 100% (harus 1 baris per row)")
     for name, data in templates.items():
-        walk(data['content'], 'section', name)
+        walk(data['content'], name, True)
     return errors
 
 def main():
