@@ -53,13 +53,13 @@
     },
     {
       "source": "templates/header-section.json",
-      "type": "wpr-theme-builder",
+      "type": "section",
       "title": "Header",
       "thumbnail": ""
     },
     {
       "source": "templates/footer-section.json",
-      "type": "wpr-theme-builder",
+      "type": "section",
       "title": "Footer",
       "thumbnail": ""
     }

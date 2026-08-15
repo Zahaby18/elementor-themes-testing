@@ -39,25 +39,11 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 - **Font**: Inter (Google Font, auto-load oleh Elementor).
 - **Palette**: slate + indigo aksen. Semua warna & font bisa diganti lewat editor.
 
-## ⚠️ Ketergantungan Plugin (untuk Single Post, Header, Footer, Blog)
+## ⚠️ Catatan Royal Elementor Addons
 
-Halaman **Home / About / Services / Portfolio / Contact / 404** murni Elementor Free, tanpa plugin.
+Kit ini **100% Elementor Free, tanpa plugin tambahan** — semua halaman (Home/About/Services/Portfolio/Blog/Contact/404/Single/Header/Footer) memakai widget native Free.
 
-Tapi **Single Post, Header, Footer, dan Blog grid** memakai widget **Royal Elementor Addons** (gratis) agar bisa dinamis:
-
-- Blog → widget `wpr-grid` (post grid otomatis)
-- Single Post → `wpr-post-title`, `wpr-post-media`, `wpr-post-content`, `wpr-post-info`, `wpr-author-box`
-- Header → `wpr-logo`, `wpr-nav-menu`
-- Footer → konten statis (container native)
-
-**Cara pakai:**
-1. Install & aktifkan **Royal Elementor Addons** (free, dari repo WordPress)
-2. Import kit seperti biasa
-3. Buka **Royal → Theme Builder** → assign template:
-   - `Single Post` → Single Post
-   - `Header` → Header
-   - `Footer` → Footer
-4. Untuk menu header, pilih menu di setting widget `wpr-nav-menu`
+> **Known issue**: kalau kamu pakai **Royal Elementor Addons** (untuk fitur dynamic lain), nonaktifkan dulu saat import kit — Royal yang aktif bisa bikin proses import Elementor hang/timeout. Setelah import selesai, Royal boleh diaktifkan lagi.
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat — gambar demo bakal tetap kebaca dari URL.*
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).

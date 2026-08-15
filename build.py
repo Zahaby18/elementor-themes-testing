@@ -937,49 +937,23 @@ def blog():
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85)))
 
-    # LATEST ARTICLES — Royal Elementor Addons Post Grid (dynamic)
+    # LATEST ARTICLES — static cards (wpr-grid removed: it hangs on import)
+    posts = [
+        (U["w1"], "10 Conversion Lessons from 100+ Landing Pages", "We analyzed the patterns that separate high-converting landing pages from the rest. Here's what actually works.", "#"),
+        (U["w2"], "The Design System That Cut Our Build Time in Half", "How we standardized components, tokens, and handoff — and why your team should too.", "#"),
+        (U["w6"], "SEO in 2026: What Still Matters (and What Doesn't)", "Algorithm changes come and go. These fundamentals have survived every update so far.", "#"),
+    ]
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
-    wpr_grid = widget("wpr-grid", {
-        "query_not_found_text": "No Posts Found!",
-        "grid_elements": [
-            {"_id": eid(), "element_read_more_text": "Read More", "element_tax_sep": ", ",
-             "element_comments_text_1": "No Comments", "element_comments_text_2": "Comment", "element_comments_text_3": "Comments"},
-            {"element_select": "date", "element_display": "inline", "element_extra_text_pos": "after", "element_extra_text": "/",
-             "_id": eid(), "element_read_more_text": "Read More", "element_tax_sep": ", ",
-             "element_comments_text_1": "No Comments", "element_comments_text_2": "Comment", "element_comments_text_3": "Comments"},
-            {"element_select": "excerpt", "_id": eid(), "element_read_more_text": "Read More", "element_tax_sep": ", ",
-             "element_comments_text_1": "No Comments", "element_comments_text_2": "Comment", "element_comments_text_3": "Comments"},
-            {"element_select": "read-more", "_id": eid(), "element_read_more_text": "Read More", "element_tax_sep": ", ",
-             "element_comments_text_1": "No Comments", "element_comments_text_2": "Comment", "element_comments_text_3": "Comments"},
-        ],
-        "filters_all_text": "All Posts",
-        "pagination_older_text": "Older Posts", "pagination_newer_text": "Newer Posts",
-        "pagination_prev_text": "Previous Page", "pagination_next_text": "Next Page",
-        "pagination_first_text": "First Page", "pagination_last_text": "Last Page",
-        "pagination_load_more_text": "Load More", "pagination_finish_text": "End of Content.",
-        "layout_filters": "", "layout_pagination": "",
-        "grid_item_bg_color": "#FFFFFF",
-        "grid_item_padding": dim(20, 20, 20, 20, True),
-        "grid_item_radius": dim(20, 20, 20, 20, True),
-        "grid_item_shadow_box_shadow_type": "yes",
-        "grid_item_shadow_box_shadow": {"horizontal": 0, "vertical": 12, "blur": 32, "spread": -12, "color": "rgba(79,70,229,0.16)"},
-        "grid_media_radius": dim(20, 20, 0, 0, False),
-        "date_text_spacing": {"unit": "px", "size": 7, "sizes": []},
-        "date_margin": dim(5, 7, 10, 0, False),
-        "read_more_bg_color_background": "classic",
-        "read_more_bg_color_color": ACCENT,
-        "read_more_color": "#FFFFFF",
-        "read_more_bg_color_hr_background": "classic",
-        "read_more_bg_color_hr_color": ACCENT2,
-        "read_more_color_hr": "#FFFFFF",
-        "read_more_padding": dim(8, 20, 8, 20, False),
-        "read_more_margin": dim(30, 0, 0, 0, False),
-        "read_more_radius": dim(10, 10, 10, 10, True),
-    })
     els.append(section([
-        col([wpr_grid], 100),
+        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3], anim="fadeInUp")], 33.3333),
+        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3], anim="fadeInUp", anim_delay=100)], 33.3333),
+        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3], anim="fadeInUp", anim_delay=200)], 33.3333),
+    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(0, 16, 50, 16)))
+    els.append(section([
+        col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add Royal Elementor Addons' Post Grid widget, or use Elementor Pro's Posts widget.</p>",
+                  MUTED, "center", 14)], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # CTA
@@ -1076,19 +1050,19 @@ def p404():
     return page("404", els)
 
 def header_section():
-    # Royal Theme Builder header — wpr-logo + wpr-nav-menu (dynamic)
+    # Free-only header (logo + CTA) — inserted as a section on each page
     return {
         "content": [
             section([
-                col([widget("wpr-logo", {})], 40, center=True),
-                col([widget("wpr-nav-menu", {"menu_align": "right"})], 60, center=True),
-            ], bg=WHITE, pad_top=16, pad_bottom=16,
+                col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 50, center=True),
+                col([btn("Start a Project", "#contact", "right", ACCENT, WHITE, ACCENT2, pt=12, pl=28, radius=8)], 50, center=True),
+            ], bg=WHITE, pad_top=20, pad_bottom=20,
                settings={"border_border": "solid", "border_width": dim(0, 0, 1, 0, False), "border_color": BORDER}),
         ],
         "page_settings": [],
         "version": "0.4",
         "title": "Header",
-        "type": "wpr-theme-builder",
+        "type": "section",
     }
 
 def footer_section():
@@ -1125,7 +1099,7 @@ def footer_section():
         "page_settings": [],
         "version": "0.4",
         "title": "Footer",
-        "type": "wpr-theme-builder",
+        "type": "section",
     }
 
 # ---------------------------------------------------------------- build
