@@ -33,11 +33,31 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 
 ## Spesifikasi
 
-- **Widget**: 100% widget native Elementor Free (heading, text-editor, button, image, icon-box, icon-list, testimonial, counter, accordion, divider, spacer, social-icons, image-gallery, html, dll). **Tanpa** widget Pro, tanpa third-party addon.
+- **Widget**: 100% widget native Elementor Free (heading, text-editor, button, image, icon-box, icon-list, testimonial, counter, accordion, divider, spacer, social-icons, html, dll). **Tanpa** widget Pro, tanpa third-party addon — *kecuali Single Post, Header, Footer, dan Blog grid*.
 - **Struktur**: **Flexbox Containers** (`elType: container`) — nggak perlu convert manual dari section. Boxed 1140px seperti Bootstrap.
 - **Efek**: entrance animations (fadeInUp staggered), hover animation (grow), gradient backgrounds (hero & CTA), box shadow cards.
 - **Font**: Inter (Google Font, auto-load oleh Elementor).
 - **Palette**: slate + indigo aksen. Semua warna & font bisa diganti lewat editor.
+
+## ⚠️ Ketergantungan Plugin (untuk Single Post, Header, Footer, Blog)
+
+Halaman **Home / About / Services / Portfolio / Contact / 404** murni Elementor Free, tanpa plugin.
+
+Tapi **Single Post, Header, Footer, dan Blog grid** memakai widget **Royal Elementor Addons** (gratis) agar bisa dinamis:
+
+- Blog → widget `wpr-grid` (post grid otomatis)
+- Single Post → `wpr-post-title`, `wpr-post-media`, `wpr-post-content`, `wpr-post-info`, `wpr-author-box`
+- Header → `wpr-logo`, `wpr-nav-menu`
+- Footer → konten statis (container native)
+
+**Cara pakai:**
+1. Install & aktifkan **Royal Elementor Addons** (free, dari repo WordPress)
+2. Import kit seperti biasa
+3. Buka **Royal → Theme Builder** → assign template:
+   - `Single Post` → Single Post
+   - `Header` → Header
+   - `Footer` → Footer
+4. Untuk menu header, pilih menu di setting widget `wpr-nav-menu`
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via GitHub raw agar stabil). Ganti dengan aset milikmu di editor (upload ke Media Library → pilih di widget).
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
