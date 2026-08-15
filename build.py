@@ -251,10 +251,11 @@ def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", 
         "title_text": title_,
         "description_text": desc_,
         "position": position,
-        "view": "default",
+        "view": "stacked",
         "primary_color": icon_color,
+        "secondary_color": "#FFFFFF",
         "hover_primary_color": ACCENT2,
-        "icon_size": size(32),
+        "icon_size": size(28),
         "title_color": INK,
         "description_color": BODY,
         "title_typography_typography": "custom",
@@ -319,6 +320,51 @@ def testimonial(content_, name_, job_, img=None, anim=None, anim_delay=0):
         if anim_delay:
             s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     return widget("testimonial", s)
+
+def icon_widget(icon, color="#E2E8F0", px=28, align="left"):
+    return widget("icon", {
+        "selected_icon": {"value": icon, "library": "fa-solid"},
+        "view": "default",
+        "primary_color": color,
+        "size": size(px),
+        "align": align,
+    })
+
+def inner_row(children, justify="flex-start", align="center", gap=12):
+    """Generic inner flex row container."""
+    return {"id": eid(), "elType": "container", "isInner": True,
+            "settings": {"container_type": "flex", "content_width": "full",
+                         "flex_direction": "row", "flex_direction_tablet": "row",
+                         "flex_direction_mobile": "row", "flex_wrap": "nowrap",
+                         "flex_justify_content": justify, "flex_align_items": align,
+                         **flex_gap(gap, gap, gap)}, "elements": children}
+
+def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0):
+    """Testimonial as a custom card: quote icon, italic quote, right-aligned person."""
+    card_settings = {
+        "background_background": "classic",
+        "background_color": WHITE,
+        "border_border": "solid",
+        "border_width": dim(1, 1, 1, 1, True),
+        "border_color": "#E8EDF4",
+        "border_radius": dim(16, 16, 16, 16, True),
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": shadow(12, 28, 0, "rgba(15,23,42,0.12)"),
+        "padding": dim(34, 28, 34, 28, False),
+    }
+    person = inner_row([
+        col([heading(name_, "h5", INK, "left", 16, "600", 1.3),
+             text(f"<p>{job_}</p>", MUTED, "left", 13, "400", 1.5)], 60),
+        col([img(avatar, name_, 100, 50)], 40),
+    ], justify="flex-end", align="center", gap=12)
+    els = [
+        icon_widget("fas fa-quote-left", "#E2E8F0", 28, "left"),
+        spacer(14, 10),
+        text(f"<p><em>{content_}</em></p>", BODY, "left", 15, "400", 1.75),
+        spacer(18, 12),
+        person,
+    ]
+    return col(els, 33.3333, settings=card_settings, anim=anim, anim_delay=anim_delay)
 
 def accordion(items, anim=None, anim_delay=0):
     tabs = [{"_id": eid(), "tab_title": t, "tab_content": f"<p>{c}</p>"} for t, c in items]
@@ -546,27 +592,13 @@ def home():
     els.append(section([
         col(sec_head("Testimonials", "What our clients say"), 100),
     ], bg=LIGHT, pad_top=100, pad_bottom=30))
-    t_card = {
-        "background_background": "classic",
-        "background_color": WHITE,
-        "border_border": "solid",
-        "border_width": dim(1, 1, 1, 1, True),
-        "border_color": "#E8EDF4",
-        "border_radius": dim(16, 16, 16, 16, True),
-        "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": shadow(12, 28, 0, "rgba(15,23,42,0.10)"),
-        "padding": dim(34, 28, 34, 28, False),
-    }
     els.append(section([
-        col([testimonial("“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”",
-                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""},
-                         anim="fadeInUp", anim_delay=0)], 33.3333, settings=t_card),
-        col([testimonial("“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”",
-                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""},
-                         anim="fadeInUp", anim_delay=100)], 33.3333, settings=t_card),
-        col([testimonial("“They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.”",
-                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""},
-                         anim="fadeInUp", anim_delay=200)], 33.3333, settings=t_card),
+        testimonial_card("Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.",
+                         "Rina Amelia", "CEO, Tokokita", U["p1"], anim="fadeInUp", anim_delay=0),
+        testimonial_card("The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.",
+                         "Bima Pratama", "Founder, Nusantara Studio", U["p2"], anim="fadeInUp", anim_delay=100),
+        testimonial_card("They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.",
+                         "Sari Wijaya", "Marketing Lead, GreenFood", U["p3"], anim="fadeInUp", anim_delay=200),
     ], bg=LIGHT, pad_top=0, pad_bottom=100, anchor="testimonials"))
 
     # FAQ (2 sections: heading + accordion)
