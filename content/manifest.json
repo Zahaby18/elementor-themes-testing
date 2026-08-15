@@ -35,8 +35,8 @@
     },
     {
       "source": "templates/single.json",
-      "type": "wpr-theme-builder",
-      "title": "Single Post",
+      "type": "page",
+      "title": "Single Post (Demo)",
       "thumbnail": ""
     },
     {

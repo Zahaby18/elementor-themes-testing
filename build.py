@@ -988,43 +988,29 @@ def blog():
 
 def single():
     els = []
-    # POST TITLE + META (dynamic via Royal)
+    # HERO
     els.append(section([
         col([
-            widget("wpr-post-title", {"post_title_tag": "h1", "post_title_align": "left",
-                                      "post_title_color": INK,
-                                      "title_typography_typography": "custom",
-                                      "title_typography_font_family": FONT,
-                                      "title_typography_font_size": size(40),
-                                      "title_typography_font_weight": "800",
-                                      "title_typography_line_height": {"unit": "em", "size": 1.2, "sizes": []}}),
-            widget("wpr-post-info", {"post_info_align": "left", "post_info_color": MUTED,
-                                     "post_info_typography_typography": "custom",
-                                     "post_info_typography_font_family": FONT,
-                                     "post_info_typography_font_size": size(14)}),
+            eyebrow("Insight", "left"),
+            heading("10 Conversion Lessons from 100+ Landing Pages", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>By Andi Kurniawan · 6 min read · August 2026</p>", "#CBD5E1", "left", 15,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
-    ], bg=WHITE, pad_top=70, pad_bottom=20, pad_mobile=(50, 16, 0, 16)))
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w2"], 0.85)))
 
-    # FEATURED IMAGE + CONTENT (dynamic)
+    # CONTENT
     els.append(section([
         col([
-            widget("wpr-post-media", {}),
-            widget("wpr-post-content", {"content_typography_typography": "custom",
-                                        "content_typography_font_family": FONT,
-                                        "content_typography_font_size": size(17),
-                                        "content_typography_line_height": {"unit": "em", "size": 1.7, "sizes": []},
-                                        "content_color": BODY}),
+            text("<p>We analyzed the patterns that separate high-converting landing pages from the rest. Over the last year, we audited more than a hundred pages across industries — and the results were remarkably consistent.</p>"
+                 "<p>The pages that convert share a handful of traits: a single clear headline, one primary call to action, social proof placed early, and a friction-free form. The pages that don't, tend to try to do too much at once.</p>"
+                 "<p>This is a demo single-post layout for the Agenzy kit. Replace this content with your own article — and for a fully dynamic single-post template, apply it via Elementor Theme Builder (Pro).</p>"),
         ], 75),
-    ], bg=WHITE, pad_top=0, pad_bottom=60, settings={"flex_justify_content": "center"}, pad_mobile=(0, 16, 40, 16)))
-
-    # AUTHOR BOX (dynamic)
-    els.append(section([
-        col([widget("wpr-author-box", {})], 75),
-    ], bg=LIGHT, pad_top=60, pad_bottom=60, settings={"flex_justify_content": "center"}))
+    ], bg=WHITE, pad_top=80, pad_bottom=80, settings={"flex_justify_content": "center"}))
 
     # CTA
     els.append(cta_box("Enjoyed this article?", "There's more where that came from. One email a month, no spam.", "Subscribe"))
-    return tb_page("Single Post", els)
+    return page("Single Post (Demo)", els)
 
 def contact():
     els = []
