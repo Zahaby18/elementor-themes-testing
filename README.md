@@ -62,6 +62,17 @@ Kit ini pakai **Elementor Free** + 2 plugin gratis:
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat — gambar demo bakal tetap kebaca dari URL.*
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
 
+## Demo Content (10 Post)
+
+Repo ini menyertakan `demo-posts.php` — script buat generate **10 post demo + featured image** biar blog grid (`jkit_post_block`) ada kontennya pas testing.
+
+```bash
+# dari folder WordPress (via SSH/CloudPanel terminal)
+wp eval-file demo-posts.php
+```
+
+> Gambar featured di-download otomatis dari CDN ke Media Library.
+
 ## Struktur Repo
 
 ```
