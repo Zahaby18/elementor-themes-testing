@@ -41,18 +41,20 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 
 ## ⚠️ Plugin yang Dibutuhkan (gratis)
 
-Kit ini pakai **Elementor Free** + 3 plugin gratis untuk fitur dinamis:
+Kit ini pakai **Elementor Free** + plugin gratis untuk fitur dinamis:
 
-| Plugin | Buat apa |
-|---|---|
-| **Jeg Elementor Kit** (free) | Blog grid (`jkit_post_block`), single post (`jkit_post_title`/`jkit_post_featured_image`/`jkit_post_content`), nav menu (`jkit_nav_menu`) |
-| **Elementor – Header, Footer & Blocks** (free) | Header/footer global |
-| **MetForm** (free) | Form kontak |
+| Plugin | Buat apa | Status |
+|---|---|---|
+| **Jeg Elementor Kit** (free) | Blog grid (`jkit_post_block`) + nav menu (`jkit_nav_menu`) | ✅ import aman |
+| **Elementor – Header, Footer & Blocks** (free) | Header/footer global | ✅ import aman |
+
+> ℹ️ **Single post dinamis** butuh **Elementor Pro** (Theme Builder) — nggak ada plugin free yang bisa bikin single post template tanpa masalah (Jeg free cuma widget, Royal bikin import hang). Template `single.json` di kit ini versi demo statis.
 
 **Cara pakai:**
-1. Install & aktifkan **Jeg Elementor Kit** (wajib untuk Blog & Single Post dinamis)
+1. Install & aktifkan **Jeg Elementor Kit** + **Elementor – Header, Footer & Blocks** (dua-duanya gratis)
 2. Import kit seperti biasa
-3. Untuk menu header, pilih menu di setting widget `jkit_nav_menu`
+3. Header/footer: assign via **Appearance → Elementor Header & Footer**
+4. Menu header: pilih menu di setting widget `jkit_nav_menu`
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat — gambar demo bakal tetap kebaca dari URL.*
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
