@@ -579,6 +579,34 @@ def osm_map():
 def page(title, elements, ptype="page"):
     return {"content": elements, "page_settings": [], "version": "0.4", "title": title, "type": ptype}
 
+def cta_box(heading_text, sub_text, btn_text, colors=("#4F46E5", "#7C3AED"), btn_url="#contact"):
+    """Rounded gradient CTA box (inner container, matches homepage design)."""
+    box = {"id": eid(), "elType": "container", "isInner": True,
+           "settings": {
+               "container_type": "flex", "content_width": "full",
+               "flex_direction": "column", "flex_direction_tablet": "column",
+               "flex_direction_mobile": "column", "flex_wrap": "nowrap",
+               "flex_justify_content": "center", "flex_align_items": "center",
+               "background_background": "gradient",
+               "background_color": colors[0], "background_color_b": colors[1],
+               "background_gradient_type": "linear",
+               "background_gradient_angle": {"unit": "deg", "size": 135, "sizes": []},
+               "border_radius": dim(24, 24, 24, 24, True),
+               "padding": dim(80, 40, 80, 40, False),
+               "padding_tablet": dim(60, 30, 60, 30, False),
+               "padding_mobile": dim(50, 24, 50, 24, False),
+               **flex_gap(16, 14, 12),
+           },
+           "elements": [
+               heading(heading_text, "h2", WHITE, "center", 34, "700", 1.25, tablet=28, mobile=24,
+                       extra={"_animation": "fadeInUp"}),
+               text(f"<p style='text-align:center;'>{sub_text}</p>", "#CBD5E1", "center", 17, "400", 1.7,
+                    extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}),
+               btn(btn_text, btn_url, "center", WHITE, INK, "#E2E8F0", pt=16, pl=36,
+                   extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 200, "sizes": []}}),
+           ]}
+    return container([box], pad_top=90, pad_bottom=90)
+
 # ---------------------------------------------------------------- templates
 def home():
     els = []
@@ -705,43 +733,46 @@ def home():
 
 def about():
     els = []
+    # HERO
     els.append(section([
         col([
-            heading("About Agenzy", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28),
-            spacer(14, 10),
-            text("<p>The people, the process, and the values behind the work.</p>", "#CBD5E1", "left", 18),
+            heading("About Agenzy", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>The people, the process, and the values behind the work.</p>", "#CBD5E1", "left", 18,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["workshop"], 0.85)))
 
+    # STORY
     els.append(section([
         col([img(U["meeting"], "Agenzy team in a meeting", 100, 16, shadow(), anim="fadeIn")], 50, center=True),
         col([
-            eyebrow("Our Story"), spacer(12, 8),
+            eyebrow("Our Story", "left"), spacer(12, 8),
             heading("Started with three laptops and a stubborn belief", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
                     extra={"_animation": "fadeInLeft"}),
-            spacer(12, 8),
             text("<p>Agenzy began in 2019 when three friends decided freelancing alone wasn't enough — clients deserved a team that could take an idea from whiteboard to world. Today we're a 20-person studio shipping products across three continents.</p>"
                  "<p>We stay deliberately small. Small enough that every project gets senior attention, big enough to deliver on time, every time.</p>",
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 50, center=True),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
-    # VALUES (2 sections: heading + row)
+    # VALUES (heading + row of cards)
     vals = [
         ("fas fa-handshake", "Transparency", "Open pricing, honest timelines, and a shared dashboard so you always know what's happening."),
         ("fas fa-gem", "Quality First", "We'd rather ship one great product than five mediocre ones. Craft is non-negotiable."),
         ("fas fa-lightbulb", "Bold Thinking", "Safe is boring. We bring ideas, not just execution — and we're not afraid to challenge the brief."),
     ]
+    val_widgets = [icon_box(i, t, d, anim="fadeInUp", anim_delay=idx * 100) for idx, (i, t, d) in enumerate(vals)]
     els.append(section([
         col(sec_head("Our Values", "What we stand for"), 100),
     ], bg=LIGHT, pad_top=100, pad_bottom=30))
     els.append(section([
-        col([icon_box(vals[0][0], vals[0][1], vals[0][2])], 33.3333, anim="fadeInUp", anim_delay=0),
-        col([icon_box(vals[1][0], vals[1][1], vals[1][2])], 33.3333, anim="fadeInUp", anim_delay=100),
-        col([icon_box(vals[2][0], vals[2][1], vals[2][2])], 33.3333, anim="fadeInUp", anim_delay=200),
+        card_col([val_widgets[0]]),
+        card_col([val_widgets[1]]),
+        card_col([val_widgets[2]]),
     ], bg=LIGHT, pad_top=0, pad_bottom=100))
 
-    # TEAM (2 sections: heading + row)
+    # TEAM (heading + row)
     team = [
         (U["p1"], "Andi Kurniawan", "Founder & Strategy Director"),
         (U["p2"], "Dewi Lestari", "Head of Design"),
@@ -751,11 +782,10 @@ def about():
     team_cols = []
     for i, (turl, name_, role) in enumerate(team):
         team_cols.append(col([
-            img(turl, name_, 100, 12),
-            spacer(14, 10),
+            img(turl, name_, 100, 12, anim="fadeIn"),
             heading(name_, "h4", INK, "center", 19, "700", 1.3),
             text(f"<p style='text-align:center;'>{role}</p>", MUTED, "center", 14, "400", 1.5),
-        ], 25, anim="fadeInUp", anim_delay=i * 100))
+        ], 25))
     els.append(section([
         col(sec_head("Meet the Team", "The people behind the pixels"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30))
@@ -763,20 +793,20 @@ def about():
         *team_cols,
     ], bg=WHITE, pad_top=0, pad_bottom=100))
 
-    els.append(section([
-        col([heading("Want to join the team?", "h2", WHITE, "center", 34, "700", 1.25, tablet=28, mobile=24),
-             spacer(18, 12),
-             btn("See Open Roles", "#contact", "center", WHITE, INK, "#E2E8F0")], 70, center=True),
-    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
+    # CTA
+    els.append(cta_box("Want to join the team?", "We're always looking for sharp people who care about craft. Drop us a line.", "See Open Roles",
+                       colors=("#0F172A", "#1E1B4B")))
     return page("About", els)
 
 def services():
     els = []
+    # HERO
     els.append(section([
         col([
-            heading("Our Services", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28),
-            spacer(14, 10),
-            text("<p>Everything your business needs to win online — designed, built, and grown by one team.</p>", "#CBD5E1", "left", 18),
+            heading("Our Services", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>Everything your business needs to win online — designed, built, and grown by one team.</p>", "#CBD5E1", "left", 18,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["planning"], 0.85)))
 
@@ -788,21 +818,22 @@ def services():
         ("fas fa-palette", "Brand Identity", "From logo to full brand guidelines — a visual identity your audience will remember."),
         ("fas fa-hashtag", "Content & Social", "Editorial calendars, writing, and social management that keep your brand consistently loud."),
     ]
+    srv_widgets = [icon_box(i, t, d, link="#contact", anim="fadeInUp", anim_delay=(idx % 3) * 100) for idx, (i, t, d) in enumerate(services)]
     els.append(section([
         col(sec_head("What We Do", "Six services, one partner"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
     els.append(section([
-        card_col([icon_box(*services[0], link="#contact")], anim="fadeInUp", anim_delay=0),
-        card_col([icon_box(*services[1], link="#contact")], anim="fadeInUp", anim_delay=100),
-        card_col([icon_box(*services[2], link="#contact")], anim="fadeInUp", anim_delay=200),
+        card_col([srv_widgets[0]]),
+        card_col([srv_widgets[1]]),
+        card_col([srv_widgets[2]]),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
-        card_col([icon_box(*services[3], link="#contact")], anim="fadeInUp", anim_delay=0),
-        card_col([icon_box(*services[4], link="#contact")], anim="fadeInUp", anim_delay=100),
-        card_col([icon_box(*services[5], link="#contact")], anim="fadeInUp", anim_delay=200),
+        card_col([srv_widgets[3]]),
+        card_col([srv_widgets[4]]),
+        card_col([srv_widgets[5]]),
     ], bg=WHITE, pad_top=0, pad_bottom=100))
 
-    # PROCESS
+    # PROCESS (heading + row)
     steps = [
         ("01", "Discover", "We dig into your goals, users, and competitors. You get a clear brief and a realistic roadmap."),
         ("02", "Design", "Wireframes become high-fidelity designs. You review and approve at every milestone."),
@@ -813,7 +844,7 @@ def services():
         col(sec_head("Our Process", "How we work together"), 100),
     ], bg=LIGHT, pad_top=100, pad_bottom=30))
     els.append(section([
-        *[col([heading(num, "h3", ACCENT, "center", 40, "800", 1.1), spacer(10, 6),
+        *[col([heading(num, "h3", ACCENT, "center", 40, "800", 1.1),
                heading(title_, "h4", INK, "center", 19, "700", 1.3),
                text(f"<p style='text-align:center;'>{desc}</p>", BODY, "center", 15, "400", 1.65)], 25)
           for num, title_, desc in steps],
@@ -822,9 +853,9 @@ def services():
     # WHAT'S INCLUDED
     els.append(section([
         col([
-            eyebrow("Value"), spacer(12, 8),
-            heading("Every engagement includes", "h2", INK, "left", 34, "700", 1.25, tablet=28, mobile=24),
-            spacer(14, 10),
+            eyebrow("Value", "left"), spacer(12, 8),
+            heading("Every engagement includes", "h2", INK, "left", 34, "700", 1.25, tablet=28, mobile=24,
+                    extra={"_animation": "fadeInLeft"}),
             icon_list([
                 "A dedicated project lead & Slack channel",
                 "Weekly demos with recorded walkthroughs",
@@ -832,54 +863,49 @@ def services():
                 "Documentation and full ownership handover",
                 "30 days of post-launch support free",
             ], icon="fas fa-check-circle"),
-            spacer(24, 16),
             btn("Start Your Project", "#contact", "left"),
         ], 55, center=True),
-        col([img(U["laptop"], "Coding in progress", 100, 16, shadow())], 45, center=True),
+        col([img(U["laptop"], "Coding in progress", 100, 16, shadow(), anim="fadeIn")], 45, center=True),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
-    els.append(section([
-        col([heading("Not sure which service you need?", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
-             spacer(16, 10),
-             btn("Book a Free Call", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
-
+    # CTA
+    els.append(cta_box("Not sure which service you need?", "Book a free 30-minute call — we'll point you in the right direction.", "Book a Free Call"))
     return page("Services", els)
 
 def portfolio():
     els = []
+    # HERO
     els.append(section([
         col([
-            heading("Our Work", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28),
-            spacer(14, 10),
-            text("<p>A selection of projects we're proud of. Every one started as a blank canvas.</p>", "#CBD5E1", "left", 18),
+            heading("Our Work", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>A selection of projects we're proud of. Every one started as a blank canvas.</p>", "#CBD5E1", "left", 18,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w5"], 0.85)))
 
+    # PROJECTS
     els.append(section([
         col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands — built for clients who cared about the details."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30))
     els.append(section([
-        col([img(U["w1"], "Project 1", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=0),
-        col([img(U["w2"], "Project 2", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=100),
-        col([img(U["w3"], "Project 3", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=200),
+        col([img(U["w1"], "Project 1", 100, 12, shadow(), anim="fadeInUp")], 33.3333),
+        col([img(U["w2"], "Project 2", 100, 12, shadow(), anim="fadeInUp", anim_delay=100)], 33.3333),
+        col([img(U["w3"], "Project 3", 100, 12, shadow(), anim="fadeInUp", anim_delay=200)], 33.3333),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
-        col([img(U["w4"], "Project 4", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=0),
-        col([img(U["w5"], "Project 5", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=100),
-        col([img(U["w6"], "Project 6", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=200),
+        col([img(U["w4"], "Project 4", 100, 12, shadow(), anim="fadeInUp")], 33.3333),
+        col([img(U["w5"], "Project 5", 100, 12, shadow(), anim="fadeInUp", anim_delay=100)], 33.3333),
+        col([img(U["w6"], "Project 6", 100, 12, shadow(), anim="fadeInUp", anim_delay=200)], 33.3333),
     ], bg=WHITE, pad_top=0, pad_bottom=40))
     els.append(section([
         col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15),
-             spacer(16, 10),
              btn("Request Case Studies", "#contact", "center")], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100))
 
-    els.append(section([
-        col([heading("Your project could be next", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
-             spacer(16, 10),
-             btn("Start a Project", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
+    # CTA
+    els.append(cta_box("Your project could be next", "Let's build something worth showing off. Free consultation, no strings attached.", "Start a Project",
+                       colors=("#0F172A", "#1E1B4B")))
     return page("Portfolio", els)
 
 def blog():
@@ -1095,6 +1121,9 @@ def main():
 
     templates = {
         "home.json": home(),
+        "about.json": about(),
+        "services.json": services(),
+        "portfolio.json": portfolio(),
     }
 
     errors = validate_structure(templates)

@@ -8,6 +8,24 @@
       "type": "page",
       "title": "Home",
       "thumbnail": ""
+    },
+    {
+      "source": "templates/about.json",
+      "type": "page",
+      "title": "About",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/services.json",
+      "type": "page",
+      "title": "Services",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/portfolio.json",
+      "type": "page",
+      "title": "Portfolio",
+      "thumbnail": ""
     }
   ],
   "categories": [
