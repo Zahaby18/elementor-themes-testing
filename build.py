@@ -474,14 +474,14 @@ def img(url, alt="", width=100, radius=12, shadow_=None, align="center", anim=No
         s["box_shadow_box_shadow"] = shadow_
     return widget("image", s)
 
-def image_box(url, title_, desc_, link="#"):
-    return widget("image-box", {
+def image_box(url, title_, desc_, link="#", anim=None, anim_delay=0):
+    s = {
         "image": {"url": url, "id": 0, "alt": ""},
         "title_text": title_,
         "description_text": desc_,
         "link": {"url": link, "is_external": "", "nofollow": "", "custom_attributes": ""},
         "position": "top",
-        "image_border_radius": dim(10, 10, 0, 0, True),
+        "image_border_radius": dim(20, 20, 0, 0, True),
         "title_color": INK,
         "description_color": BODY,
         "title_typography_typography": "custom",
@@ -495,9 +495,22 @@ def image_box(url, title_, desc_, link="#"):
         "content_padding": dim(24, 24, 24, 24, False),
         "background_background": "classic",
         "background_color": WHITE,
+        "border_border": "solid",
+        "border_width": dim(1, 1, 1, 1, True),
+        "border_color": "#E8EDF4",
+        "border_radius": dim(20, 20, 20, 20, True),
         "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": shadow(14, 28, -10, "rgba(15,23,42,0.08)"),
-    })
+        "box_shadow_box_shadow": CARD_SHADOW,
+        "box_shadow_hover_box_shadow_type": "yes",
+        "box_shadow_hover_box_shadow": {"horizontal": 0, "vertical": 18, "blur": 44, "spread": -8, "color": "rgba(79,70,229,0.28)"},
+        "_transform_translate_popover_hover": "transform",
+        "_transform_translateY_effect_hover": {"unit": "px", "size": -10, "sizes": []},
+    }
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
+    return widget("image-box", s)
 
 def counter(n, suffix, title_, dark=True, anim=None, anim_delay=0):
     s = {
@@ -579,7 +592,7 @@ def osm_map():
 def page(title, elements, ptype="page"):
     return {"content": elements, "page_settings": [], "version": "0.4", "title": title, "type": ptype}
 
-def cta_box(heading_text, sub_text, btn_text, colors=("#4F46E5", "#7C3AED"), btn_url="#contact"):
+def cta_box(heading_text, sub_text, btn_text, colors=("#4F46E5", "#7C3AED"), btn_url="#contact", pad_mobile=None):
     """Rounded gradient CTA box (inner container, matches homepage design)."""
     box = {"id": eid(), "elType": "container", "isInner": True,
            "settings": {
@@ -605,7 +618,7 @@ def cta_box(heading_text, sub_text, btn_text, colors=("#4F46E5", "#7C3AED"), btn
                btn(btn_text, btn_url, "center", WHITE, INK, "#E2E8F0", pt=16, pl=36,
                    extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 200, "sizes": []}}),
            ]}
-    return container([box], pad_top=90, pad_bottom=90)
+    return container([box], pad_top=90, pad_bottom=90, pad_mobile=pad_mobile)
 
 # ---------------------------------------------------------------- templates
 def home():
@@ -770,7 +783,7 @@ def about():
         card_col([val_widgets[0]]),
         card_col([val_widgets[1]]),
         card_col([val_widgets[2]]),
-    ], bg=LIGHT, pad_top=0, pad_bottom=100))
+    ], bg=LIGHT, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # TEAM (heading + row)
     team = [
@@ -791,7 +804,7 @@ def about():
     ], bg=WHITE, pad_top=100, pad_bottom=30))
     els.append(section([
         *team_cols,
-    ], bg=WHITE, pad_top=0, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # CTA
     els.append(cta_box("Want to join the team?", "We're always looking for sharp people who care about craft. Drop us a line.", "See Open Roles",
@@ -826,12 +839,12 @@ def services():
         card_col([srv_widgets[0]]),
         card_col([srv_widgets[1]]),
         card_col([srv_widgets[2]]),
-    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(0, 16, 50, 16)))
     els.append(section([
         card_col([srv_widgets[3]]),
         card_col([srv_widgets[4]]),
         card_col([srv_widgets[5]]),
-    ], bg=WHITE, pad_top=0, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # PROCESS (heading + row)
     steps = [
@@ -848,7 +861,7 @@ def services():
                heading(title_, "h4", INK, "center", 19, "700", 1.3),
                text(f"<p style='text-align:center;'>{desc}</p>", BODY, "center", 15, "400", 1.65)], 25)
           for num, title_, desc in steps],
-    ], bg=LIGHT, pad_top=0, pad_bottom=100))
+    ], bg=LIGHT, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # WHAT'S INCLUDED
     els.append(section([
@@ -887,34 +900,36 @@ def portfolio():
     # PROJECTS
     els.append(section([
         col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands — built for clients who cared about the details."), 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
     els.append(section([
         col([img(U["w1"], "Project 1", 100, 12, shadow(), anim="fadeInUp")], 33.3333),
         col([img(U["w2"], "Project 2", 100, 12, shadow(), anim="fadeInUp", anim_delay=100)], 33.3333),
         col([img(U["w3"], "Project 3", 100, 12, shadow(), anim="fadeInUp", anim_delay=200)], 33.3333),
-    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(0, 16, 50, 16)))
     els.append(section([
         col([img(U["w4"], "Project 4", 100, 12, shadow(), anim="fadeInUp")], 33.3333),
         col([img(U["w5"], "Project 5", 100, 12, shadow(), anim="fadeInUp", anim_delay=100)], 33.3333),
         col([img(U["w6"], "Project 6", 100, 12, shadow(), anim="fadeInUp", anim_delay=200)], 33.3333),
-    ], bg=WHITE, pad_top=0, pad_bottom=40))
+    ], bg=WHITE, pad_top=0, pad_bottom=40, pad_mobile=(0, 16, 50, 16)))
     els.append(section([
         col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15),
              btn("Request Case Studies", "#contact", "center")], 100),
-    ], bg=WHITE, pad_top=0, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # CTA
     els.append(cta_box("Your project could be next", "Let's build something worth showing off. Free consultation, no strings attached.", "Start a Project",
-                       colors=("#0F172A", "#1E1B4B")))
+                       colors=("#0F172A", "#1E1B4B"), pad_mobile=(0, 16, 50, 16)))
     return page("Portfolio", els)
 
 def blog():
     els = []
+    # HERO
     els.append(section([
         col([
-            heading("Blog", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28),
-            spacer(14, 10),
-            text("<p>Ideas, guides, and lessons from the front lines of digital.</p>", "#CBD5E1", "left", 18),
+            heading("Blog", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>Ideas, guides, and lessons from the front lines of digital.</p>", "#CBD5E1", "left", 18,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85)))
 
@@ -925,34 +940,56 @@ def blog():
     ]
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
     els.append(section([
-        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3])], 33.3333, anim="fadeInUp", anim_delay=0),
-        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3])], 33.3333, anim="fadeInUp", anim_delay=100),
-        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3])], 33.3333, anim="fadeInUp", anim_delay=200),
-    ], bg=WHITE, pad_top=0, pad_bottom=30))
+        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3], anim="fadeInUp")], 33.3333),
+        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3], anim="fadeInUp", anim_delay=100)], 33.3333),
+        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3], anim="fadeInUp", anim_delay=200)], 33.3333),
+    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(0, 16, 50, 16)))
     els.append(section([
         col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add the Posts widget (Elementor Pro) or use your theme's blog template.</p>",
                   MUTED, "center", 14)], 100),
-    ], bg=WHITE, pad_top=0, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
-    els.append(section([
-        col([heading("Fresh ideas, straight to your inbox", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
-             spacer(16, 10),
-             text("<p style='text-align:center;'>One email a month. No spam, ever.</p>", "#CBD5E1", "center", 16),
-             spacer(18, 12),
-             btn("Subscribe", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=80, pad_bottom=80, settings={"border_radius": dim(24, 24, 24, 24, True)}))
-
+    # CTA
+    els.append(cta_box("Fresh ideas, straight to your inbox", "One email a month. No spam, ever.", "Subscribe"))
     return page("Blog", els)
+
+def single():
+    els = []
+    # HERO
+    els.append(section([
+        col([
+            eyebrow("Insight", "left"),
+            heading("10 Conversion Lessons from 100+ Landing Pages", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>By Andi Kurniawan · 6 min read · August 2026</p>", "#CBD5E1", "left", 15,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
+        ], 100),
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w2"], 0.85)))
+
+    # CONTENT
+    els.append(section([
+        col([
+            text("<p>We analyzed the patterns that separate high-converting landing pages from the rest. Over the last year, we audited more than a hundred pages across industries — and the results were remarkably consistent.</p>"
+                 "<p>The pages that convert share a handful of traits: a single clear headline, one primary call to action, social proof placed early, and a friction-free form. The pages that don't, tend to try to do too much at once.</p>"
+                 "<p>This is a demo single-post layout for the Agenzy kit. Replace this content with your own article — and for a fully dynamic single-post template, apply it via Elementor Theme Builder (Pro).</p>"),
+        ], 75),
+    ], bg=WHITE, pad_top=80, pad_bottom=80, settings={"flex_justify_content": "center"}))
+
+    # CTA
+    els.append(cta_box("Enjoyed this article?", "There's more where that came from. One email a month, no spam.", "Subscribe"))
+    return page("Single Post (Demo)", els)
 
 def contact():
     els = []
+    # HERO
     els.append(section([
         col([
-            heading("Contact Us", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28),
-            spacer(14, 10),
-            text("<p>Tell us about your project. We usually reply within one business day.</p>", "#CBD5E1", "left", 18),
+            heading("Contact Us", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>Tell us about your project. We usually reply within one business day.</p>", "#CBD5E1", "left", 18,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["office"], 0.85)))
 
@@ -961,41 +998,37 @@ def contact():
         ("fas fa-envelope", "Email Us", "hello@agenzy.studio"),
         ("fas fa-phone", "Call Us", "+62 812 3456 7890"),
     ]
+    info_widgets = [icon_box(i, t, d, anim="fadeInUp", anim_delay=idx * 100) for idx, (i, t, d) in enumerate(info)]
     els.append(section([
-        col([icon_box(info[0][0], info[0][1], info[0][2])], 33.3333),
-        col([icon_box(info[1][0], info[1][1], info[1][2])], 33.3333),
-        col([icon_box(info[2][0], info[2][1], info[2][2])], 33.3333),
+        card_col([info_widgets[0]]),
+        card_col([info_widgets[1]]),
+        card_col([info_widgets[2]]),
     ], bg=LIGHT, pad_top=80, pad_bottom=80))
 
+    # CONTACT + MAP
     els.append(section([
         col([
-            eyebrow("Get In Touch"), spacer(12, 8),
-            heading("Let's build something great together", "h2", INK, "left", 34, "700", 1.25, tablet=28, mobile=24),
-            spacer(14, 10),
-            text("<p>Free 30-minute consultation. We'll listen first, then give you honest advice — even if that means telling you we're not the right fit.</p>"),
-            spacer(20, 12),
+            eyebrow("Get In Touch", "left"), spacer(12, 8),
+            heading("Let's build something great together", "h2", INK, "left", 34, "700", 1.25, tablet=28, mobile=24,
+                    extra={"_animation": "fadeInLeft"}),
+            text("<p>Free 30-minute consultation. We'll listen first, then give you honest advice — even if that means telling you we're not the right fit.</p>",
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             icon_list([
                 "hello@agenzy.studio",
                 "+62 812 3456 7890",
                 "Jl. Sudirman Kav. 52-53, Jakarta",
             ], icon="fas fa-check-circle"),
-            spacer(24, 16),
             btn("Email Us Directly", "mailto:hello@agenzy.studio", "left"),
         ], 50, center=True),
         col([
             heading("Find Us", "h4", INK, "left", 20, "700", 1.3),
-            spacer(12, 8),
             osm_map(),
         ], 50, center=True),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
-    els.append(section([
-        col([heading("Prefer a form?", "h2", WHITE, "center", 30, "700", 1.25, tablet=26, mobile=22),
-             spacer(14, 10),
-             text("<p style='text-align:center;'>Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget — it takes one minute.</p>", "#CBD5E1", "center", 16),
-             spacer(18, 12),
-             btn("Get the Shortcode Guide", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36)], 70, center=True),
-    ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
+    # CTA
+    els.append(cta_box("Prefer a form?", "Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget — it takes one minute.", "Get in Touch",
+                       colors=("#0F172A", "#1E1B4B")))
     return page("Contact", els)
 
 def p404():
@@ -1003,11 +1036,8 @@ def p404():
     els.append(section([
         col([
             heading("404", "h1", ACCENT, "center", 110, "800", 1.0, tablet=80, mobile=64),
-            spacer(12, 8),
             heading("This page took a vacation", "h2", WHITE, "center", 36, "700", 1.25, tablet=28, mobile=24),
-            spacer(14, 10),
             text("<p style='text-align:center;'>The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>", "#CBD5E1", "center", 17),
-            spacer(24, 16),
             btn("Back to Home", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36),
         ], 70, center=True),
     ], bg=None, pad_top=140, pad_bottom=140, overlay=dark_hero_bg(U["meeting"], 0.92)))
@@ -1018,12 +1048,8 @@ def header_section():
     return {
         "content": [
             section([
-                col([
-                    icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left"),
-                ], 30, center=True),
-                col([
-                    btn("Start a Project", "#contact", "right", ACCENT, WHITE, ACCENT2, pt=12, pl=28, radius=8),
-                ], 70, center=True),
+                col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 50, center=True),
+                col([btn("Start a Project", "#contact", "right", ACCENT, WHITE, ACCENT2, pt=12, pl=28, radius=8)], 50, center=True),
             ], bg=WHITE, pad_top=20, pad_bottom=20,
                settings={"border_border": "solid", "border_width": dim(0, 0, 1, 0, False), "border_color": BORDER}),
         ],
@@ -1035,37 +1061,28 @@ def header_section():
 
 def footer_section():
     links = [
-        ("fas fa-angle-right", "Home", "#"),
-        ("fas fa-angle-right", "About", "#about"),
-        ("fas fa-angle-right", "Services", "#services"),
-        ("fas fa-angle-right", "Portfolio", "#portfolio"),
-        ("fas fa-angle-right", "Contact", "#contact"),
+        "Home", "About", "Services", "Portfolio", "Blog", "Contact",
     ]
     contact_items = [
-        ("fas fa-envelope", "hello@agenzy.studio"),
-        ("fas fa-phone", "+62 812 3456 7890"),
-        ("fas fa-map-marker-alt", "Jakarta Selatan, Indonesia"),
+        "hello@agenzy.studio",
+        "+62 812 3456 7890",
+        "Jakarta Selatan, Indonesia",
     ]
     col1 = col([
         heading("Agenzy", "h4", WHITE, "left", 22, "700", 1.3),
-        spacer(12, 8),
         text("<p>A full-service digital agency helping startups and brands design, build, and scale products people love.</p>", "#94A3B8", "left", 15, line=1.7),
-        spacer(16, 10),
         social_icons(),
     ], 40)
     col2 = col([
         heading("Quick Links", "h4", WHITE, "left", 18, "700", 1.3),
-        spacer(14, 8),
-        icon_list([t for _, t, _ in links], icon="fas fa-angle-right", icon_color="#94A3B8", text_color="#CBD5E1", px=15),
+        icon_list(links, icon="fas fa-angle-right", icon_color="#94A3B8", text_color="#CBD5E1", px=15),
     ], 30)
     col3 = col([
         heading("Contact", "h4", WHITE, "left", 18, "700", 1.3),
-        spacer(14, 8),
-        icon_list([c for _, c in contact_items], icon="fas fa-check-circle", icon_color=ACCENT, text_color="#CBD5E1", px=15),
+        icon_list(contact_items, icon="fas fa-check-circle", icon_color=ACCENT, text_color="#CBD5E1", px=15),
     ], 30)
     bottom = col([
         divider(color="#1E293B", width_pct=100),
-        spacer(14, 8),
         text("<p style='text-align:center;'>© 2026 Agenzy. All rights reserved. — Made with the Agenzy Elementor Kit.</p>", "#64748B", "center", 14),
     ], 100)
     return {
@@ -1124,6 +1141,12 @@ def main():
         "about.json": about(),
         "services.json": services(),
         "portfolio.json": portfolio(),
+        "blog.json": blog(),
+        "single.json": single(),
+        "contact.json": contact(),
+        "404.json": p404(),
+        "header-section.json": header_section(),
+        "footer-section.json": footer_section(),
     }
 
     errors = validate_structure(templates)

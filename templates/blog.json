@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "nxsltqa",
+      "id": "6fc0e84",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -65,7 +65,7 @@
         },
         "background_background": "classic",
         "background_image": {
-          "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img13.jpg",
+          "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img07.jpg",
           "id": 0,
           "alt": ""
         },
@@ -89,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "l84itjv",
+          "id": "eepgb8v",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -139,11 +139,11 @@
           },
           "elements": [
             {
-              "id": "l0ivc00",
+              "id": "2biw72d",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Our Work",
+                "title": "Blog",
                 "header_size": "h1",
                 "align": "left",
                 "title_color": "#FFFFFF",
@@ -186,11 +186,11 @@
               }
             },
             {
-              "id": "jm9nlfl",
+              "id": "z79h8p0",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>A selection of projects we're proud of. Every one started as a blank canvas.</p>",
+                "editor": "<p>Ideas, guides, and lessons from the front lines of digital.</p>",
                 "text_color": "#CBD5E1",
                 "align": "left",
                 "typography_typography": "custom",
@@ -233,7 +233,7 @@
       "isInner": false
     },
     {
-      "id": "zipc4pb",
+      "id": "31nd54o",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -300,7 +300,7 @@
       },
       "elements": [
         {
-          "id": "xbov692",
+          "id": "7czk8pb",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -350,11 +350,11 @@
           },
           "elements": [
             {
-              "id": "vpdu1fl",
+              "id": "d21zpde",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Selected Projects",
+                "title": "Latest Articles",
                 "header_size": "h5",
                 "align": "center",
                 "title_color": "#4F46E5",
@@ -386,11 +386,11 @@
               }
             },
             {
-              "id": "hy1ex0j",
+              "id": "wop4azy",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Recent work",
+                "title": "From the blog",
                 "header_size": "h2",
                 "align": "center",
                 "title_color": "#0F172A",
@@ -431,47 +431,6 @@
                 },
                 "_animation": "fadeInUp"
               }
-            },
-            {
-              "id": "jqlfyhb",
-              "elType": "widget",
-              "widgetType": "text-editor",
-              "settings": {
-                "editor": "<p>Websites, apps, and brands — built for clients who cared about the details.</p>",
-                "text_color": "#475569",
-                "align": "center",
-                "typography_typography": "custom",
-                "typography_font_family": "Inter",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 17,
-                  "sizes": []
-                },
-                "typography_font_weight": "400",
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1.7,
-                  "sizes": []
-                },
-                "typography_text_transform": "",
-                "typography_font_style": "normal",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "typography_word_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "_animation": "fadeInUp",
-                "_animation_delay": {
-                  "unit": "px",
-                  "size": 100,
-                  "sizes": []
-                }
-              }
             }
           ],
           "isInner": true
@@ -480,7 +439,7 @@
       "isInner": false
     },
     {
-      "id": "mfj8s0y",
+      "id": "ta3s4nv",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -547,7 +506,7 @@
       },
       "elements": [
         {
-          "id": "v48cozg",
+          "id": "3cdpz0g",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -597,46 +556,112 @@
           },
           "elements": [
             {
-              "id": "p7pdghg",
+              "id": "shgx036",
               "elType": "widget",
-              "widgetType": "image",
+              "widgetType": "image-box",
               "settings": {
                 "image": {
                   "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img07.jpg",
                   "id": 0,
-                  "alt": "Project 1"
+                  "alt": ""
                 },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
+                "title_text": "10 Conversion Lessons from 100+ Landing Pages",
+                "description_text": "We analyzed the patterns that separate high-converting landing pages from the rest. Here's what actually works.",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
                 },
+                "position": "top",
                 "image_border_radius": {
                   "unit": "px",
-                  "top": "12",
-                  "right": "12",
-                  "bottom": "12",
-                  "left": "12",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "0",
+                  "left": "0",
                   "isLinked": true
                 },
-                "_animation": "fadeInUp",
+                "title_color": "#0F172A",
+                "description_color": "#475569",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Inter",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Inter",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.65,
+                  "sizes": []
+                },
+                "content_padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E8EDF4",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
                 "box_shadow_box_shadow_type": "yes",
                 "box_shadow_box_shadow": {
                   "horizontal": 0,
-                  "vertical": 24,
-                  "blur": 48,
+                  "vertical": 12,
+                  "blur": 32,
                   "spread": -12,
-                  "color": "rgba(15,23,42,0.12)"
-                }
+                  "color": "rgba(79,70,229,0.16)"
+                },
+                "box_shadow_hover_box_shadow_type": "yes",
+                "box_shadow_hover_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 18,
+                  "blur": 44,
+                  "spread": -8,
+                  "color": "rgba(79,70,229,0.28)"
+                },
+                "_transform_translate_popover_hover": "transform",
+                "_transform_translateY_effect_hover": {
+                  "unit": "px",
+                  "size": -10,
+                  "sizes": []
+                },
+                "_animation": "fadeInUp"
               }
             }
           ],
           "isInner": true
         },
         {
-          "id": "o1m25s6",
+          "id": "vn0yhv2",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -686,43 +711,109 @@
           },
           "elements": [
             {
-              "id": "ab9njdl",
+              "id": "pskqhdq",
               "elType": "widget",
-              "widgetType": "image",
+              "widgetType": "image-box",
               "settings": {
                 "image": {
                   "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img08.jpg",
                   "id": 0,
-                  "alt": "Project 2"
+                  "alt": ""
                 },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
+                "title_text": "The Design System That Cut Our Build Time in Half",
+                "description_text": "How we standardized components, tokens, and handoff — and why your team should too.",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
                 },
+                "position": "top",
                 "image_border_radius": {
                   "unit": "px",
-                  "top": "12",
-                  "right": "12",
-                  "bottom": "12",
-                  "left": "12",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "0",
+                  "left": "0",
                   "isLinked": true
+                },
+                "title_color": "#0F172A",
+                "description_color": "#475569",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Inter",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Inter",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.65,
+                  "sizes": []
+                },
+                "content_padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E8EDF4",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -12,
+                  "color": "rgba(79,70,229,0.16)"
+                },
+                "box_shadow_hover_box_shadow_type": "yes",
+                "box_shadow_hover_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 18,
+                  "blur": 44,
+                  "spread": -8,
+                  "color": "rgba(79,70,229,0.28)"
+                },
+                "_transform_translate_popover_hover": "transform",
+                "_transform_translateY_effect_hover": {
+                  "unit": "px",
+                  "size": -10,
+                  "sizes": []
                 },
                 "_animation": "fadeInUp",
                 "_animation_delay": {
                   "unit": "px",
                   "size": 100,
                   "sizes": []
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 24,
-                  "blur": 48,
-                  "spread": -12,
-                  "color": "rgba(15,23,42,0.12)"
                 }
               }
             }
@@ -730,7 +821,7 @@
           "isInner": true
         },
         {
-          "id": "lb9qvz9",
+          "id": "alz1e7y",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -780,390 +871,109 @@
           },
           "elements": [
             {
-              "id": "aoo9egg",
+              "id": "z4d2zed",
               "elType": "widget",
-              "widgetType": "image",
-              "settings": {
-                "image": {
-                  "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img14.jpg",
-                  "id": 0,
-                  "alt": "Project 3"
-                },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
-                },
-                "image_border_radius": {
-                  "unit": "px",
-                  "top": "12",
-                  "right": "12",
-                  "bottom": "12",
-                  "left": "12",
-                  "isLinked": true
-                },
-                "_animation": "fadeInUp",
-                "_animation_delay": {
-                  "unit": "px",
-                  "size": 200,
-                  "sizes": []
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 24,
-                  "blur": 48,
-                  "spread": -12,
-                  "color": "rgba(15,23,42,0.12)"
-                }
-              }
-            }
-          ],
-          "isInner": true
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "r0cfzdh",
-      "elType": "container",
-      "settings": {
-        "container_type": "flex",
-        "content_width": "boxed",
-        "boxed_width": {
-          "unit": "px",
-          "size": 1140,
-          "sizes": []
-        },
-        "flex_direction": "row",
-        "flex_direction_tablet": "row",
-        "flex_direction_mobile": "column",
-        "flex_wrap": "nowrap",
-        "flex_wrap_tablet": "nowrap",
-        "flex_justify_content": "flex-start",
-        "flex_align_items": "stretch",
-        "padding": {
-          "unit": "px",
-          "top": "0",
-          "right": "20",
-          "bottom": "40",
-          "left": "20",
-          "isLinked": false
-        },
-        "padding_tablet": {
-          "unit": "px",
-          "top": "70",
-          "right": "20",
-          "bottom": "70",
-          "left": "20",
-          "isLinked": false
-        },
-        "padding_mobile": {
-          "unit": "px",
-          "top": "0",
-          "right": "16",
-          "bottom": "50",
-          "left": "16",
-          "isLinked": false
-        },
-        "gap": {
-          "unit": "px",
-          "column": 24,
-          "row": 24,
-          "sizes": [],
-          "isLinked": true
-        },
-        "gap_tablet": {
-          "unit": "px",
-          "column": 20,
-          "row": 20,
-          "sizes": [],
-          "isLinked": true
-        },
-        "gap_mobile": {
-          "unit": "px",
-          "column": 16,
-          "row": 16,
-          "sizes": [],
-          "isLinked": true
-        },
-        "background_background": "classic",
-        "background_color": "#FFFFFF"
-      },
-      "elements": [
-        {
-          "id": "aeg3zd3",
-          "elType": "container",
-          "settings": {
-            "container_type": "flex",
-            "content_width": "full",
-            "width": {
-              "unit": "%",
-              "size": 33.3333,
-              "sizes": []
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100,
-              "sizes": []
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100,
-              "sizes": []
-            },
-            "flex_direction": "column",
-            "flex_direction_tablet": "column",
-            "flex_direction_mobile": "column",
-            "flex_wrap": "wrap",
-            "flex_justify_content": "flex-start",
-            "flex_align_items": "stretch",
-            "gap": {
-              "unit": "px",
-              "column": 16,
-              "row": 16,
-              "sizes": [],
-              "isLinked": true
-            },
-            "gap_tablet": {
-              "unit": "px",
-              "column": 14,
-              "row": 14,
-              "sizes": [],
-              "isLinked": true
-            },
-            "gap_mobile": {
-              "unit": "px",
-              "column": 12,
-              "row": 12,
-              "sizes": [],
-              "isLinked": true
-            }
-          },
-          "elements": [
-            {
-              "id": "48nx7u1",
-              "elType": "widget",
-              "widgetType": "image",
-              "settings": {
-                "image": {
-                  "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img15.jpg",
-                  "id": 0,
-                  "alt": "Project 4"
-                },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
-                },
-                "image_border_radius": {
-                  "unit": "px",
-                  "top": "12",
-                  "right": "12",
-                  "bottom": "12",
-                  "left": "12",
-                  "isLinked": true
-                },
-                "_animation": "fadeInUp",
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 24,
-                  "blur": 48,
-                  "spread": -12,
-                  "color": "rgba(15,23,42,0.12)"
-                }
-              }
-            }
-          ],
-          "isInner": true
-        },
-        {
-          "id": "vg8n9ab",
-          "elType": "container",
-          "settings": {
-            "container_type": "flex",
-            "content_width": "full",
-            "width": {
-              "unit": "%",
-              "size": 33.3333,
-              "sizes": []
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100,
-              "sizes": []
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100,
-              "sizes": []
-            },
-            "flex_direction": "column",
-            "flex_direction_tablet": "column",
-            "flex_direction_mobile": "column",
-            "flex_wrap": "wrap",
-            "flex_justify_content": "flex-start",
-            "flex_align_items": "stretch",
-            "gap": {
-              "unit": "px",
-              "column": 16,
-              "row": 16,
-              "sizes": [],
-              "isLinked": true
-            },
-            "gap_tablet": {
-              "unit": "px",
-              "column": 14,
-              "row": 14,
-              "sizes": [],
-              "isLinked": true
-            },
-            "gap_mobile": {
-              "unit": "px",
-              "column": 12,
-              "row": 12,
-              "sizes": [],
-              "isLinked": true
-            }
-          },
-          "elements": [
-            {
-              "id": "9gvus5s",
-              "elType": "widget",
-              "widgetType": "image",
-              "settings": {
-                "image": {
-                  "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img13.jpg",
-                  "id": 0,
-                  "alt": "Project 5"
-                },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
-                },
-                "image_border_radius": {
-                  "unit": "px",
-                  "top": "12",
-                  "right": "12",
-                  "bottom": "12",
-                  "left": "12",
-                  "isLinked": true
-                },
-                "_animation": "fadeInUp",
-                "_animation_delay": {
-                  "unit": "px",
-                  "size": 100,
-                  "sizes": []
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 24,
-                  "blur": 48,
-                  "spread": -12,
-                  "color": "rgba(15,23,42,0.12)"
-                }
-              }
-            }
-          ],
-          "isInner": true
-        },
-        {
-          "id": "4btloni",
-          "elType": "container",
-          "settings": {
-            "container_type": "flex",
-            "content_width": "full",
-            "width": {
-              "unit": "%",
-              "size": 33.3333,
-              "sizes": []
-            },
-            "width_tablet": {
-              "unit": "%",
-              "size": 100,
-              "sizes": []
-            },
-            "width_mobile": {
-              "unit": "%",
-              "size": 100,
-              "sizes": []
-            },
-            "flex_direction": "column",
-            "flex_direction_tablet": "column",
-            "flex_direction_mobile": "column",
-            "flex_wrap": "wrap",
-            "flex_justify_content": "flex-start",
-            "flex_align_items": "stretch",
-            "gap": {
-              "unit": "px",
-              "column": 16,
-              "row": 16,
-              "sizes": [],
-              "isLinked": true
-            },
-            "gap_tablet": {
-              "unit": "px",
-              "column": 14,
-              "row": 14,
-              "sizes": [],
-              "isLinked": true
-            },
-            "gap_mobile": {
-              "unit": "px",
-              "column": 12,
-              "row": 12,
-              "sizes": [],
-              "isLinked": true
-            }
-          },
-          "elements": [
-            {
-              "id": "7ok3icu",
-              "elType": "widget",
-              "widgetType": "image",
+              "widgetType": "image-box",
               "settings": {
                 "image": {
                   "url": "https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img09.jpg",
                   "id": 0,
-                  "alt": "Project 6"
+                  "alt": ""
                 },
-                "image_size": "full",
-                "align": "center",
-                "width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
+                "title_text": "SEO in 2026: What Still Matters (and What Doesn't)",
+                "description_text": "Algorithm changes come and go. These fundamentals have survived every update so far.",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": "",
+                  "custom_attributes": ""
                 },
+                "position": "top",
                 "image_border_radius": {
                   "unit": "px",
-                  "top": "12",
-                  "right": "12",
-                  "bottom": "12",
-                  "left": "12",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "0",
+                  "left": "0",
                   "isLinked": true
+                },
+                "title_color": "#0F172A",
+                "description_color": "#475569",
+                "title_typography_typography": "custom",
+                "title_typography_font_family": "Inter",
+                "title_typography_font_size": {
+                  "unit": "px",
+                  "size": 18,
+                  "sizes": []
+                },
+                "title_typography_font_weight": "700",
+                "description_typography_typography": "custom",
+                "description_typography_font_family": "Inter",
+                "description_typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "description_typography_line_height": {
+                  "unit": "em",
+                  "size": 1.65,
+                  "sizes": []
+                },
+                "content_padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#E8EDF4",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "box_shadow_box_shadow_type": "yes",
+                "box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 12,
+                  "blur": 32,
+                  "spread": -12,
+                  "color": "rgba(79,70,229,0.16)"
+                },
+                "box_shadow_hover_box_shadow_type": "yes",
+                "box_shadow_hover_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 18,
+                  "blur": 44,
+                  "spread": -8,
+                  "color": "rgba(79,70,229,0.28)"
+                },
+                "_transform_translate_popover_hover": "transform",
+                "_transform_translateY_effect_hover": {
+                  "unit": "px",
+                  "size": -10,
+                  "sizes": []
                 },
                 "_animation": "fadeInUp",
                 "_animation_delay": {
                   "unit": "px",
                   "size": 200,
                   "sizes": []
-                },
-                "box_shadow_box_shadow_type": "yes",
-                "box_shadow_box_shadow": {
-                  "horizontal": 0,
-                  "vertical": 24,
-                  "blur": 48,
-                  "spread": -12,
-                  "color": "rgba(15,23,42,0.12)"
                 }
               }
             }
@@ -1174,7 +984,7 @@
       "isInner": false
     },
     {
-      "id": "c20az8z",
+      "id": "nd1ei8e",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1241,7 +1051,7 @@
       },
       "elements": [
         {
-          "id": "5asofy7",
+          "id": "o8pkv68",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1291,87 +1101,24 @@
           },
           "elements": [
             {
-              "id": "sis6xng",
+              "id": "aue3hwx",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>",
+                "editor": "<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add the Posts widget (Elementor Pro) or use your theme's blog template.</p>",
                 "text_color": "#64748B",
                 "align": "center",
                 "typography_typography": "custom",
                 "typography_font_family": "Inter",
                 "typography_font_size": {
                   "unit": "px",
-                  "size": 15,
+                  "size": 14,
                   "sizes": []
                 },
                 "typography_font_weight": "400",
                 "typography_line_height": {
                   "unit": "em",
                   "size": 1.7,
-                  "sizes": []
-                },
-                "typography_text_transform": "",
-                "typography_font_style": "normal",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                },
-                "typography_word_spacing": {
-                  "unit": "px",
-                  "size": 0,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "80w96o3",
-              "elType": "widget",
-              "widgetType": "button",
-              "settings": {
-                "text": "Request Case Studies",
-                "link": {
-                  "url": "#contact",
-                  "is_external": "",
-                  "nofollow": "",
-                  "custom_attributes": ""
-                },
-                "align": "center",
-                "size": "sm",
-                "background_color": "#4F46E5",
-                "button_text_color": "#FFFFFF",
-                "hover_color": "#FFFFFF",
-                "button_background_hover_color": "#4338CA",
-                "border_radius": {
-                  "unit": "px",
-                  "top": "8",
-                  "right": "8",
-                  "bottom": "8",
-                  "left": "8",
-                  "isLinked": true
-                },
-                "text_padding": {
-                  "unit": "px",
-                  "top": "16",
-                  "right": "32",
-                  "bottom": "16",
-                  "left": "32",
-                  "isLinked": false
-                },
-                "align_mobile": "justify",
-                "_element_width_mobile": "inherit",
-                "typography_typography": "custom",
-                "typography_font_family": "Inter",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 16,
-                  "sizes": []
-                },
-                "typography_font_weight": "600",
-                "typography_line_height": {
-                  "unit": "em",
-                  "size": 1,
                   "sizes": []
                 },
                 "typography_text_transform": "",
@@ -1395,7 +1142,7 @@
       "isInner": false
     },
     {
-      "id": "gpuahbs",
+      "id": "xz88ema",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1430,7 +1177,7 @@
         },
         "padding_mobile": {
           "unit": "px",
-          "top": "0",
+          "top": "50",
           "right": "16",
           "bottom": "50",
           "left": "16",
@@ -1460,7 +1207,7 @@
       },
       "elements": [
         {
-          "id": "ghhpsmi",
+          "id": "o6lnozm",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1473,8 +1220,8 @@
             "flex_justify_content": "center",
             "flex_align_items": "center",
             "background_background": "gradient",
-            "background_color": "#0F172A",
-            "background_color_b": "#1E1B4B",
+            "background_color": "#4F46E5",
+            "background_color_b": "#7C3AED",
             "background_gradient_type": "linear",
             "background_gradient_angle": {
               "unit": "deg",
@@ -1537,11 +1284,11 @@
           },
           "elements": [
             {
-              "id": "xdt3pm6",
+              "id": "xwmq1ru",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
-                "title": "Your project could be next",
+                "title": "Fresh ideas, straight to your inbox",
                 "header_size": "h2",
                 "align": "center",
                 "title_color": "#FFFFFF",
@@ -1584,11 +1331,11 @@
               }
             },
             {
-              "id": "ciicr4p",
+              "id": "xtw4diu",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>Let's build something worth showing off. Free consultation, no strings attached.</p>",
+                "editor": "<p style='text-align:center;'>One email a month. No spam, ever.</p>",
                 "text_color": "#CBD5E1",
                 "align": "center",
                 "typography_typography": "custom",
@@ -1625,11 +1372,11 @@
               }
             },
             {
-              "id": "g3uwh00",
+              "id": "9ohsind",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
-                "text": "Start a Project",
+                "text": "Subscribe",
                 "link": {
                   "url": "#contact",
                   "is_external": "",
@@ -1701,6 +1448,6 @@
   ],
   "page_settings": [],
   "version": "0.4",
-  "title": "Portfolio",
+  "title": "Blog",
   "type": "page"
 }

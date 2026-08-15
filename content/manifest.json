@@ -26,6 +26,42 @@
       "type": "page",
       "title": "Portfolio",
       "thumbnail": ""
+    },
+    {
+      "source": "templates/blog.json",
+      "type": "page",
+      "title": "Blog",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/single.json",
+      "type": "page",
+      "title": "Single Post (Demo)",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/contact.json",
+      "type": "page",
+      "title": "Contact",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/404.json",
+      "type": "page",
+      "title": "404",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/header-section.json",
+      "type": "section",
+      "title": "Header",
+      "thumbnail": ""
+    },
+    {
+      "source": "templates/footer-section.json",
+      "type": "section",
+      "title": "Footer",
+      "thumbnail": ""
     }
   ],
   "categories": [

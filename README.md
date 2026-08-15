@@ -12,8 +12,15 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 | `templates/about.json` | Page | Story, values, team, CTA |
 | `templates/services.json` | Page | 6 services, process, what's included, CTA |
 | `templates/portfolio.json` | Page | Galeri proyek, CTA |
+| `templates/blog.json` | Page | Hero, artikel cards, CTA |
+| `templates/single.json` | Page | Layout single post (demo) |
+| `templates/contact.json` | Page | Info cards, detail kontak, peta, CTA |
+| `templates/404.json` | Page | Halaman 404 |
+| `templates/header-section.json` | Section | Header: logo + CTA |
+| `templates/footer-section.json` | Section | Footer 3 kolom + copyright |
 
-> ⚠️ **Status**: Homepage 100% disetujui. About / Services / Portfolio sudah di-rebuild dengan design system yang sama — menunggu review.
+> ⚠️ **Status**: Homepage 100% disetujui. About/Services/Portfolio sudah di-review & dirapikan (responsive mobile). Blog/Single/Contact/Header/Footer baru dibuat — menunggu review.
+> ℹ️ Single post dinamis butuh Elementor Pro (Theme Builder). `single.json` ini layout demo yang bisa di-insert sebagai halaman.
 
 ## Cara Pakai (Import)
 
