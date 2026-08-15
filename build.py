@@ -167,14 +167,17 @@ def col(elements, width=50, settings=None, center=False, anim=None, anim_delay=0
         s.update(settings)
     return {"id": eid(), "elType": "container", "settings": s, "elements": elements, "isInner": True}
 
-def card_col(widgets, bg=LIGHT, radius=16, anim=None, anim_delay=0):
-    """Card = inner container with bg, radius, shadow, hover lift via box-shadow."""
+def card_col(widgets, bg=WHITE, radius=16, anim=None, anim_delay=0):
+    """Card = inner container with bg, border, radius + visible shadow."""
     s = {
         "background_background": "classic",
         "background_color": bg,
+        "border_border": "solid",
+        "border_width": dim(1, 1, 1, 1, True),
+        "border_color": "#E8EDF4",
         "border_radius": dim(radius, radius, radius, radius, True),
         "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": shadow(20, 40, -12, "rgba(15,23,42,0.10)"),
+        "box_shadow_box_shadow": shadow(12, 28, 0, "rgba(15,23,42,0.12)"),
         "padding": dim(34, 28, 34, 28, False),
     }
     return col(widgets, 33.3333, settings=s, anim=anim, anim_delay=anim_delay)
@@ -192,9 +195,11 @@ def btn_row(buttons):
 
 def sec_head(eyebrow_, title_, sub_=None, align="center"):
     els = [eyebrow(eyebrow_)]
-    els.append(heading(title_, "h2", INK, align, 38, "700", 1.25, tablet=30, mobile=26))
+    els.append(heading(title_, "h2", INK, align, 38, "700", 1.25, tablet=30, mobile=26,
+                       extra={"_animation": "fadeInUp"}))
     if sub_:
-        els.append(text(f"<p>{sub_}</p>", BODY, align, 17, "400", 1.7))
+        els.append(text(f"<p>{sub_}</p>", BODY, align, 17, "400", 1.7,
+                        extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}))
     return els
 
 def heading(text_, tag="h2", color=INK, align="left", px=40, weight="700", line=1.2, tablet=None, mobile=None, extra=None):
@@ -286,7 +291,7 @@ def icon_list(items, icon="fas fa-check", icon_color=ACCENT, text_color=BODY, px
         "text_typography_font_weight": "500",
     })
 
-def testimonial(content_, name_, job_, img=None):
+def testimonial(content_, name_, job_, img=None, anim=None, anim_delay=0):
     s = {
         "testimonial_content": content_,
         "testimonial_name": name_,
@@ -309,11 +314,15 @@ def testimonial(content_, name_, job_, img=None):
     }
     if img:
         s["testimonial_image"] = img
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     return widget("testimonial", s)
 
-def accordion(items):
+def accordion(items, anim=None, anim_delay=0):
     tabs = [{"_id": eid(), "tab_title": t, "tab_content": f"<p>{c}</p>"} for t, c in items]
-    return widget("accordion", {
+    s = {
         "tabs": tabs,
         "title_color": INK,
         "tab_active_color": ACCENT,
@@ -332,7 +341,12 @@ def accordion(items):
         "title_background": WHITE,
         "tab_active_background": WHITE,
         "content_background_color": WHITE,
-    })
+    }
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
+    return widget("accordion", s)
 
 def img(url, alt="", width=100, radius=12, shadow_=None, align="center", anim=None, anim_delay=0):
     s = {
@@ -376,8 +390,8 @@ def image_box(url, title_, desc_, link="#"):
         "box_shadow_box_shadow": shadow(14, 28, -10, "rgba(15,23,42,0.08)"),
     })
 
-def counter(n, suffix, title_, dark=True):
-    return widget("counter", {
+def counter(n, suffix, title_, dark=True, anim=None, anim_delay=0):
+    s = {
         "starting_number": 0,
         "ending_number": n,
         "suffix": suffix,
@@ -392,7 +406,12 @@ def counter(n, suffix, title_, dark=True):
         "title_typography_font_family": FONT,
         "title_typography_font_size": size(15),
         "title_typography_font_weight": "500",
-    })
+    }
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
+    return widget("counter", s)
 
 def social_icons(icons=None, bg="rgba(255,255,255,0.10)", color=WHITE, px=15):
     icons = icons or [
@@ -458,14 +477,15 @@ def home():
     els.append(section([
         col([
             heading("We Build Digital Products That Grow Your Business", "h1", WHITE, "left", 52, "800", 1.15,
-                    tablet=40, mobile=32),
+                    tablet=40, mobile=32, extra={"_animation": "fadeInLeft"}),
             spacer(16, 12),
             text("<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>",
-                 "#CBD5E1", "left", 18, "400", 1.7),
+                 "#CBD5E1", "left", 18, "400", 1.7,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             spacer(24, 16),
             btn_row([btn("Explore Services", "#services", "left"), ghost_btn("Start a Project", "#contact", "left")]),
         ], 55, center=True),
-        col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"))], 45, center=True),
+        col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"), anim="fadeIn", anim_delay=200)], 45, center=True),
     ], bg=None, pad_top=120, pad_bottom=120, overlay=dark_hero_bg(U["team"], 0.9)))
 
     # TRUST BAR
@@ -483,7 +503,7 @@ def home():
         ("fas fa-palette", "Brand Identity", "Logos, guidelines, and visual systems that make your brand impossible to ignore."),
         ("fas fa-hashtag", "Content & Social", "Editorial and social content that builds authority and keeps your audience engaged."),
     ]
-    srv_widgets = [icon_box(i, t, d, link="#services") for i, t, d in services]
+    srv_widgets = [icon_box(i, t, d, link="#services", anim="fadeInUp", anim_delay=(idx % 3) * 100) for idx, (i, t, d) in enumerate(services)]
     els.append(section([
         col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
@@ -500,12 +520,14 @@ def home():
 
     # ABOUT PREVIEW
     els.append(section([
-        col([img(U["collab"], "Our team collaborating", 100, 16, shadow())], 50, center=True),
+        col([img(U["collab"], "Our team collaborating", 100, 16, shadow(), anim="fadeIn")], 50, center=True),
         col([
             eyebrow("About Us"), spacer(12, 8),
-            heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24),
+            heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
+                    extra={"_animation": "fadeInLeft"}),
             spacer(12, 8),
-            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>"),
+            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>",
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             spacer(16, 10),
             icon_list(["Senior talent on every project", "Transparent pricing, no surprises", "Launch in weeks, not months"]),
             spacer(24, 16),
@@ -515,23 +537,37 @@ def home():
 
     # STATS
     els.append(section([
-        col([counter(120, "+", "Projects Delivered")], 25),
-        col([counter(85, "+", "Happy Clients")], 25),
-        col([counter(6, "+", "Years Experience")], 25),
-        col([counter(15, "+", "Industry Awards")], 25),
+        col([counter(120, "+", "Projects Delivered", anim="fadeInUp", anim_delay=0)], 25),
+        col([counter(85, "+", "Happy Clients", anim="fadeInUp", anim_delay=100)], 25),
+        col([counter(6, "+", "Years Experience", anim="fadeInUp", anim_delay=200)], 25),
+        col([counter(15, "+", "Industry Awards", anim="fadeInUp", anim_delay=300)], 25),
     ], gradient=("#0F172A", "#1E1B4B", 135), pad_top=80, pad_bottom=80))
-    # TESTIMONIALS (2 sections: heading + row)
+    # TESTIMONIALS (2 sections: heading + row of cards)
     els.append(section([
         col(sec_head("Testimonials", "What our clients say"), 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    ], bg=LIGHT, pad_top=100, pad_bottom=30))
+    t_card = {
+        "background_background": "classic",
+        "background_color": WHITE,
+        "border_border": "solid",
+        "border_width": dim(1, 1, 1, 1, True),
+        "border_color": "#E8EDF4",
+        "border_radius": dim(16, 16, 16, 16, True),
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": shadow(12, 28, 0, "rgba(15,23,42,0.10)"),
+        "padding": dim(34, 28, 34, 28, False),
+    }
     els.append(section([
         col([testimonial("“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”",
-                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333),
+                         "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""},
+                         anim="fadeInUp", anim_delay=0)], 33.3333, settings=t_card),
         col([testimonial("“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”",
-                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""})], 33.3333),
+                         "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""},
+                         anim="fadeInUp", anim_delay=100)], 33.3333, settings=t_card),
         col([testimonial("“They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.”",
-                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""})], 33.3333),
-    ], bg=WHITE, pad_top=0, pad_bottom=100, anchor="testimonials"))
+                         "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""},
+                         anim="fadeInUp", anim_delay=200)], 33.3333, settings=t_card),
+    ], bg=LIGHT, pad_top=0, pad_bottom=100, anchor="testimonials"))
 
     # FAQ (2 sections: heading + accordion)
     faq = [
@@ -542,20 +578,23 @@ def home():
     ]
     els.append(section([
         col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else — just ask us."), 100),
-    ], bg=LIGHT, pad_top=100, pad_bottom=30, anchor="faq"))
+    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="faq"))
     els.append(section([
-        col([accordion(faq)], 75, settings={"content_position": "center"}),
-    ], bg=LIGHT, pad_top=0, pad_bottom=100))
+        col([accordion(faq, anim="fadeInUp")], 80),
+    ], bg=WHITE, pad_top=0, pad_bottom=100, settings={"flex_justify_content": "center"}))
 
     # CTA
     els.append(section([
         col([
-            heading("Have a project in mind?", "h2", WHITE, "center", 38, "700", 1.25, tablet=30, mobile=26),
+            heading("Have a project in mind?", "h2", WHITE, "center", 38, "700", 1.25, tablet=30, mobile=26,
+                    extra={"_animation": "fadeInUp"}),
             spacer(14, 10),
-            text("<p style='text-align:center;'>Let's talk about what we can build together. Free consultation, no strings attached.</p>", "#CBD5E1", "center", 17, "400", 1.7),
+            text("<p style='text-align:center;'>Let's talk about what we can build together. Free consultation, no strings attached.</p>", "#CBD5E1", "center", 17, "400", 1.7,
+                 extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}),
             spacer(22, 14),
-            btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36),
-        ], 70, center=True),
+            btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36,
+                extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 200, "sizes": []}}),
+        ], 100, center=True),
     ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=90, pad_bottom=90, anchor="contact",
        settings={"border_radius": dim(24, 24, 24, 24, True)}))
 
