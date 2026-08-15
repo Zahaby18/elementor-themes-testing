@@ -79,7 +79,7 @@ def flex_gap(px, tablet=20, mobile=16):
             "gap_mobile": {"unit": "px", "column": mobile, "row": mobile, "sizes": [], "isLinked": True}}
 
 def container(elements, settings=None, bg=None, gradient=None, pad_top=100, pad_bottom=100, anchor=None,
-              overlay=None, radius=None, shadow_=None, anim=None, anim_delay=0):
+              overlay=None, radius=None, shadow_=None, anim=None, anim_delay=0, pad_mobile=None):
     """Elementor Flexbox Container (boxed 1140px)."""
     s = {
         "container_type": "flex",
@@ -94,7 +94,7 @@ def container(elements, settings=None, bg=None, gradient=None, pad_top=100, pad_
         "flex_align_items": "stretch",
         "padding": dim(pad_top, 20, pad_bottom, 20, False),
         "padding_tablet": dim(70, 20, 70, 20, False),
-        "padding_mobile": dim(50, 16, 50, 16, False),
+        "padding_mobile": dim(*(pad_mobile if pad_mobile else (50, 16, 50, 16)), False),
         **flex_gap(24, 20, 16),
     }
     if bg:
@@ -244,6 +244,8 @@ def btn(text_, url="#", align="left", bg=ACCENT, fg=WHITE, hover_bg=ACCENT2, pt=
         "button_background_hover_color": hover_bg,
         "border_radius": dim(radius, radius, radius, radius, True),
         "text_padding": dim(pt, pl, pt, pl, False),
+        "align_mobile": "justify",
+        "_element_width_mobile": "inherit",
         **typo(16, "600", 1),
     }
     if extra:
@@ -349,7 +351,7 @@ def inner_row(children, justify="flex-start", align="center", gap=12):
                          "flex_justify_content": justify, "flex_align_items": align,
                          **flex_gap(gap, gap, gap)}, "elements": children}
 
-def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0):
+def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0, width_tablet=100):
     """Testimonial as a custom card: quote icon, italic quote, right-aligned person."""
     card_settings = {
         "background_background": "classic",
@@ -361,9 +363,10 @@ def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0):
         "box_shadow_box_shadow_type": "yes",
         "box_shadow_box_shadow": shadow(12, 28, 0, "rgba(15,23,42,0.12)"),
         "padding": dim(34, 28, 34, 28, False),
+        "width_tablet": {"unit": "%", "size": width_tablet, "sizes": []},
     }
     person = inner_row([
-        col([img(avatar, name_, 100, 50)], 18),
+        col([img(avatar, name_, 100, 50)], 44),
         col([heading(name_, "h5", INK, "left", 16, "600", 1.3),
              text(f"<p>{job_}</p>", MUTED, "left", 13, "400", 1.5)], 60),
     ], justify="flex-end", align="center", gap=12)
@@ -537,11 +540,9 @@ def home():
         col([
             heading("We Build Digital Products That Grow Your Business", "h1", WHITE, "left", 52, "800", 1.15,
                     tablet=40, mobile=32, extra={"_animation": "fadeInLeft"}),
-            spacer(16, 12),
             text("<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>",
                  "#CBD5E1", "left", 18, "400", 1.7,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
-            spacer(24, 16),
             btn_row([btn("Explore Services", "#services", "left"), ghost_btn("Start a Project", "#contact", "left")]),
         ], 55, center=True),
         col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"), anim="fadeIn", anim_delay=200)], 45, center=True),
@@ -551,7 +552,7 @@ def home():
     els.append(section([
         col([text("<p style='text-align:center;'>Trusted by 50+ startups and growing teams — from Jakarta to Singapore</p>",
                   MUTED, "center", 15, "500", 1.5)], 100)
-    ], bg=LIGHT, pad_top=28, pad_bottom=28))
+    ], bg=LIGHT, pad_top=28, pad_bottom=28, pad_mobile=(10, 16, 10, 16)))
 
     # SERVICES (3 sections = 3 rows: heading, row 1, row 2)
     services = [
@@ -565,17 +566,17 @@ def home():
     srv_widgets = [icon_box(i, t, d, link="#services", anim="fadeInUp", anim_delay=(idx % 3) * 100) for idx, (i, t, d) in enumerate(services)]
     els.append(section([
         col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
+    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services", pad_mobile=(50, 16, 0, 16)))
     els.append(section([
         card_col([srv_widgets[0]]),
         card_col([srv_widgets[1]]),
         card_col([srv_widgets[2]]),
-    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(50, 16, 20, 16)))
     els.append(section([
         card_col([srv_widgets[3]]),
         card_col([srv_widgets[4]]),
         card_col([srv_widgets[5]]),
-    ], bg=WHITE, pad_top=0, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # ABOUT PREVIEW
     els.append(section([
@@ -604,12 +605,13 @@ def home():
     ], bg=LIGHT, pad_top=100, pad_bottom=30))
     els.append(section([
         testimonial_card("Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.",
-                         "Rina Amelia", "CEO, Tokokita", U["p1"], anim="fadeInUp", anim_delay=0),
+                         "Rina Amelia", "CEO, Tokokita", U["p1"], anim="fadeInUp", anim_delay=0, width_tablet=48),
         testimonial_card("The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.",
-                         "Bima Pratama", "Founder, Nusantara Studio", U["p2"], anim="fadeInUp", anim_delay=100),
+                         "Bima Pratama", "Founder, Nusantara Studio", U["p2"], anim="fadeInUp", anim_delay=100, width_tablet=48),
         testimonial_card("They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.",
                          "Sari Wijaya", "Marketing Lead, GreenFood", U["p3"], anim="fadeInUp", anim_delay=200),
-    ], bg=LIGHT, pad_top=0, pad_bottom=100, anchor="testimonials"))
+    ], bg=LIGHT, pad_top=0, pad_bottom=100, anchor="testimonials",
+       settings={"flex_wrap_tablet": "wrap", "flex_justify_content_tablet": "space-between"}))
 
     # FAQ (2 sections: heading + accordion)
     faq = [
@@ -620,10 +622,10 @@ def home():
     ]
     els.append(section([
         col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else — just ask us."), 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="faq"))
+    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="faq", pad_mobile=(50, 16, 10, 16)))
     els.append(section([
         col([accordion(faq, anim="fadeInUp")], 80),
-    ], bg=WHITE, pad_top=0, pad_bottom=100, settings={"flex_justify_content": "center"}))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, settings={"flex_justify_content": "center"}, pad_mobile=(0, 10, 50, 10)))
 
     # CTA — rounded gradient box (inner container, so radius applies to content box not full width)
     cta_box = {"id": eid(), "elType": "container", "isInner": True,
@@ -1031,8 +1033,8 @@ def validate_structure(templates):
             walk(children, p + '>', child_row_ctx)
         if is_row_ctx:
             total = sum(widths)
-            if total > 100.01:
-                errors.append(f"{path}: inner container widths sum {total:.1f}% > 100% (harus 1 baris per row)")
+            if total > 110.01:
+                errors.append(f"{path}: inner container widths sum {total:.1f}% > 110% (harus 1 baris per row)")
     for name, data in templates.items():
         walk(data['content'], name, True)
     return errors

@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "ly65tuv",
+      "id": "5ofcfqu",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -89,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "8l3wf29",
+          "id": "cwdjudq",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -139,7 +139,7 @@
           },
           "elements": [
             {
-              "id": "5ona9z2",
+              "id": "tzrb4q5",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -186,24 +186,7 @@
               }
             },
             {
-              "id": "zpr4g8b",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 16,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 12,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "vbjgagi",
+              "id": "ey688im",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -244,24 +227,7 @@
               }
             },
             {
-              "id": "qqzy9hq",
-              "elType": "widget",
-              "widgetType": "spacer",
-              "settings": {
-                "space": {
-                  "unit": "px",
-                  "size": 24,
-                  "sizes": []
-                },
-                "space_mobile": {
-                  "unit": "px",
-                  "size": 16,
-                  "sizes": []
-                }
-              }
-            },
-            {
-              "id": "kjgoin7",
+              "id": "o39737l",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -297,7 +263,7 @@
               },
               "elements": [
                 {
-                  "id": "br5jjh5",
+                  "id": "tvzleoy",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -330,6 +296,8 @@
                       "left": "32",
                       "isLinked": false
                     },
+                    "align_mobile": "justify",
+                    "_element_width_mobile": "inherit",
                     "typography_typography": "custom",
                     "typography_font_family": "Inter",
                     "typography_font_size": {
@@ -358,7 +326,7 @@
                   }
                 },
                 {
-                  "id": "1o7252r",
+                  "id": "xrzx39x",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -391,6 +359,8 @@
                       "left": "32",
                       "isLinked": false
                     },
+                    "align_mobile": "justify",
+                    "_element_width_mobile": "inherit",
                     "typography_typography": "custom",
                     "typography_font_family": "Inter",
                     "typography_font_size": {
@@ -434,7 +404,7 @@
           "isInner": true
         },
         {
-          "id": "ud8o1hn",
+          "id": "um4v486",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -484,7 +454,7 @@
           },
           "elements": [
             {
-              "id": "3zpy25s",
+              "id": "ovupfkn",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -531,7 +501,7 @@
       "isInner": false
     },
     {
-      "id": "7ashben",
+      "id": "1x71ih4",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -566,9 +536,9 @@
         },
         "padding_mobile": {
           "unit": "px",
-          "top": "50",
+          "top": "10",
           "right": "16",
-          "bottom": "50",
+          "bottom": "10",
           "left": "16",
           "isLinked": false
         },
@@ -598,7 +568,7 @@
       },
       "elements": [
         {
-          "id": "89kw24l",
+          "id": "4bfqofe",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -648,7 +618,7 @@
           },
           "elements": [
             {
-              "id": "bpq8af1",
+              "id": "591zmr6",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -689,7 +659,7 @@
       "isInner": false
     },
     {
-      "id": "kxloy5h",
+      "id": "jeq8prz",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -726,7 +696,7 @@
           "unit": "px",
           "top": "50",
           "right": "16",
-          "bottom": "50",
+          "bottom": "0",
           "left": "16",
           "isLinked": false
         },
@@ -757,7 +727,7 @@
       },
       "elements": [
         {
-          "id": "h32heb7",
+          "id": "qgabgnc",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -807,7 +777,7 @@
           },
           "elements": [
             {
-              "id": "ane8pmh",
+              "id": "8kv69il",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -843,7 +813,7 @@
               }
             },
             {
-              "id": "qewhcgb",
+              "id": "yqmepyv",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -890,7 +860,7 @@
               }
             },
             {
-              "id": "pca1646",
+              "id": "xwbk0t7",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -937,7 +907,7 @@
       "isInner": false
     },
     {
-      "id": "nvdjt5r",
+      "id": "rs1nmu8",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -974,7 +944,7 @@
           "unit": "px",
           "top": "50",
           "right": "16",
-          "bottom": "50",
+          "bottom": "20",
           "left": "16",
           "isLinked": false
         },
@@ -1004,7 +974,7 @@
       },
       "elements": [
         {
-          "id": "1pup4xw",
+          "id": "6zhnsnc",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1104,7 +1074,7 @@
           },
           "elements": [
             {
-              "id": "r4sp4hw",
+              "id": "43lmc3y",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1165,7 +1135,7 @@
           "isInner": true
         },
         {
-          "id": "z0hvvcj",
+          "id": "v319w6i",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1265,7 +1235,7 @@
           },
           "elements": [
             {
-              "id": "hrwvubm",
+              "id": "59tncx4",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1331,7 +1301,7 @@
           "isInner": true
         },
         {
-          "id": "qo0u4z2",
+          "id": "z5xojo4",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1431,7 +1401,7 @@
           },
           "elements": [
             {
-              "id": "1yd6huj",
+              "id": "slkiz5e",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1500,7 +1470,7 @@
       "isInner": false
     },
     {
-      "id": "4efymf4",
+      "id": "snu9b1k",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1535,7 +1505,7 @@
         },
         "padding_mobile": {
           "unit": "px",
-          "top": "50",
+          "top": "0",
           "right": "16",
           "bottom": "50",
           "left": "16",
@@ -1567,7 +1537,7 @@
       },
       "elements": [
         {
-          "id": "jil97na",
+          "id": "ek3u2rz",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1667,7 +1637,7 @@
           },
           "elements": [
             {
-              "id": "ygafbrd",
+              "id": "n30eym1",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1728,7 +1698,7 @@
           "isInner": true
         },
         {
-          "id": "7itgwn7",
+          "id": "af6r79a",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1828,7 +1798,7 @@
           },
           "elements": [
             {
-              "id": "6177dh8",
+              "id": "bm2i8vb",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1894,7 +1864,7 @@
           "isInner": true
         },
         {
-          "id": "efcbhme",
+          "id": "otv28qd",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1994,7 +1964,7 @@
           },
           "elements": [
             {
-              "id": "1wcyiaj",
+              "id": "7e2qcv9",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -2063,7 +2033,7 @@
       "isInner": false
     },
     {
-      "id": "ga3dl3r",
+      "id": "gtbxtbm",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2130,7 +2100,7 @@
       },
       "elements": [
         {
-          "id": "2tdflek",
+          "id": "2qxzwys",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2180,7 +2150,7 @@
           },
           "elements": [
             {
-              "id": "yqhi0v6",
+              "id": "m4xp9vc",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -2219,7 +2189,7 @@
           "isInner": true
         },
         {
-          "id": "cco9ilh",
+          "id": "j6up9d3",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2269,7 +2239,7 @@
           },
           "elements": [
             {
-              "id": "u9cqwt7",
+              "id": "47nhlds",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2305,7 +2275,7 @@
               }
             },
             {
-              "id": "3h06j40",
+              "id": "2wb766l",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2322,7 +2292,7 @@
               }
             },
             {
-              "id": "mwdqff5",
+              "id": "xuxmc2a",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2369,7 +2339,7 @@
               }
             },
             {
-              "id": "wu5j6by",
+              "id": "gl3fmjf",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -2410,13 +2380,13 @@
               }
             },
             {
-              "id": "wgpguh4",
+              "id": "mw8giuz",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "tbcsgkt",
+                    "_id": "5od28xp",
                     "text": "Senior talent on every project",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2430,7 +2400,7 @@
                     }
                   },
                   {
-                    "_id": "lgkt2o4",
+                    "_id": "czcn1h5",
                     "text": "Transparent pricing, no surprises",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2444,7 +2414,7 @@
                     }
                   },
                   {
-                    "_id": "12fr684",
+                    "_id": "fptke2a",
                     "text": "Launch in weeks, not months",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2481,7 +2451,7 @@
               }
             },
             {
-              "id": "tqkbvek",
+              "id": "gifdjsj",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -2514,6 +2484,8 @@
                   "left": "32",
                   "isLinked": false
                 },
+                "align_mobile": "justify",
+                "_element_width_mobile": "inherit",
                 "typography_typography": "custom",
                 "typography_font_family": "Inter",
                 "typography_font_size": {
@@ -2548,7 +2520,7 @@
       "isInner": false
     },
     {
-      "id": "axhku8y",
+      "id": "tjxiojj",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2622,7 +2594,7 @@
       },
       "elements": [
         {
-          "id": "7gklaq5",
+          "id": "fd2k40h",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2672,7 +2644,7 @@
           },
           "elements": [
             {
-              "id": "o6yl4eq",
+              "id": "lijlxdy",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2705,7 +2677,7 @@
           "isInner": true
         },
         {
-          "id": "oaxcwzh",
+          "id": "b1xko6v",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2755,7 +2727,7 @@
           },
           "elements": [
             {
-              "id": "hm3f8qp",
+              "id": "jp3v8kt",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2793,7 +2765,7 @@
           "isInner": true
         },
         {
-          "id": "1ch7dwy",
+          "id": "7beqqc1",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2843,7 +2815,7 @@
           },
           "elements": [
             {
-              "id": "knu9nmn",
+              "id": "xxoj366",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2881,7 +2853,7 @@
           "isInner": true
         },
         {
-          "id": "au42hds",
+          "id": "cgcm1ay",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2931,7 +2903,7 @@
           },
           "elements": [
             {
-              "id": "tuptqim",
+              "id": "meh14lg",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2972,7 +2944,7 @@
       "isInner": false
     },
     {
-      "id": "ruiypf4",
+      "id": "fq1pqr3",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3039,7 +3011,7 @@
       },
       "elements": [
         {
-          "id": "21osttr",
+          "id": "mczv0hz",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3089,7 +3061,7 @@
           },
           "elements": [
             {
-              "id": "f1rfb5q",
+              "id": "4r0d6sv",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3125,7 +3097,7 @@
               }
             },
             {
-              "id": "94f6ucs",
+              "id": "c4l3a43",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3178,7 +3150,7 @@
       "isInner": false
     },
     {
-      "id": "lwv5h2f",
+      "id": "sx2l6b0",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3192,7 +3164,7 @@
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
         "flex_wrap": "nowrap",
-        "flex_wrap_tablet": "nowrap",
+        "flex_wrap_tablet": "wrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -3242,11 +3214,12 @@
         },
         "background_background": "classic",
         "background_color": "#F8FAFC",
-        "_element_id": "testimonials"
+        "_element_id": "testimonials",
+        "flex_justify_content_tablet": "space-between"
       },
       "elements": [
         {
-          "id": "tsdyj2b",
+          "id": "f137rs6",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3258,7 +3231,7 @@
             },
             "width_tablet": {
               "unit": "%",
-              "size": 100,
+              "size": 48,
               "sizes": []
             },
             "width_mobile": {
@@ -3332,7 +3305,7 @@
           },
           "elements": [
             {
-              "id": "x3thmlk",
+              "id": "yrdp5k2",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -3351,7 +3324,7 @@
               }
             },
             {
-              "id": "70y7zv2",
+              "id": "vozdmid",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3387,7 +3360,7 @@
               }
             },
             {
-              "id": "6o6543m",
+              "id": "ri902q7",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3423,14 +3396,14 @@
               },
               "elements": [
                 {
-                  "id": "ra3znt2",
+                  "id": "b36yz3u",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
                     "content_width": "full",
                     "width": {
                       "unit": "%",
-                      "size": 18,
+                      "size": 44,
                       "sizes": []
                     },
                     "width_tablet": {
@@ -3473,7 +3446,7 @@
                   },
                   "elements": [
                     {
-                      "id": "gnd5956",
+                      "id": "zpri60i",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -3503,7 +3476,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "akhyigz",
+                  "id": "x3ww60r",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3553,7 +3526,7 @@
                   },
                   "elements": [
                     {
-                      "id": "wqgndj5",
+                      "id": "9yhl0tg",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -3589,7 +3562,7 @@
                       }
                     },
                     {
-                      "id": "6ji5kvk",
+                      "id": "3xaeomz",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -3632,7 +3605,7 @@
           "isInner": true
         },
         {
-          "id": "oh27g2j",
+          "id": "c5fs82p",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3644,7 +3617,7 @@
             },
             "width_tablet": {
               "unit": "%",
-              "size": 100,
+              "size": 48,
               "sizes": []
             },
             "width_mobile": {
@@ -3718,7 +3691,7 @@
           },
           "elements": [
             {
-              "id": "83dy4wj",
+              "id": "c7zsh8g",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -3737,7 +3710,7 @@
               }
             },
             {
-              "id": "t3dg01z",
+              "id": "1663n2v",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3778,7 +3751,7 @@
               }
             },
             {
-              "id": "og4cv74",
+              "id": "ivdp3fv",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3814,14 +3787,14 @@
               },
               "elements": [
                 {
-                  "id": "mubc002",
+                  "id": "ec0tmmc",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
                     "content_width": "full",
                     "width": {
                       "unit": "%",
-                      "size": 18,
+                      "size": 44,
                       "sizes": []
                     },
                     "width_tablet": {
@@ -3864,7 +3837,7 @@
                   },
                   "elements": [
                     {
-                      "id": "2kloo4m",
+                      "id": "0xw4ptu",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -3894,7 +3867,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "5v8vt84",
+                  "id": "oxcs840",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3944,7 +3917,7 @@
                   },
                   "elements": [
                     {
-                      "id": "ag29yfy",
+                      "id": "jva55nh",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -3980,7 +3953,7 @@
                       }
                     },
                     {
-                      "id": "4yo7uh5",
+                      "id": "u9yp4gd",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -4023,7 +3996,7 @@
           "isInner": true
         },
         {
-          "id": "5jzzhm6",
+          "id": "0k8y6vc",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4109,7 +4082,7 @@
           },
           "elements": [
             {
-              "id": "1tz5vd4",
+              "id": "zqsy96y",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -4128,7 +4101,7 @@
               }
             },
             {
-              "id": "xuqlznl",
+              "id": "11udxgy",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4169,7 +4142,7 @@
               }
             },
             {
-              "id": "0mlwbb1",
+              "id": "8yp7mrm",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -4205,14 +4178,14 @@
               },
               "elements": [
                 {
-                  "id": "w5txvj9",
+                  "id": "twjetu0",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
                     "content_width": "full",
                     "width": {
                       "unit": "%",
-                      "size": 18,
+                      "size": 44,
                       "sizes": []
                     },
                     "width_tablet": {
@@ -4255,7 +4228,7 @@
                   },
                   "elements": [
                     {
-                      "id": "9k7sqdx",
+                      "id": "6e0ru1x",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -4285,7 +4258,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "mxit42g",
+                  "id": "r4oo64r",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -4335,7 +4308,7 @@
                   },
                   "elements": [
                     {
-                      "id": "ewo0ttj",
+                      "id": "e9v10nb",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -4371,7 +4344,7 @@
                       }
                     },
                     {
-                      "id": "fsr1l3i",
+                      "id": "5eoc67l",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -4417,7 +4390,7 @@
       "isInner": false
     },
     {
-      "id": "lc3s68a",
+      "id": "9a04uan",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4454,7 +4427,7 @@
           "unit": "px",
           "top": "50",
           "right": "16",
-          "bottom": "50",
+          "bottom": "10",
           "left": "16",
           "isLinked": false
         },
@@ -4485,7 +4458,7 @@
       },
       "elements": [
         {
-          "id": "o8h7mpj",
+          "id": "aog9yaa",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4535,7 +4508,7 @@
           },
           "elements": [
             {
-              "id": "hj3sjzc",
+              "id": "vgg89ip",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4571,7 +4544,7 @@
               }
             },
             {
-              "id": "wpsu9b5",
+              "id": "i3tdcii",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4618,7 +4591,7 @@
               }
             },
             {
-              "id": "siizmd7",
+              "id": "fkx109v",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4665,7 +4638,7 @@
       "isInner": false
     },
     {
-      "id": "rw08hpf",
+      "id": "xu7e262",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4700,10 +4673,10 @@
         },
         "padding_mobile": {
           "unit": "px",
-          "top": "50",
-          "right": "16",
+          "top": "0",
+          "right": "10",
           "bottom": "50",
-          "left": "16",
+          "left": "10",
           "isLinked": false
         },
         "gap": {
@@ -4732,7 +4705,7 @@
       },
       "elements": [
         {
-          "id": "z4dtrz7",
+          "id": "vwy64i5",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4782,28 +4755,28 @@
           },
           "elements": [
             {
-              "id": "twbtfg4",
+              "id": "3yyxe6y",
               "elType": "widget",
               "widgetType": "accordion",
               "settings": {
                 "tabs": [
                   {
-                    "_id": "29qdgkn",
+                    "_id": "0i9kw14",
                     "tab_title": "How much does a project cost?",
                     "tab_content": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>"
                   },
                   {
-                    "_id": "fjq4h37",
+                    "_id": "bsoly9d",
                     "tab_title": "How long does it take to launch?",
                     "tab_content": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>"
                   },
                   {
-                    "_id": "sf3i7j7",
+                    "_id": "r7bvwpg",
                     "tab_title": "Do you work with existing brands?",
                     "tab_content": "<p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p>"
                   },
                   {
-                    "_id": "4277yzc",
+                    "_id": "vg8ix9k",
                     "tab_title": "What happens after launch?",
                     "tab_content": "<p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p>"
                   }
@@ -4858,7 +4831,7 @@
       "isInner": false
     },
     {
-      "id": "7q2t14d",
+      "id": "yqojsyq",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4924,7 +4897,7 @@
       },
       "elements": [
         {
-          "id": "mov70ad",
+          "id": "ujbuqji",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -5001,7 +4974,7 @@
           },
           "elements": [
             {
-              "id": "qgcxy57",
+              "id": "q4k4gri",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -5048,7 +5021,7 @@
               }
             },
             {
-              "id": "4trucuf",
+              "id": "quz3453",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -5089,7 +5062,7 @@
               }
             },
             {
-              "id": "n1h1scd",
+              "id": "3dmp6v3",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -5122,6 +5095,8 @@
                   "left": "36",
                   "isLinked": false
                 },
+                "align_mobile": "justify",
+                "_element_width_mobile": "inherit",
                 "typography_typography": "custom",
                 "typography_font_family": "Inter",
                 "typography_font_size": {
