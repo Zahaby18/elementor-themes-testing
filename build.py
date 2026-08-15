@@ -357,14 +357,19 @@ def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0):
              text(f"<p>{job_}</p>", MUTED, "left", 13, "400", 1.5)], 60),
         col([img(avatar, name_, 100, 50)], 40),
     ], justify="flex-end", align="center", gap=12)
+    qextra = {}
+    if anim:
+        qextra["_animation"] = anim
+        if anim_delay:
+            qextra["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     els = [
         icon_widget("fas fa-quote-left", "#E2E8F0", 28, "left"),
         spacer(14, 10),
-        text(f"<p><em>{content_}</em></p>", BODY, "left", 15, "400", 1.75),
+        text(f"<p><em>{content_}</em></p>", BODY, "left", 15, "400", 1.75, extra=qextra),
         spacer(18, 12),
         person,
     ]
-    return col(els, 33.3333, settings=card_settings, anim=anim, anim_delay=anim_delay)
+    return col(els, 33.3333, settings=card_settings)
 
 def accordion(items, anim=None, anim_delay=0):
     tabs = [{"_id": eid(), "tab_title": t, "tab_content": f"<p>{c}</p>"} for t, c in items]
@@ -400,7 +405,7 @@ def img(url, alt="", width=100, radius=12, shadow_=None, align="center", anim=No
         "image_size": "full",
         "align": align,
         "width": {"unit": "%", "size": width, "sizes": []},
-        "border_radius": dim(radius, radius, radius, radius, True),
+        "image_border_radius": dim(radius, radius, radius, radius, True),
     }
     if anim:
         s["_animation"] = anim
