@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "1noka40",
+      "id": "n9r4iq7",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -14,7 +14,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -88,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "m5o5swh",
+          "id": "hvbcct2",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -113,7 +114,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -138,7 +139,7 @@
           },
           "elements": [
             {
-              "id": "2cwg7xt",
+              "id": "u6b8oxs",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -180,11 +181,12 @@
                   "unit": "px",
                   "size": 32,
                   "sizes": []
-                }
+                },
+                "_animation": "fadeInLeft"
               }
             },
             {
-              "id": "b2pnbu9",
+              "id": "2unw1j5",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -201,7 +203,7 @@
               }
             },
             {
-              "id": "92bl314",
+              "id": "96bfx07",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -232,11 +234,17 @@
                   "unit": "px",
                   "size": 0,
                   "sizes": []
+                },
+                "_animation": "fadeInLeft",
+                "_animation_delay": {
+                  "unit": "px",
+                  "size": 120,
+                  "sizes": []
                 }
               }
             },
             {
-              "id": "ziy1jnu",
+              "id": "0s02wp9",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -253,7 +261,7 @@
               }
             },
             {
-              "id": "u8lddfp",
+              "id": "zrxh26d",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -262,7 +270,7 @@
                 "flex_direction": "row",
                 "flex_direction_tablet": "row",
                 "flex_direction_mobile": "column",
-                "flex_wrap": "wrap",
+                "flex_wrap": "nowrap",
                 "flex_justify_content": "flex-start",
                 "flex_align_items": "center",
                 "gap": {
@@ -289,7 +297,7 @@
               },
               "elements": [
                 {
-                  "id": "1of3cca",
+                  "id": "dpj6bli",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -314,7 +322,7 @@
                     "flex_direction_mobile": "column",
                     "flex_wrap": "wrap",
                     "flex_justify_content": "center",
-                    "flex_align_items": "stretch",
+                    "flex_align_items": "center",
                     "gap": {
                       "unit": "px",
                       "column": 16,
@@ -339,7 +347,7 @@
                   },
                   "elements": [
                     {
-                      "id": "kkog05m",
+                      "id": "vcfsjzf",
                       "elType": "widget",
                       "widgetType": "button",
                       "settings": {
@@ -402,7 +410,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "mggse3t",
+                  "id": "ajrb6ry",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -427,7 +435,7 @@
                     "flex_direction_mobile": "column",
                     "flex_wrap": "wrap",
                     "flex_justify_content": "center",
-                    "flex_align_items": "stretch",
+                    "flex_align_items": "center",
                     "gap": {
                       "unit": "px",
                       "column": 16,
@@ -452,7 +460,7 @@
                   },
                   "elements": [
                     {
-                      "id": "egxot2p",
+                      "id": "ktrnw9z",
                       "elType": "widget",
                       "widgetType": "button",
                       "settings": {
@@ -530,7 +538,7 @@
           "isInner": true
         },
         {
-          "id": "wa2ppmd",
+          "id": "ueogtpd",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -555,7 +563,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -580,7 +588,7 @@
           },
           "elements": [
             {
-              "id": "inmu50k",
+              "id": "anxqf15",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -604,6 +612,12 @@
                   "left": "16",
                   "isLinked": true
                 },
+                "_animation": "fadeIn",
+                "_animation_delay": {
+                  "unit": "px",
+                  "size": 200,
+                  "sizes": []
+                },
                 "box_shadow_box_shadow_type": "yes",
                 "box_shadow_box_shadow": {
                   "horizontal": 0,
@@ -621,7 +635,7 @@
       "isInner": false
     },
     {
-      "id": "pt369pi",
+      "id": "arudk5a",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -634,7 +648,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -687,7 +702,7 @@
       },
       "elements": [
         {
-          "id": "b5uv6lp",
+          "id": "g285fpy",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -737,7 +752,7 @@
           },
           "elements": [
             {
-              "id": "tcrcftg",
+              "id": "zfl2udy",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -778,7 +793,7 @@
       "isInner": false
     },
     {
-      "id": "vyl3wgw",
+      "id": "m0r75w6",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -791,7 +806,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -845,7 +861,7 @@
       },
       "elements": [
         {
-          "id": "qju9nqz",
+          "id": "dljiy67",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -895,7 +911,7 @@
           },
           "elements": [
             {
-              "id": "eg2mm3j",
+              "id": "u9nru6q",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -931,7 +947,7 @@
               }
             },
             {
-              "id": "td9m2w7",
+              "id": "oqn0bgs",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -978,7 +994,7 @@
               }
             },
             {
-              "id": "2o0xusw",
+              "id": "uo1446c",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1025,7 +1041,7 @@
       "isInner": false
     },
     {
-      "id": "g9bwsc6",
+      "id": "ybxgp2o",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1038,7 +1054,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -1091,7 +1108,7 @@
       },
       "elements": [
         {
-          "id": "7qdbku3",
+          "id": "j6r8e8m",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1168,7 +1185,7 @@
           },
           "elements": [
             {
-              "id": "w5t3z0v",
+              "id": "y36o79c",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1179,13 +1196,14 @@
                 "title_text": "Digital Strategy",
                 "description_text": "Market research, positioning, and roadmaps that turn your business goals into a clear plan of action.",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -1226,7 +1244,7 @@
           "isInner": true
         },
         {
-          "id": "64s31se",
+          "id": "hewb328",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1308,7 +1326,7 @@
           },
           "elements": [
             {
-              "id": "1buewme",
+              "id": "ob9cjt6",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1319,13 +1337,14 @@
                 "title_text": "UI/UX Design",
                 "description_text": "Research-driven interfaces that look sharp and convert — web, mobile, and product design.",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -1366,7 +1385,7 @@
           "isInner": true
         },
         {
-          "id": "9idwh2l",
+          "id": "a5t1hm5",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1448,7 +1467,7 @@
           },
           "elements": [
             {
-              "id": "8maucbl",
+              "id": "cic420j",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1459,13 +1478,14 @@
                 "title_text": "Web Development",
                 "description_text": "Fast, secure, and scalable websites and web apps built with modern technology.",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -1509,7 +1529,7 @@
       "isInner": false
     },
     {
-      "id": "5c2xxaz",
+      "id": "bvc8wt8",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1522,7 +1542,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -1575,7 +1596,7 @@
       },
       "elements": [
         {
-          "id": "4nl6vri",
+          "id": "1xqgc4k",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1652,7 +1673,7 @@
           },
           "elements": [
             {
-              "id": "ctmckvq",
+              "id": "swxrmt1",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1663,13 +1684,14 @@
                 "title_text": "SEO & Growth",
                 "description_text": "Technical SEO, content strategy, and performance marketing that compound over time.",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -1710,7 +1732,7 @@
           "isInner": true
         },
         {
-          "id": "mgvucam",
+          "id": "i8djady",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1792,7 +1814,7 @@
           },
           "elements": [
             {
-              "id": "3ktycd8",
+              "id": "oddu6fl",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1803,13 +1825,14 @@
                 "title_text": "Brand Identity",
                 "description_text": "Logos, guidelines, and visual systems that make your brand impossible to ignore.",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -1850,7 +1873,7 @@
           "isInner": true
         },
         {
-          "id": "kel9e2p",
+          "id": "cw8amdf",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1932,7 +1955,7 @@
           },
           "elements": [
             {
-              "id": "8n07lb8",
+              "id": "uz4rdi7",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1943,13 +1966,14 @@
                 "title_text": "Content & Social",
                 "description_text": "Editorial and social content that builds authority and keeps your audience engaged.",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -1993,7 +2017,7 @@
       "isInner": false
     },
     {
-      "id": "itqioii",
+      "id": "cvdgb3z",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2006,7 +2030,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -2059,7 +2084,7 @@
       },
       "elements": [
         {
-          "id": "nen2sfq",
+          "id": "7qebnmt",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2084,7 +2109,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -2109,7 +2134,7 @@
           },
           "elements": [
             {
-              "id": "llzyus0",
+              "id": "561j5v0",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -2133,6 +2158,7 @@
                   "left": "16",
                   "isLinked": true
                 },
+                "_animation": "fadeIn",
                 "box_shadow_box_shadow_type": "yes",
                 "box_shadow_box_shadow": {
                   "horizontal": 0,
@@ -2147,7 +2173,7 @@
           "isInner": true
         },
         {
-          "id": "euok9ls",
+          "id": "tfanpgg",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2172,7 +2198,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -2197,7 +2223,7 @@
           },
           "elements": [
             {
-              "id": "esqb0uh",
+              "id": "xgl19mk",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2233,7 +2259,7 @@
               }
             },
             {
-              "id": "z42fslk",
+              "id": "1a7psbh",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2250,7 +2276,7 @@
               }
             },
             {
-              "id": "recxwne",
+              "id": "wtxb5cu",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2292,11 +2318,12 @@
                   "unit": "px",
                   "size": 24,
                   "sizes": []
-                }
+                },
+                "_animation": "fadeInLeft"
               }
             },
             {
-              "id": "ubhrut6",
+              "id": "x3tg7hr",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2313,7 +2340,7 @@
               }
             },
             {
-              "id": "awyntf3",
+              "id": "9yxo3vb",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -2344,11 +2371,17 @@
                   "unit": "px",
                   "size": 0,
                   "sizes": []
+                },
+                "_animation": "fadeInLeft",
+                "_animation_delay": {
+                  "unit": "px",
+                  "size": 120,
+                  "sizes": []
                 }
               }
             },
             {
-              "id": "h8ktsfx",
+              "id": "pn6mszf",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2365,13 +2398,13 @@
               }
             },
             {
-              "id": "mnrnu9b",
+              "id": "pyyxq61",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "3nc9d9r",
+                    "_id": "u2t0j0s",
                     "text": "Senior talent on every project",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2385,7 +2418,7 @@
                     }
                   },
                   {
-                    "_id": "49a9bik",
+                    "_id": "fcbo8sk",
                     "text": "Transparent pricing, no surprises",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2399,7 +2432,7 @@
                     }
                   },
                   {
-                    "_id": "82bhyzl",
+                    "_id": "dq0pcnp",
                     "text": "Launch in weeks, not months",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2436,7 +2469,7 @@
               }
             },
             {
-              "id": "wmkhkik",
+              "id": "cy2q3kd",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2453,7 +2486,7 @@
               }
             },
             {
-              "id": "lrrasft",
+              "id": "pz2wwqg",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -2519,7 +2552,7 @@
       "isInner": false
     },
     {
-      "id": "hbpetfb",
+      "id": "lhpg7e0",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2532,7 +2565,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -2592,7 +2626,7 @@
       },
       "elements": [
         {
-          "id": "9ea9af4",
+          "id": "4dd9xiz",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2642,7 +2676,7 @@
           },
           "elements": [
             {
-              "id": "p08s41a",
+              "id": "yvh6ist",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2674,7 +2708,7 @@
           "isInner": true
         },
         {
-          "id": "5sbsg3f",
+          "id": "3x00kjy",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2724,7 +2758,7 @@
           },
           "elements": [
             {
-              "id": "mmvfixn",
+              "id": "jmoyatr",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2756,7 +2790,7 @@
           "isInner": true
         },
         {
-          "id": "1p5wx1z",
+          "id": "l1q8nbi",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2806,7 +2840,7 @@
           },
           "elements": [
             {
-              "id": "d0mc0du",
+              "id": "03b4l2c",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2838,7 +2872,7 @@
           "isInner": true
         },
         {
-          "id": "i5i2b4t",
+          "id": "t3bj03n",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2888,7 +2922,7 @@
           },
           "elements": [
             {
-              "id": "gcxj43k",
+              "id": "d7uxanp",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2923,7 +2957,7 @@
       "isInner": false
     },
     {
-      "id": "kvxrrdv",
+      "id": "h75ast8",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2936,7 +2970,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -2989,7 +3024,7 @@
       },
       "elements": [
         {
-          "id": "2qk0evz",
+          "id": "bwi2mhi",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3039,7 +3074,7 @@
           },
           "elements": [
             {
-              "id": "o6nikk1",
+              "id": "in88ob6",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3075,7 +3110,7 @@
               }
             },
             {
-              "id": "2ljl70o",
+              "id": "soe6f9p",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3128,7 +3163,7 @@
       "isInner": false
     },
     {
-      "id": "mh6724c",
+      "id": "pwdnuzo",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3141,7 +3176,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -3195,7 +3231,7 @@
       },
       "elements": [
         {
-          "id": "wt4c7t5",
+          "id": "j0a9mwe",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3246,7 +3282,7 @@
           },
           "elements": [
             {
-              "id": "8fvthmw",
+              "id": "s9p9ety",
               "elType": "widget",
               "widgetType": "testimonial",
               "settings": {
@@ -3295,7 +3331,7 @@
           "isInner": true
         },
         {
-          "id": "svae9yk",
+          "id": "786o47o",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3351,7 +3387,7 @@
           },
           "elements": [
             {
-              "id": "rvq9f8o",
+              "id": "evrxrsz",
               "elType": "widget",
               "widgetType": "testimonial",
               "settings": {
@@ -3400,7 +3436,7 @@
           "isInner": true
         },
         {
-          "id": "5zjx5t7",
+          "id": "9ohkvsg",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3456,7 +3492,7 @@
           },
           "elements": [
             {
-              "id": "hqjl9py",
+              "id": "ukbtvle",
               "elType": "widget",
               "widgetType": "testimonial",
               "settings": {
@@ -3508,7 +3544,7 @@
       "isInner": false
     },
     {
-      "id": "3mh7iui",
+      "id": "ecftg04",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3521,7 +3557,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -3575,7 +3612,7 @@
       },
       "elements": [
         {
-          "id": "ccntbk5",
+          "id": "q3oxg7w",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3625,7 +3662,7 @@
           },
           "elements": [
             {
-              "id": "l6w779s",
+              "id": "3bc9rar",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3661,7 +3698,7 @@
               }
             },
             {
-              "id": "9rntpx2",
+              "id": "g3ynad9",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3708,7 +3745,7 @@
               }
             },
             {
-              "id": "s93s3zt",
+              "id": "tltvsau",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3755,7 +3792,7 @@
       "isInner": false
     },
     {
-      "id": "i1m1n6u",
+      "id": "zmk9ssx",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3768,7 +3805,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -3821,7 +3859,7 @@
       },
       "elements": [
         {
-          "id": "8r3x2ma",
+          "id": "0xxtzt1",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3872,28 +3910,28 @@
           },
           "elements": [
             {
-              "id": "2opeu3l",
+              "id": "l3qgdte",
               "elType": "widget",
               "widgetType": "accordion",
               "settings": {
                 "tabs": [
                   {
-                    "_id": "2g3y3lq",
+                    "_id": "0e23alw",
                     "tab_title": "How much does a project cost?",
                     "tab_content": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>"
                   },
                   {
-                    "_id": "r5ni37x",
+                    "_id": "c4htr8r",
                     "tab_title": "How long does it take to launch?",
                     "tab_content": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>"
                   },
                   {
-                    "_id": "b6pbwrf",
+                    "_id": "54mokwv",
                     "tab_title": "Do you work with existing brands?",
                     "tab_content": "<p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p>"
                   },
                   {
-                    "_id": "grj93cv",
+                    "_id": "foumuha",
                     "tab_title": "What happens after launch?",
                     "tab_content": "<p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p>"
                   }
@@ -3947,7 +3985,7 @@
       "isInner": false
     },
     {
-      "id": "hf5rbwb",
+      "id": "i0v3w0g",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3960,7 +3998,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -4029,7 +4068,7 @@
       },
       "elements": [
         {
-          "id": "y98o25l",
+          "id": "3qnl7pz",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4054,7 +4093,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -4079,7 +4118,7 @@
           },
           "elements": [
             {
-              "id": "2yjwk7n",
+              "id": "xefngna",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4125,7 +4164,7 @@
               }
             },
             {
-              "id": "w0r42em",
+              "id": "0ke4gfl",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -4142,7 +4181,7 @@
               }
             },
             {
-              "id": "fc3slmv",
+              "id": "bsnpz1n",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4177,7 +4216,7 @@
               }
             },
             {
-              "id": "kn0wzm1",
+              "id": "nkgwnua",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -4194,7 +4233,7 @@
               }
             },
             {
-              "id": "j01h3jw",
+              "id": "f1kwsx5",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

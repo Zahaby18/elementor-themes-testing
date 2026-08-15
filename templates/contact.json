@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "nwsa2tw",
+      "id": "sk1ezdj",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -14,7 +14,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -88,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "07h4zlt",
+          "id": "0316f68",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -138,7 +139,7 @@
           },
           "elements": [
             {
-              "id": "auvyzkn",
+              "id": "zywcutk",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -184,7 +185,7 @@
               }
             },
             {
-              "id": "9x6qx3u",
+              "id": "b5ja55o",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -201,7 +202,7 @@
               }
             },
             {
-              "id": "t66l2c2",
+              "id": "b0gvm9m",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -242,7 +243,7 @@
       "isInner": false
     },
     {
-      "id": "pqkyamh",
+      "id": "s73swuf",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -255,7 +256,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -308,7 +310,7 @@
       },
       "elements": [
         {
-          "id": "668lbui",
+          "id": "3mr8v3j",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -358,7 +360,7 @@
           },
           "elements": [
             {
-              "id": "qpzu9w2",
+              "id": "hy404vp",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -369,13 +371,14 @@
                 "title_text": "Visit Us",
                 "description_text": "Jl. Sudirman Kav. 52-53, Jakarta Selatan, Indonesia",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -410,7 +413,7 @@
           "isInner": true
         },
         {
-          "id": "9olooc9",
+          "id": "f9di8h2",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -460,7 +463,7 @@
           },
           "elements": [
             {
-              "id": "klsxxzr",
+              "id": "skh3tfg",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -471,13 +474,14 @@
                 "title_text": "Email Us",
                 "description_text": "hello@agenzy.studio",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -512,7 +516,7 @@
           "isInner": true
         },
         {
-          "id": "yu5a1l3",
+          "id": "ahnc061",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -562,7 +566,7 @@
           },
           "elements": [
             {
-              "id": "w5guy6h",
+              "id": "tp79f8n",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -573,13 +577,14 @@
                 "title_text": "Call Us",
                 "description_text": "+62 812 3456 7890",
                 "position": "top",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -617,7 +622,7 @@
       "isInner": false
     },
     {
-      "id": "a8emmfs",
+      "id": "mtrp7pz",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -630,7 +635,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -683,7 +689,7 @@
       },
       "elements": [
         {
-          "id": "1xws4iw",
+          "id": "xb4icom",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -708,7 +714,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -733,7 +739,7 @@
           },
           "elements": [
             {
-              "id": "1jfdbnd",
+              "id": "r9p7v8l",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -769,7 +775,7 @@
               }
             },
             {
-              "id": "ou9pw9y",
+              "id": "af5c8hc",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -786,7 +792,7 @@
               }
             },
             {
-              "id": "emf5ojb",
+              "id": "9jaince",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -832,7 +838,7 @@
               }
             },
             {
-              "id": "i9a37d1",
+              "id": "gtcoam6",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -849,7 +855,7 @@
               }
             },
             {
-              "id": "5w5h8wh",
+              "id": "fw6ojm4",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -884,7 +890,7 @@
               }
             },
             {
-              "id": "0otszx8",
+              "id": "e3fy8yz",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -901,13 +907,13 @@
               }
             },
             {
-              "id": "dfo8e4g",
+              "id": "701u13x",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "8d7601u",
+                    "_id": "wsgj75z",
                     "text": "hello@agenzy.studio",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -921,7 +927,7 @@
                     }
                   },
                   {
-                    "_id": "aqesxn4",
+                    "_id": "vslm55e",
                     "text": "+62 812 3456 7890",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -935,7 +941,7 @@
                     }
                   },
                   {
-                    "_id": "6ybavg9",
+                    "_id": "n1h9irf",
                     "text": "Jl. Sudirman Kav. 52-53, Jakarta",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -972,7 +978,7 @@
               }
             },
             {
-              "id": "x6n6axw",
+              "id": "6ahjrgf",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -989,7 +995,7 @@
               }
             },
             {
-              "id": "07s6zvm",
+              "id": "ap7zfwn",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -1052,7 +1058,7 @@
           "isInner": true
         },
         {
-          "id": "79t05wz",
+          "id": "0ztgm72",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1077,7 +1083,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -1102,7 +1108,7 @@
           },
           "elements": [
             {
-              "id": "339n2zf",
+              "id": "gm0tuw2",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1138,7 +1144,7 @@
               }
             },
             {
-              "id": "4pkvkpk",
+              "id": "vgl9n2y",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1155,7 +1161,7 @@
               }
             },
             {
-              "id": "oftmavd",
+              "id": "mca42mq",
               "elType": "widget",
               "widgetType": "html",
               "settings": {
@@ -1169,7 +1175,7 @@
       "isInner": false
     },
     {
-      "id": "aze869h",
+      "id": "k3ob9zf",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1182,7 +1188,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -1242,7 +1249,7 @@
       },
       "elements": [
         {
-          "id": "aogany0",
+          "id": "33jzjuf",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1267,7 +1274,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -1292,7 +1299,7 @@
           },
           "elements": [
             {
-              "id": "lmutbw8",
+              "id": "u2idnt3",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -1338,7 +1345,7 @@
               }
             },
             {
-              "id": "71jchh4",
+              "id": "hn458bc",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1355,7 +1362,7 @@
               }
             },
             {
-              "id": "9q1tf81",
+              "id": "qcqqk45",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -1390,7 +1397,7 @@
               }
             },
             {
-              "id": "m3htt3i",
+              "id": "2ib6hhz",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -1407,7 +1414,7 @@
               }
             },
             {
-              "id": "jpi94g0",
+              "id": "qls404j",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

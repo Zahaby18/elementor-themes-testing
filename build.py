@@ -88,7 +88,8 @@ def container(elements, settings=None, bg=None, gradient=None, pad_top=100, pad_
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": dim(pad_top, 20, pad_bottom, 20, False),
@@ -155,7 +156,7 @@ def col(elements, width=50, settings=None, center=False, anim=None, anim_delay=0
         "flex_direction_mobile": "column",
         "flex_wrap": "wrap",
         "flex_justify_content": "center" if center else "flex-start",
-        "flex_align_items": "stretch",
+        "flex_align_items": "center" if center else "stretch",
         **flex_gap(16, 14, 12),
     }
     if anim:
@@ -184,7 +185,7 @@ def btn_row(buttons):
     inner = {"id": eid(), "elType": "container", "isInner": True,
              "settings": {"container_type": "flex", "content_width": "full",
                           "flex_direction": "row", "flex_direction_tablet": "row",
-                          "flex_direction_mobile": "column", "flex_wrap": "wrap",
+                          "flex_direction_mobile": "column", "flex_wrap": "nowrap",
                           "flex_justify_content": "flex-start", "flex_align_items": "center",
                           **flex_gap(12, 12, 10)}, "elements": cols}
     return inner
@@ -247,9 +248,10 @@ def icon_box(icon, title_, desc_, link=None, icon_color=ACCENT, position="top", 
         "title_text": title_,
         "description_text": desc_,
         "position": position,
-        "icon_color": icon_color,
+        "view": "default",
+        "primary_color": icon_color,
+        "hover_primary_color": ACCENT2,
         "icon_size": size(32),
-        "hover_animation": "grow",
         "title_color": INK,
         "description_color": BODY,
         "title_typography_typography": "custom",
@@ -334,7 +336,7 @@ def accordion(items):
         "content_background_color": WHITE,
     })
 
-def img(url, alt="", width=100, radius=12, shadow_=None, align="center"):
+def img(url, alt="", width=100, radius=12, shadow_=None, align="center", anim=None, anim_delay=0):
     s = {
         "image": {"url": url, "id": 0, "alt": alt},
         "image_size": "full",
@@ -342,6 +344,10 @@ def img(url, alt="", width=100, radius=12, shadow_=None, align="center"):
         "width": {"unit": "%", "size": width, "sizes": []},
         "border_radius": dim(radius, radius, radius, radius, True),
     }
+    if anim:
+        s["_animation"] = anim
+        if anim_delay:
+            s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     if shadow_:
         s["box_shadow_box_shadow_type"] = "yes"
         s["box_shadow_box_shadow"] = shadow_
@@ -454,14 +460,15 @@ def home():
     els.append(section([
         col([
             heading("We Build Digital Products That Grow Your Business", "h1", WHITE, "left", 52, "800", 1.15,
-                    tablet=40, mobile=32),
+                    tablet=40, mobile=32, extra={"_animation": "fadeInLeft"}),
             spacer(16, 12),
             text("<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>",
-                 "#CBD5E1", "left", 18, "400", 1.7),
+                 "#CBD5E1", "left", 18, "400", 1.7,
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             spacer(24, 16),
             btn_row([btn("Explore Services", "#services", "left"), ghost_btn("Start a Project", "#contact", "left")]),
         ], 55, center=True),
-        col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"))], 45, center=True),
+        col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"), anim="fadeIn", anim_delay=200)], 45, center=True),
     ], bg=None, pad_top=120, pad_bottom=120, overlay=dark_hero_bg(U["team"], 0.9)))
 
     # TRUST BAR
@@ -496,12 +503,14 @@ def home():
 
     # ABOUT PREVIEW
     els.append(section([
-        col([img(U["collab"], "Our team collaborating", 100, 16, shadow())], 50, center=True),
+        col([img(U["collab"], "Our team collaborating", 100, 16, shadow(), anim="fadeIn")], 50, center=True),
         col([
             eyebrow("About Us"), spacer(12, 8),
-            heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24),
+            heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
+                    extra={"_animation": "fadeInLeft"}),
             spacer(12, 8),
-            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>"),
+            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>",
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             spacer(16, 10),
             icon_list(["Senior talent on every project", "Transparent pricing, no surprises", "Launch in weeks, not months"]),
             spacer(24, 16),
@@ -568,13 +577,15 @@ def about():
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["workshop"], 0.85)))
 
     els.append(section([
-        col([img(U["meeting"], "Agenzy team in a meeting", 100, 16, shadow())], 50, center=True),
+        col([img(U["meeting"], "Agenzy team in a meeting", 100, 16, shadow(), anim="fadeIn")], 50, center=True),
         col([
             eyebrow("Our Story"), spacer(12, 8),
-            heading("Started with three laptops and a stubborn belief", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24),
+            heading("Started with three laptops and a stubborn belief", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
+                    extra={"_animation": "fadeInLeft"}),
             spacer(12, 8),
             text("<p>Agenzy began in 2019 when three friends decided freelancing alone wasn't enough — clients deserved a team that could take an idea from whiteboard to world. Today we're a 20-person studio shipping products across three continents.</p>"
-                 "<p>We stay deliberately small. Small enough that every project gets senior attention, big enough to deliver on time, every time.</p>"),
+                 "<p>We stay deliberately small. Small enough that every project gets senior attention, big enough to deliver on time, every time.</p>",
+                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 50, center=True),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
@@ -712,10 +723,14 @@ def portfolio():
         col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands — built for clients who cared about the details."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30))
     els.append(section([
-        col([gallery([U["w1"], U["w2"], U["w3"]])], 100),
+        col([img(U["w1"], "Project 1", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=0),
+        col([img(U["w2"], "Project 2", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=100),
+        col([img(U["w3"], "Project 3", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=30))
     els.append(section([
-        col([gallery([U["w4"], U["w5"], U["w6"]])], 100),
+        col([img(U["w4"], "Project 4", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=0),
+        col([img(U["w5"], "Project 5", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=100),
+        col([img(U["w6"], "Project 6", 100, 12, shadow(), anim="fadeIn")], 33.3333, anim="fadeInUp", anim_delay=200),
     ], bg=WHITE, pad_top=0, pad_bottom=40))
     els.append(section([
         col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15),

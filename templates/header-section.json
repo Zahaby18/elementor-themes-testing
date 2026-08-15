@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "4rjmcqt",
+      "id": "8vcy6ud",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -14,7 +14,8 @@
         "flex_direction": "row",
         "flex_direction_tablet": "row",
         "flex_direction_mobile": "column",
-        "flex_wrap": "wrap",
+        "flex_wrap": "nowrap",
+        "flex_wrap_tablet": "nowrap",
         "flex_justify_content": "flex-start",
         "flex_align_items": "stretch",
         "padding": {
@@ -77,7 +78,7 @@
       },
       "elements": [
         {
-          "id": "nz1qicy",
+          "id": "l7k2p9d",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -102,7 +103,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -127,7 +128,7 @@
           },
           "elements": [
             {
-              "id": "qq2j0sj",
+              "id": "odjeqwi",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -138,13 +139,14 @@
                 "title_text": "Agenzy",
                 "description_text": "",
                 "position": "left",
-                "icon_color": "#4F46E5",
+                "view": "default",
+                "primary_color": "#4F46E5",
+                "hover_primary_color": "#4338CA",
                 "icon_size": {
                   "unit": "px",
                   "size": 32,
                   "sizes": []
                 },
-                "hover_animation": "grow",
                 "title_color": "#0F172A",
                 "description_color": "#475569",
                 "title_typography_typography": "custom",
@@ -179,7 +181,7 @@
           "isInner": true
         },
         {
-          "id": "br8yo3z",
+          "id": "qeyq8fp",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -204,7 +206,7 @@
             "flex_direction_mobile": "column",
             "flex_wrap": "wrap",
             "flex_justify_content": "center",
-            "flex_align_items": "stretch",
+            "flex_align_items": "center",
             "gap": {
               "unit": "px",
               "column": 16,
@@ -229,7 +231,7 @@
           },
           "elements": [
             {
-              "id": "i0yaj3o",
+              "id": "7tnvqqy",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
