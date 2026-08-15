@@ -64,10 +64,12 @@ Kit ini pakai **Elementor Free** + 2 plugin gratis:
 
 ## Demo Content (10 Post)
 
-Repo ini menyertakan `demo-posts.php` — script buat generate **10 post demo + featured image** biar blog grid (`jkit_post_block`) ada kontennya pas testing.
+Dua cara generate **10 post demo + featured image** (buat blog grid `jkit_post_block`):
 
+**Cara gampang (plugin):** upload `agenzy-demo-posts.zip` via **Plugins → Add New → Upload Plugin** → Install → **Activate**. 10 post langsung ke-generate. Setelah itu boleh deactivate & hapus plugin-nya (post tetap ada).
+
+**Cara wp-cli:**
 ```bash
-# dari folder WordPress (via SSH/CloudPanel terminal)
 wp eval-file demo-posts.php
 ```
 
