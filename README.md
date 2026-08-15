@@ -41,20 +41,22 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 
 ## ⚠️ Plugin yang Dibutuhkan (gratis)
 
-Kit ini pakai **Elementor Free** + plugin gratis untuk fitur dinamis:
+Kit ini pakai **Elementor Free** + **Happy Elementor Addons** (free) untuk fitur dinamis.
 
-| Plugin | Buat apa | Status |
-|---|---|---|
-| **Jeg Elementor Kit** (free) | Blog grid (`jkit_post_block`) + nav menu (`jkit_nav_menu`) | ✅ import aman |
-| **Elementor – Header, Footer & Blocks** (free) | Header/footer global | ✅ import aman |
+**Happy Elementor Addons** (1 plugin gratis, nutup semua):
+- **Theme Builder** (free) → single post, archive, header, footer global
+- **Widget dinamis** → `ha-archive-posts` (blog grid), `ha-post-title`, `ha-post-content`, `ha-post-featured-image`, `ha-navigation-menu`, dll.
 
-> ℹ️ **Single post dinamis** butuh **Elementor Pro** (Theme Builder) — nggak ada plugin free yang bisa bikin single post template tanpa masalah (Jeg free cuma widget, Royal bikin import hang). Template `single.json` di kit ini versi demo statis.
+> ✅ Happy Addons **aman** untuk import (nggak hang, beda sama Royal Elementor Addons).
 
-**Cara pakai:**
-1. Install & aktifkan **Jeg Elementor Kit** + **Elementor – Header, Footer & Blocks** (dua-duanya gratis)
-2. Import kit seperti biasa
-3. Header/footer: assign via **Appearance → Elementor Header & Footer**
-4. Menu header: pilih menu di setting widget `jkit_nav_menu`
+**Cara pakai (2 langkah):**
+1. Install & aktifkan **Happy Elementor Addons** (free) → import kit seperti biasa
+2. Bikin template dinamis via **Happy Addons → Theme Builder**:
+   - **Archive** → `ha-archive-posts` (blog grid)
+   - **Single** → `ha-post-title` + `ha-post-featured-image` + `ha-post-content`
+   - **Header/Footer** → assign global
+
+> ℹ️ Halaman di kit (Home/About/Services/Portfolio/Blog/Contact/404) import langsung. Template dinamis (archive/single/header/footer) dibuat via Theme Builder Happy Addons — karena pakai konteks Theme Builder, bukan template page biasa.
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat — gambar demo bakal tetap kebaca dari URL.*
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).

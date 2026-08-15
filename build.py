@@ -937,17 +937,23 @@ def blog():
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
-    # LATEST ARTICLES — Jeg Elementor Kit Post Block (dynamic grid)
+    # LATEST ARTICLES — static demo cards (dynamic archive via Happy Theme Builder)
+    posts = [
+        (U["w1"], "10 Conversion Lessons from 100+ Landing Pages", "We analyzed the patterns that separate high-converting landing pages from the rest. Here's what actually works.", "#"),
+        (U["w2"], "The Design System That Cut Our Build Time in Half", "How we standardized components, tokens, and handoff — and why your team should too.", "#"),
+        (U["w6"], "SEO in 2026: What Still Matters (and What Doesn't)", "Algorithm changes come and go. These fundamentals have survived every update so far.", "#"),
+    ]
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
     els.append(section([
-        col([widget("jkit_post_block", {
-            "sg_content_postblock_type": "grid",
-            "sg_content_column": 3,
-            "sg_content_number_post": 6,
-            "pagination_mode": "loadmore",
-        })], 100),
+        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3], anim="fadeInUp")], 33.3333),
+        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3], anim="fadeInUp", anim_delay=100)], 33.3333),
+        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3], anim="fadeInUp", anim_delay=200)], 33.3333),
+    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(0, 16, 50, 16)))
+    els.append(section([
+        col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, create an Archive template via Happy Addons Theme Builder (free) using the Archive Posts widget.</p>",
+                  MUTED, "center", 14)], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # CTA
@@ -1044,12 +1050,12 @@ def p404():
     return page("404", els)
 
 def header_section():
-    # Header — logo + Jeg nav menu (dynamic)
+    # Header — logo + Happy Addons nav menu
     return {
         "content": [
             section([
                 col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 40, center=True),
-                col([widget("jkit_nav_menu", {"sg_menu_direction": "horizontal"})], 60, center=True),
+                col([widget("ha-navigation-menu", {})], 60, center=True),
             ], bg=WHITE, pad_top=16, pad_bottom=16,
                settings={"border_border": "solid", "border_width": dim(0, 0, 1, 0, False), "border_color": BORDER}),
         ],

@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "njr0dmm",
+      "id": "7nem3n9",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -68,7 +68,7 @@
       },
       "elements": [
         {
-          "id": "ld41an1",
+          "id": "uayay29",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -118,7 +118,7 @@
           },
           "elements": [
             {
-              "id": "shw2swk",
+              "id": "1palko3",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -154,7 +154,7 @@
               }
             },
             {
-              "id": "cnzek7u",
+              "id": "albkyq5",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -189,13 +189,13 @@
               }
             },
             {
-              "id": "lu6hdok",
+              "id": "zw1z5kt",
               "elType": "widget",
               "widgetType": "social-icons",
               "settings": {
                 "social_icon_list": [
                   {
-                    "_id": "to6170g",
+                    "_id": "f2lwfde",
                     "social_icon": {
                       "value": "fab fa-facebook-f",
                       "library": "fa-brands"
@@ -208,7 +208,7 @@
                     }
                   },
                   {
-                    "_id": "s8lw2g8",
+                    "_id": "m3we1iq",
                     "social_icon": {
                       "value": "fab fa-twitter",
                       "library": "fa-brands"
@@ -221,7 +221,7 @@
                     }
                   },
                   {
-                    "_id": "jddninr",
+                    "_id": "uiokfxl",
                     "social_icon": {
                       "value": "fab fa-instagram",
                       "library": "fa-brands"
@@ -234,7 +234,7 @@
                     }
                   },
                   {
-                    "_id": "svlv85p",
+                    "_id": "5dgwqhw",
                     "social_icon": {
                       "value": "fab fa-linkedin-in",
                       "library": "fa-brands"
@@ -269,7 +269,7 @@
           "isInner": true
         },
         {
-          "id": "4w0oela",
+          "id": "78rc5sk",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -319,7 +319,7 @@
           },
           "elements": [
             {
-              "id": "0fbiw32",
+              "id": "v8mqpuy",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -355,13 +355,13 @@
               }
             },
             {
-              "id": "sckyu4e",
+              "id": "xffm2ik",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "hiodbs7",
+                    "_id": "d469boq",
                     "text": "Home",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -375,7 +375,7 @@
                     }
                   },
                   {
-                    "_id": "h1macgt",
+                    "_id": "mjcwwiu",
                     "text": "About",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -389,7 +389,7 @@
                     }
                   },
                   {
-                    "_id": "xbytjx5",
+                    "_id": "086bv94",
                     "text": "Services",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -403,7 +403,7 @@
                     }
                   },
                   {
-                    "_id": "gdx9nwt",
+                    "_id": "djokycy",
                     "text": "Portfolio",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -417,7 +417,7 @@
                     }
                   },
                   {
-                    "_id": "ddu5ao8",
+                    "_id": "qlsy36z",
                     "text": "Blog",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -431,7 +431,7 @@
                     }
                   },
                   {
-                    "_id": "wzh5ilz",
+                    "_id": "deishr6",
                     "text": "Contact",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -471,7 +471,7 @@
           "isInner": true
         },
         {
-          "id": "ymrqt0y",
+          "id": "f3900op",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -521,7 +521,7 @@
           },
           "elements": [
             {
-              "id": "5iwy4k2",
+              "id": "3ij9f28",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -557,13 +557,13 @@
               }
             },
             {
-              "id": "q4jkfjm",
+              "id": "365ndj8",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "bpkqke5",
+                    "_id": "x6oupcs",
                     "text": "hello@agenzy.studio",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -577,7 +577,7 @@
                     }
                   },
                   {
-                    "_id": "5qnpg6e",
+                    "_id": "drj9kcm",
                     "text": "+62 812 3456 7890",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -591,7 +591,7 @@
                     }
                   },
                   {
-                    "_id": "wk3bgr1",
+                    "_id": "f2cwcxn",
                     "text": "Jakarta Selatan, Indonesia",
                     "selected_icon": {
                       "value": "fas fa-check-circle",
@@ -634,7 +634,7 @@
       "isInner": false
     },
     {
-      "id": "5subxla",
+      "id": "8go7fy1",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -701,7 +701,7 @@
       },
       "elements": [
         {
-          "id": "98n4woh",
+          "id": "zkuubpl",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -751,7 +751,7 @@
           },
           "elements": [
             {
-              "id": "l8ijthe",
+              "id": "kzcnv7b",
               "elType": "widget",
               "widgetType": "divider",
               "settings": {
@@ -774,7 +774,7 @@
               }
             },
             {
-              "id": "kwnlf9t",
+              "id": "9s02ex0",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
