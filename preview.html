@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenzy — Homepage Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  :root{
+    --ink:#0F172A; --body:#475569; --muted:#64748B;
+    --accent:#4F46E5; --accent2:#4338CA; --purple:#7C3AED;
+    --light:#F8FAFC; --border:#E8EDF4; --white:#fff;
+    --shadow:0 12px 28px 0 rgba(15,23,42,.12);
+    --shadow-sm:0 8px 20px 0 rgba(15,23,42,.08);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--body);line-height:1.7;background:var(--white);-webkit-font-smoothing:antialiased}
+  .container{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{padding:100px 0}
+  .eyebrow{display:inline-block;color:var(--accent);font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+  h1,h2,h3,h4{color:var(--ink);font-weight:800;line-height:1.2}
+  h1{font-size:52px;letter-spacing:-1px}
+  h2{font-size:38px;letter-spacing:-.5px}
+  .sub{font-size:17px;color:var(--muted);max-width:640px}
+  .center{text-align:center}
+  .center .sub{margin:14px auto 0}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:16px 32px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;transition:all .25s ease;border:none;cursor:pointer}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 10px 24px rgba(79,70,229,.35)}
+  .btn-light{background:#fff;color:var(--ink)}
+  .btn-light:hover{background:#E2E8F0;transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:#fff;border:1px solid #334155}
+  .btn-ghost:hover{background:rgba(255,255,255,.08);border-color:#475569}
+  .row{display:flex;gap:24px}
+  .col{flex:1}
+  /* HERO */
+  .hero{position:relative;background:linear-gradient(135deg,#0F172A 0%,#1E1B4B 100%);color:#fff;padding:120px 0;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:url('https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img11.jpg') center/cover no-repeat;opacity:.18}
+  .hero .container{position:relative;display:flex;gap:56px;align-items:center}
+  .hero-left{flex:1.2}
+  .hero h1{color:#fff;margin-bottom:16px}
+  .hero p{color:#CBD5E1;font-size:18px;margin-bottom:24px;max-width:520px}
+  .hero .btns{display:flex;gap:16px;flex-wrap:wrap}
+  .hero-img{flex:1;border-radius:16px;overflow:hidden;box-shadow:0 30px 60px -15px rgba(0,0,0,.45)}
+  .hero-img img{display:block;width:100%;height:auto}
+  /* TRUST */
+  .trust{background:var(--light);padding:26px 0;text-align:center;color:var(--muted);font-size:15px;font-weight:500}
+  /* CARDS */
+  .cards{display:flex;gap:24px;flex-wrap:wrap}
+  .card{flex:1 1 30%;background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 28px;transition:transform .3s ease,box-shadow .3s ease}
+  .card:hover{transform:translateY(-6px);box-shadow:0 20px 40px 0 rgba(15,23,42,.18)}
+  .card .icon{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--purple));color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  .card h3{font-size:20px;margin-bottom:10px}
+  .card p{font-size:15px}
+  /* SPLIT */
+  .split{display:flex;gap:56px;align-items:center}
+  .split-img{flex:1;border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+  .split-img img{display:block;width:100%}
+  .split-body{flex:1}
+  .check{display:flex;align-items:center;gap:12px;margin-bottom:12px;font-weight:500;color:var(--ink)}
+  .check i{color:var(--accent)}
+  /* STATS */
+  .stats{background:linear-gradient(135deg,#0F172A 0%,#1E1B4B 100%);padding:80px 0;color:#fff}
+  .stats .row{text-align:center}
+  .stats .num{font-size:46px;font-weight:800;color:#A5B4FC}
+  .stats .lbl{color:#CBD5E1;font-size:15px;font-weight:500;margin-top:6px}
+  /* TESTIMONIALS */
+  .bg-light{background:var(--light)}
+  .t-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 28px;text-align:center}
+  .t-card .quote{font-size:15px;margin-bottom:20px}
+  .t-card .person{display:flex;align-items:center;justify-content:center;gap:12px}
+  .t-card .avatar{width:48px;height:48px;border-radius:50%;object-fit:cover}
+  .t-card .name{font-weight:600;color:var(--ink)}
+  .t-card .job{font-size:13px;color:var(--muted)}
+  /* FAQ */
+  .faq-wrap{max-width:880px;margin:0 auto}
+  .faq-item{border:1px solid var(--border);border-radius:10px;margin-bottom:14px;overflow:hidden}
+  .faq-item summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;align-items:center}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary i{color:var(--accent);transition:transform .3s}
+  .faq-item[open] summary i{transform:rotate(45deg)}
+  .faq-item p{padding:0 24px 20px;font-size:15px}
+  /* CTA */
+  .cta{background:linear-gradient(135deg,var(--accent) 0%,var(--purple) 100%);border-radius:24px;padding:80px 40px;text-align:center;color:#fff}
+  .cta h2{color:#fff;margin-bottom:12px}
+  .cta p{color:#CBD5E1;margin-bottom:24px}
+  /* ANIM */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  .reveal-left{opacity:0;transform:translateX(-28px);transition:opacity .7s ease,transform .7s ease}
+  .reveal-left.in{opacity:1;transform:none}
+  @media(max-width:1024px){
+    .hero .container{flex-direction:column}
+    .split{flex-direction:column}
+    .cards .card{flex-basis:100%}
+    h1{font-size:40px}h2{font-size:30px}
+    section{padding:70px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-left">
+      <h1 class="reveal-left in">We Build Digital Products That Grow Your Business</h1>
+      <p class="reveal-left in" style="transition-delay:.12s">Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>
+      <div class="btns reveal-left in" style="transition-delay:.24s">
+        <a class="btn btn-primary" href="#services">Explore Services <i class="fas fa-arrow-right"></i></a>
+        <a class="btn btn-ghost" href="#contact">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero-img reveal in" style="transition-delay:.2s">
+      <img src="https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img10.jpg" alt="Agenzy team">
+    </div>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="trust">Trusted by 50+ startups and growing teams — from Jakarta to Singapore</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container center">
+    <span class="eyebrow reveal">What We Do</span>
+    <h2 class="reveal">Services built to move the needle</h2>
+    <p class="sub reveal" style="transition-delay:.1s">From first idea to ongoing growth — everything your digital presence needs under one roof.</p>
+  </div>
+  <div class="container" style="margin-top:44px">
+    <div class="cards">
+      <div class="card reveal" style="transition-delay:0s"><div class="icon"><i class="fas fa-bullseye"></i></div><h3>Digital Strategy</h3><p>Market research, positioning, and roadmaps that turn your business goals into a clear plan of action.</p></div>
+      <div class="card reveal" style="transition-delay:.1s"><div class="icon"><i class="fas fa-pencil-ruler"></i></div><h3>UI/UX Design</h3><p>Research-driven interfaces that look sharp and convert — web, mobile, and product design.</p></div>
+      <div class="card reveal" style="transition-delay:.2s"><div class="icon"><i class="fas fa-code"></i></div><h3>Web Development</h3><p>Fast, secure, and scalable websites and web apps built with modern technology.</p></div>
+      <div class="card reveal" style="transition-delay:0s"><div class="icon"><i class="fas fa-chart-line"></i></div><h3>SEO & Growth</h3><p>Technical SEO, content strategy, and performance marketing that compound over time.</p></div>
+      <div class="card reveal" style="transition-delay:.1s"><div class="icon"><i class="fas fa-palette"></i></div><h3>Brand Identity</h3><p>Logos, guidelines, and visual systems that make your brand impossible to ignore.</p></div>
+      <div class="card reveal" style="transition-delay:.2s"><div class="icon"><i class="fas fa-hashtag"></i></div><h3>Content & Social</h3><p>Editorial and social content that builds authority and keeps your audience engaged.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section style="background:var(--light)">
+  <div class="container split">
+    <div class="split-img reveal"><img src="https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img12.jpg" alt="Collaboration"></div>
+    <div class="split-body reveal-left" style="transition-delay:.12s">
+      <span class="eyebrow">About Us</span>
+      <h2 style="font-size:36px">A team that treats your product like our own</h2>
+      <p style="margin:14px 0 22px">We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>
+      <div class="check"><i class="fas fa-check-circle"></i> Senior talent on every project</div>
+      <div class="check"><i class="fas fa-check-circle"></i> Transparent pricing, no surprises</div>
+      <div class="check" style="margin-bottom:26px"><i class="fas fa-check-circle"></i> Launch in weeks, not months</div>
+      <a class="btn btn-primary" href="#contact">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container">
+    <div class="row">
+      <div class="col reveal"><div class="num">120+</div><div class="lbl">Projects Delivered</div></div>
+      <div class="col reveal" style="transition-delay:.1s"><div class="num">85+</div><div class="lbl">Happy Clients</div></div>
+      <div class="col reveal" style="transition-delay:.2s"><div class="num">6+</div><div class="lbl">Years Experience</div></div>
+      <div class="col reveal" style="transition-delay:.3s"><div class="num">15+</div><div class="lbl">Industry Awards</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="bg-light">
+  <div class="container center">
+    <span class="eyebrow reveal">Testimonials</span>
+    <h2 class="reveal">What our clients say</h2>
+  </div>
+  <div class="container" style="margin-top:44px">
+    <div class="cards">
+      <div class="t-card reveal"><p class="quote">“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”</p><div class="person"><img class="avatar" src="https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img03.jpg" alt=""><div style="text-align:left"><div class="name">Rina Amelia</div><div class="job">CEO, Tokokita</div></div></div></div>
+      <div class="t-card reveal" style="transition-delay:.1s"><p class="quote">“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”</p><div class="person"><img class="avatar" src="https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img04.jpg" alt=""><div style="text-align:left"><div class="name">Bima Pratama</div><div class="job">Founder, Nusantara Studio</div></div></div></div>
+      <div class="t-card reveal" style="transition-delay:.2s"><p class="quote">“They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.”</p><div class="person"><img class="avatar" src="https://raw.githubusercontent.com/Zahaby18/elementor-themes-testing/main/assets/img/img05.jpg" alt=""><div style="text-align:left"><div class="name">Sari Wijaya</div><div class="job">Marketing Lead, GreenFood</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container center">
+    <span class="eyebrow reveal">FAQ</span>
+    <h2 class="reveal">Frequently asked questions</h2>
+    <p class="sub reveal" style="transition-delay:.1s">Quick answers. Anything else — just ask us.</p>
+  </div>
+  <div class="container" style="margin-top:44px">
+    <div class="faq-wrap reveal">
+      <details class="faq-item" open><summary>How much does a project cost? <i class="fas fa-plus"></i></summary><p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p></details>
+      <details class="faq-item"><summary>How long does it take to launch? <i class="fas fa-plus"></i></summary><p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p></details>
+      <details class="faq-item"><summary>Do you work with existing brands? <i class="fas fa-plus"></i></summary><p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p></details>
+      <details class="faq-item"><summary>What happens after launch? <i class="fas fa-plus"></i></summary><p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Have a project in mind?</h2>
+      <p>Let's talk about what we can build together. Free consultation, no strings attached.</p>
+      <a class="btn btn-light" href="#contact">Let's Talk <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal,.reveal-left').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
