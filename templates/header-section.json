@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "1jm459m",
+      "id": "e000146",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -78,7 +78,7 @@
       },
       "elements": [
         {
-          "id": "lk5bn0h",
+          "id": "e000143",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -128,7 +128,7 @@
           },
           "elements": [
             {
-              "id": "onm98c2",
+              "id": "e000142",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -182,7 +182,7 @@
           "isInner": true
         },
         {
-          "id": "zn81nkm",
+          "id": "e000145",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -232,7 +232,7 @@
           },
           "elements": [
             {
-              "id": "quf6e65",
+              "id": "e000144",
               "elType": "widget",
               "widgetType": "ha-navigation-menu",
               "settings": {}

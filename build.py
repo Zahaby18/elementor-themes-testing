@@ -4,7 +4,7 @@ Agenzy — Digital Agency Elementor Template Kit generator.
 Builds templates/*.json + content/manifest.json (Elementor Free-friendly).
 Run: python3 build.py  (then zip with build.sh)
 """
-import json, os, random, string
+import json, os
 
 # ---------------------------------------------------------------- design tokens
 INK    = "#0F172A"   # slate-900
@@ -40,8 +40,13 @@ U = {
 }
 
 # ---------------------------------------------------------------- helpers
+_id_counter = 0
+
 def eid():
-    return ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(7))
+    """Deterministic element IDs (stable across rebuilds → clean git diffs)."""
+    global _id_counter
+    _id_counter += 1
+    return f"e{_id_counter:06x}"
 
 def dim(top, right, bottom, left, linked=False):
     return {"unit": "px", "top": str(top), "right": str(right),
@@ -963,6 +968,7 @@ def blog():
             "read_more_btn_border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
             "eael_post_read_more_btn_padding": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": True},
             "eael_post_grid_load_more_btn_margin": {"unit": "px", "top": "30", "right": "0", "bottom": "0", "left": "0", "isLinked": False},
+            "eael_show_meta": "",
         })], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
