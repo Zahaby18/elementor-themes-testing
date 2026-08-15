@@ -156,7 +156,7 @@ def col(elements, width=50, settings=None, center=False, anim=None, anim_delay=0
         "flex_direction_mobile": "column",
         "flex_wrap": "wrap",
         "flex_justify_content": "center" if center else "flex-start",
-        "flex_align_items": "center" if center else "stretch",
+        "flex_align_items": "stretch",
         **flex_gap(16, 14, 12),
     }
     if anim:
@@ -167,8 +167,17 @@ def col(elements, width=50, settings=None, center=False, anim=None, anim_delay=0
         s.update(settings)
     return {"id": eid(), "elType": "container", "settings": s, "elements": elements, "isInner": True}
 
-def card_col(widgets, bg=WHITE, radius=16, anim=None, anim_delay=0):
-    """Card = inner container with bg, border, radius + visible shadow."""
+# Card design (curamedica-style): indigo glow shadow + hover lift
+CARD_SHADOW = {"horizontal": 0, "vertical": 12, "blur": 32, "spread": -12, "color": "rgba(79,70,229,0.16)"}
+CARD_HOVER = {
+    "box_shadow_hover_box_shadow_type": "yes",
+    "box_shadow_hover_box_shadow": {"horizontal": 0, "vertical": 18, "blur": 44, "spread": -8, "color": "rgba(79,70,229,0.28)"},
+    "_transform_translate_popover_hover": "transform",
+    "_transform_translateY_effect_hover": {"unit": "px", "size": -10, "sizes": []},
+}
+
+def card_col(widgets, bg=WHITE, radius=20, anim=None, anim_delay=0):
+    """Card = inner container with bg, border, radius + indigo glow shadow + hover lift."""
     s = {
         "background_background": "classic",
         "background_color": bg,
@@ -177,8 +186,9 @@ def card_col(widgets, bg=WHITE, radius=16, anim=None, anim_delay=0):
         "border_color": "#E8EDF4",
         "border_radius": dim(radius, radius, radius, radius, True),
         "box_shadow_box_shadow_type": "yes",
-        "box_shadow_box_shadow": shadow(12, 28, 0, "rgba(15,23,42,0.12)"),
+        "box_shadow_box_shadow": CARD_SHADOW,
         "padding": dim(34, 28, 34, 28, False),
+        **CARD_HOVER,
     }
     return col(widgets, 33.3333, settings=s, anim=anim, anim_delay=anim_delay)
 
