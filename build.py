@@ -403,7 +403,7 @@ def home():
                   MUTED, "center", 15, "500", 1.5)], 100)
     ], bg=LIGHT, pad_top=28, pad_bottom=28))
 
-    # SERVICES
+    # SERVICES (3 sections = 3 rows: heading, row 1, row 2)
     services = [
         ("fas fa-bullseye", "Digital Strategy", "Market research, positioning, and roadmaps that turn your business goals into a clear plan of action."),
         ("fas fa-pen-ruler", "UI/UX Design", "Research-driven interfaces that look sharp and convert — web, mobile, and product design."),
@@ -415,15 +415,17 @@ def home():
     srv_widgets = [icon_box(i, t, d, link="#services") for i, t, d in services]
     els.append(section([
         col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
-        col([spacer(40, 24)], 100),
+    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
+    els.append(section([
         card_col([srv_widgets[0]]),
         card_col([srv_widgets[1]]),
         card_col([srv_widgets[2]]),
-        col([spacer(30, 20)], 100),
+    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    els.append(section([
         card_col([srv_widgets[3]]),
         card_col([srv_widgets[4]]),
         card_col([srv_widgets[5]]),
-    ], bg=WHITE, pad_top=100, pad_bottom=100, anchor="services"))
+    ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     # ABOUT PREVIEW
     els.append(section([
@@ -448,19 +450,20 @@ def home():
         col([counter(15, "+", "Industry Awards")], 25),
     ], bg=INK, pad_top=80, pad_bottom=80))
 
-    # TESTIMONIALS
+    # TESTIMONIALS (2 sections: heading + row)
     els.append(section([
         col(sec_head("Testimonials", "What our clients say"), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    els.append(section([
         col([testimonial("“Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.”",
                          "Rina Amelia", "CEO, Tokokita", {"url": U["p1"], "id": 0, "alt": ""})], 33.3333),
         col([testimonial("“The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.”",
                          "Bima Pratama", "Founder, Nusantara Studio", {"url": U["p2"], "id": 0, "alt": ""})], 33.3333),
         col([testimonial("“They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.”",
                          "Sari Wijaya", "Marketing Lead, GreenFood", {"url": U["p3"], "id": 0, "alt": ""})], 33.3333),
-    ], bg=WHITE, pad_top=100, pad_bottom=100, anchor="testimonials"))
+    ], bg=WHITE, pad_top=0, pad_bottom=100, anchor="testimonials"))
 
-    # FAQ
+    # FAQ (2 sections: heading + accordion)
     faq = [
         ("How much does a project cost?", "Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees."),
         ("How long does it take to launch?", "A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness."),
@@ -469,9 +472,10 @@ def home():
     ]
     els.append(section([
         col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else — just ask us."), 100),
-        col([spacer(24, 16)], 100),
+    ], bg=LIGHT, pad_top=100, pad_bottom=30, anchor="faq"))
+    els.append(section([
         col([accordion(faq)], 75, settings={"content_position": "center"}),
-    ], bg=LIGHT, pad_top=100, pad_bottom=100, anchor="faq"))
+    ], bg=LIGHT, pad_top=0, pad_bottom=100))
 
     # CTA
     els.append(section([
@@ -508,7 +512,7 @@ def about():
         ], 50, center=True),
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
-    # VALUES
+    # VALUES (2 sections: heading + row)
     vals = [
         ("fas fa-handshake", "Transparency", "Open pricing, honest timelines, and a shared dashboard so you always know what's happening."),
         ("fas fa-gem", "Quality First", "We'd rather ship one great product than five mediocre ones. Craft is non-negotiable."),
@@ -516,13 +520,14 @@ def about():
     ]
     els.append(section([
         col(sec_head("Our Values", "What we stand for"), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=LIGHT, pad_top=100, pad_bottom=30))
+    els.append(section([
         col([icon_box(vals[0][0], vals[0][1], vals[0][2])], 33.3333),
         col([icon_box(vals[1][0], vals[1][1], vals[1][2])], 33.3333),
         col([icon_box(vals[2][0], vals[2][1], vals[2][2])], 33.3333),
-    ], bg=LIGHT, pad_top=100, pad_bottom=100))
+    ], bg=LIGHT, pad_top=0, pad_bottom=100))
 
-    # TEAM
+    # TEAM (2 sections: heading + row)
     team = [
         (U["p1"], "Andi Kurniawan", "Founder & Strategy Director"),
         (U["p2"], "Dewi Lestari", "Head of Design"),
@@ -539,9 +544,10 @@ def about():
         ], 25))
     els.append(section([
         col(sec_head("Meet the Team", "The people behind the pixels"), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    els.append(section([
         *team_cols,
-    ], bg=WHITE, pad_top=100, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     els.append(section([
         col([heading("Want to join the team?", "h2", WHITE, "center", 34, "700", 1.25, tablet=28, mobile=24),
@@ -571,15 +577,17 @@ def services():
     ]
     els.append(section([
         col(sec_head("What We Do", "Six services, one partner"), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services"))
+    els.append(section([
         card_col([icon_box(*services[0], link="#contact")]),
         card_col([icon_box(*services[1], link="#contact")]),
         card_col([icon_box(*services[2], link="#contact")]),
-        col([spacer(30, 20)], 100),
+    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    els.append(section([
         card_col([icon_box(*services[3], link="#contact")]),
         card_col([icon_box(*services[4], link="#contact")]),
         card_col([icon_box(*services[5], link="#contact")]),
-    ], bg=WHITE, pad_top=100, pad_bottom=100, anchor="services"))
+    ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     # PROCESS
     steps = [
@@ -590,12 +598,13 @@ def services():
     ]
     els.append(section([
         col(sec_head("Our Process", "How we work together"), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=LIGHT, pad_top=100, pad_bottom=30))
+    els.append(section([
         *[col([heading(num, "h3", ACCENT, "center", 40, "800", 1.1), spacer(10, 6),
                heading(title_, "h4", INK, "center", 19, "700", 1.3),
                text(f"<p style='text-align:center;'>{desc}</p>", BODY, "center", 15, "400", 1.65)], 25)
           for num, title_, desc in steps],
-    ], bg=LIGHT, pad_top=100, pad_bottom=100))
+    ], bg=LIGHT, pad_top=0, pad_bottom=100))
 
     # WHAT'S INCLUDED
     els.append(section([
@@ -636,15 +645,18 @@ def portfolio():
 
     els.append(section([
         col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands — built for clients who cared about the details."), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    els.append(section([
         col([gallery([U["w1"], U["w2"], U["w3"]])], 100),
-        col([spacer(24, 16)], 100),
+    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    els.append(section([
         col([gallery([U["w4"], U["w5"], U["w6"]])], 100),
-        col([spacer(30, 20)], 100),
-        col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15)], 100),
-        col([spacer(16, 10)], 100),
-        col([btn("Request Case Studies", "#contact", "center")], 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=40))
+    els.append(section([
+        col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15),
+             spacer(16, 10),
+             btn("Request Case Studies", "#contact", "center")], 100),
+    ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     els.append(section([
         col([heading("Your project could be next", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
@@ -671,14 +683,16 @@ def blog():
     ]
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
-        col([spacer(36, 20)], 100),
+    ], bg=WHITE, pad_top=100, pad_bottom=30))
+    els.append(section([
         col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3])], 33.3333),
         col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3])], 33.3333),
         col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3])], 33.3333),
-        col([spacer(24, 16)], 100),
+    ], bg=WHITE, pad_top=0, pad_bottom=30))
+    els.append(section([
         col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add the Posts widget (Elementor Pro) or use your theme's blog template.</p>",
                   MUTED, "center", 14)], 100),
-    ], bg=WHITE, pad_top=100, pad_bottom=100))
+    ], bg=WHITE, pad_top=0, pad_bottom=100))
 
     els.append(section([
         col([heading("Fresh ideas, straight to your inbox", "h2", WHITE, "center", 32, "700", 1.25, tablet=26, mobile=22),
@@ -826,9 +840,10 @@ def footer_section():
 
 # ---------------------------------------------------------------- build
 def validate_structure(templates):
-    """Elementor schema: section children = columns only; column children = widgets / inner sections; inner section children = columns."""
+    """Elementor schema: section children = columns only; column children = widgets / inner sections; inner section children = columns. Column widths per row must sum <= 100%."""
     errors = []
     def walk(elems, container, path):
+        widths = []
         for i, el in enumerate(elems):
             p = f"{path}[{i}]"
             et = el.get('elType')
@@ -840,6 +855,9 @@ def validate_structure(templates):
             children = el.get('elements', [])
             if container in ('section', 'inner-section') and et == 'widget':
                 errors.append(f"{p}: widget directly inside {container} (must be inside a column)")
+            if et == 'column':
+                w = float(el.get('settings', {}).get('_column_size', 100))
+                widths.append(w)
             if et == 'section':
                 if 'isInner' in el:
                     walk(children, 'inner-section', p + '>')
@@ -847,6 +865,10 @@ def validate_structure(templates):
                     walk(children, 'section', p + '>')
             elif et == 'column':
                 walk(children, 'column', p + '>')
+        if container in ('section', 'inner-section'):
+            total = sum(widths)
+            if total > 100.01:
+                errors.append(f"{path}: column widths sum {total:.1f}% > 100% (Elementor tidak wrap kolom — harus 1 baris per section)")
     for name, data in templates.items():
         walk(data['content'], 'section', name)
     return errors

@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "en82ryc",
+      "id": "diugq93",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -40,14 +40,14 @@
       },
       "elements": [
         {
-          "id": "x7yet2q",
+          "id": "izvvyoz",
           "elType": "column",
           "settings": {
             "_column_size": 40
           },
           "elements": [
             {
-              "id": "2utzm10",
+              "id": "q6ee8zz",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -83,7 +83,7 @@
               }
             },
             {
-              "id": "fhri99g",
+              "id": "xtn51ku",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -100,7 +100,7 @@
               }
             },
             {
-              "id": "eosff3g",
+              "id": "cphw0l0",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -135,7 +135,7 @@
               }
             },
             {
-              "id": "sjw2m7s",
+              "id": "l641up5",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -152,13 +152,13 @@
               }
             },
             {
-              "id": "fbfsj08",
+              "id": "orcwe8k",
               "elType": "widget",
               "widgetType": "social-icons",
               "settings": {
                 "social_icon_list": [
                   {
-                    "_id": "g9hqp6f",
+                    "_id": "m8krwg7",
                     "social_icon": {
                       "value": "fab fa-facebook-f",
                       "library": "fa-brands"
@@ -171,7 +171,7 @@
                     }
                   },
                   {
-                    "_id": "joz2pt8",
+                    "_id": "x327r62",
                     "social_icon": {
                       "value": "fab fa-x-twitter",
                       "library": "fa-brands"
@@ -184,7 +184,7 @@
                     }
                   },
                   {
-                    "_id": "3cn2l1k",
+                    "_id": "qdvaz45",
                     "social_icon": {
                       "value": "fab fa-instagram",
                       "library": "fa-brands"
@@ -197,7 +197,7 @@
                     }
                   },
                   {
-                    "_id": "djp8lvh",
+                    "_id": "dc1qwoj",
                     "social_icon": {
                       "value": "fab fa-linkedin-in",
                       "library": "fa-brands"
@@ -232,14 +232,14 @@
           "isInner": false
         },
         {
-          "id": "tu7qc2w",
+          "id": "1ef8kyv",
           "elType": "column",
           "settings": {
             "_column_size": 30
           },
           "elements": [
             {
-              "id": "xxmegxk",
+              "id": "ywy7efq",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -275,7 +275,7 @@
               }
             },
             {
-              "id": "nivaeax",
+              "id": "h2l6fa2",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -292,13 +292,13 @@
               }
             },
             {
-              "id": "4haj3mr",
+              "id": "h54z6wl",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "uw4u99g",
+                    "_id": "kaau7b1",
                     "text": "Home",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -312,7 +312,7 @@
                     }
                   },
                   {
-                    "_id": "l1o4hp0",
+                    "_id": "o091s17",
                     "text": "About",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -326,7 +326,7 @@
                     }
                   },
                   {
-                    "_id": "hoz8saf",
+                    "_id": "x24in16",
                     "text": "Services",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -340,7 +340,7 @@
                     }
                   },
                   {
-                    "_id": "guy7sjr",
+                    "_id": "t5oej4w",
                     "text": "Portfolio",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -354,7 +354,7 @@
                     }
                   },
                   {
-                    "_id": "uc0xzl1",
+                    "_id": "rnztxlu",
                     "text": "Contact",
                     "selected_icon": {
                       "value": "fas fa-angle-right",
@@ -394,14 +394,14 @@
           "isInner": false
         },
         {
-          "id": "l8w12ke",
+          "id": "jn03p5k",
           "elType": "column",
           "settings": {
             "_column_size": 30
           },
           "elements": [
             {
-              "id": "xrtmsvv",
+              "id": "s905t5e",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -437,7 +437,7 @@
               }
             },
             {
-              "id": "lxwuvrj",
+              "id": "0uoxaeu",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -454,13 +454,13 @@
               }
             },
             {
-              "id": "ar21foh",
+              "id": "42xtda5",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "z1jilc4",
+                    "_id": "lwmpezv",
                     "text": "hello@agenzy.studio",
                     "selected_icon": {
                       "value": "fas fa-circle-check",
@@ -474,7 +474,7 @@
                     }
                   },
                   {
-                    "_id": "8ozle72",
+                    "_id": "xd0bspj",
                     "text": "+62 812 3456 7890",
                     "selected_icon": {
                       "value": "fas fa-circle-check",
@@ -488,7 +488,7 @@
                     }
                   },
                   {
-                    "_id": "pa4exbw",
+                    "_id": "to6hbfo",
                     "text": "Jakarta Selatan, Indonesia",
                     "selected_icon": {
                       "value": "fas fa-circle-check",
@@ -531,7 +531,7 @@
       "isInner": false
     },
     {
-      "id": "x7qdmcm",
+      "id": "13wj93z",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -570,14 +570,14 @@
       },
       "elements": [
         {
-          "id": "3dls99r",
+          "id": "y1piycq",
           "elType": "column",
           "settings": {
             "_column_size": 100
           },
           "elements": [
             {
-              "id": "tk3prw9",
+              "id": "m5m6wtr",
               "elType": "widget",
               "widgetType": "divider",
               "settings": {
@@ -600,7 +600,7 @@
               }
             },
             {
-              "id": "xtkc8nu",
+              "id": "h69j95p",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -617,7 +617,7 @@
               }
             },
             {
-              "id": "qrnbcpq",
+              "id": "bgxyk4b",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {

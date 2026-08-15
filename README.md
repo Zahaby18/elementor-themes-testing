@@ -33,7 +33,7 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 - **Font**: Inter (Google Font, auto-load oleh Elementor).
 - **Palette**: slate + indigo aksen. Semua warna & font bisa diganti lewat editor.
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
-- **Gambar**: placeholder dari Unsplash. Ganti dengan aset milikmu di editor.
+- **Gambar**: demo images disimpan di `assets/img/` (di-host via GitHub raw agar stabil). Ganti dengan aset milikmu di editor (upload ke Media Library → pilih di widget).
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
 
 ## Struktur Repo

@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "bg1git4",
+      "id": "14glv33",
       "elType": "section",
       "settings": {
         "layout": "full_width",
@@ -54,7 +54,7 @@
       },
       "elements": [
         {
-          "id": "sfx026w",
+          "id": "cxcfhwi",
           "elType": "column",
           "settings": {
             "_column_size": 70,
@@ -62,7 +62,7 @@
           },
           "elements": [
             {
-              "id": "7dt20n3",
+              "id": "2q0my9z",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -108,7 +108,7 @@
               }
             },
             {
-              "id": "d57xhqr",
+              "id": "h8piagp",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -125,7 +125,7 @@
               }
             },
             {
-              "id": "lh8yvhe",
+              "id": "m0zxkcc",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -171,7 +171,7 @@
               }
             },
             {
-              "id": "f2f3vbk",
+              "id": "m53b82v",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -188,7 +188,7 @@
               }
             },
             {
-              "id": "w5ms8hu",
+              "id": "tup6quz",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -223,7 +223,7 @@
               }
             },
             {
-              "id": "jf0n8df",
+              "id": "gvq0sd6",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -240,7 +240,7 @@
               }
             },
             {
-              "id": "marsr1a",
+              "id": "ukbw9v9",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
