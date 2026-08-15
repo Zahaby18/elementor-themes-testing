@@ -94,7 +94,7 @@ def container(elements, settings=None, bg=None, gradient=None, pad_top=100, pad_
         "flex_align_items": "stretch",
         "padding": dim(pad_top, 20, pad_bottom, 20, False),
         "padding_tablet": dim(70, 20, 70, 20, False),
-        "padding_mobile": dim(*(pad_mobile if pad_mobile else (50, 16, 50, 16)), False),
+        "padding_mobile": dim(*(pad_mobile if pad_mobile else (0, 16, 50, 16)), False),
         **flex_gap(24, 20, 16),
     }
     if bg:
@@ -638,7 +638,7 @@ def home():
             btn_row([btn("Explore Services", "#services", "left"), ghost_btn("Start a Project", "#contact", "left")]),
         ], 55, center=True),
         col([img(U["office"], "Agenzy team at work", 100, 16, shadow(30, 60, -15, "rgba(0,0,0,0.45)"), anim="fadeIn", anim_delay=200)], 45, center=True),
-    ], bg=None, pad_top=120, pad_bottom=120, overlay=dark_hero_bg(U["team"], 0.9)))
+    ], bg=None, pad_top=120, pad_bottom=120, overlay=dark_hero_bg(U["team"], 0.9), pad_mobile=(50, 16, 50, 16)))
 
     # TRUST BAR
     els.append(section([
@@ -758,7 +758,7 @@ def about():
             text("<p>The people, the process, and the values behind the work.</p>", "#CBD5E1", "left", 18,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
-    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["workshop"], 0.85)))
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["workshop"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
     # STORY
     els.append(section([
@@ -825,7 +825,7 @@ def services():
             text("<p>Everything your business needs to win online — designed, built, and grown by one team.</p>", "#CBD5E1", "left", 18,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
-    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["planning"], 0.85)))
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["planning"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
     services = [
         ("fas fa-bullseye", "Digital Strategy", "Positioning, research, and roadmaps that make sure every dollar you spend has a purpose."),
@@ -899,7 +899,7 @@ def portfolio():
             text("<p>A selection of projects we're proud of. Every one started as a blank canvas.</p>", "#CBD5E1", "left", 18,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
-    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w5"], 0.85)))
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w5"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
     # PROJECTS
     els.append(section([
@@ -935,25 +935,19 @@ def blog():
             text("<p>Ideas, guides, and lessons from the front lines of digital.</p>", "#CBD5E1", "left", 18,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
-    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85)))
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
-    # LATEST ARTICLES — static cards (wpr-grid removed: it hangs on import)
-    posts = [
-        (U["w1"], "10 Conversion Lessons from 100+ Landing Pages", "We analyzed the patterns that separate high-converting landing pages from the rest. Here's what actually works.", "#"),
-        (U["w2"], "The Design System That Cut Our Build Time in Half", "How we standardized components, tokens, and handoff — and why your team should too.", "#"),
-        (U["w6"], "SEO in 2026: What Still Matters (and What Doesn't)", "Algorithm changes come and go. These fundamentals have survived every update so far.", "#"),
-    ]
+    # LATEST ARTICLES — Jeg Elementor Kit Post Block (dynamic grid)
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
     els.append(section([
-        col([image_box(posts[0][0], posts[0][1], posts[0][2], posts[0][3], anim="fadeInUp")], 33.3333),
-        col([image_box(posts[1][0], posts[1][1], posts[1][2], posts[1][3], anim="fadeInUp", anim_delay=100)], 33.3333),
-        col([image_box(posts[2][0], posts[2][1], posts[2][2], posts[2][3], anim="fadeInUp", anim_delay=200)], 33.3333),
-    ], bg=WHITE, pad_top=0, pad_bottom=30, pad_mobile=(0, 16, 50, 16)))
-    els.append(section([
-        col([text("<p style='text-align:center;'>This is a static demo layout. For a dynamic blog feed, add Royal Elementor Addons' Post Grid widget, or use Elementor Pro's Posts widget.</p>",
-                  MUTED, "center", 14)], 100),
+        col([widget("jkit_post_block", {
+            "sg_content_postblock_type": "grid",
+            "sg_content_column": 3,
+            "sg_content_number_post": 6,
+            "pagination_mode": "loadmore",
+        })], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
     # CTA
@@ -962,29 +956,30 @@ def blog():
 
 def single():
     els = []
-    # HERO
+    # POST TITLE + META (dynamic via Jeg)
     els.append(section([
         col([
-            eyebrow("Insight", "left"),
-            heading("10 Conversion Lessons from 100+ Landing Pages", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
-                    extra={"_animation": "fadeInLeft"}),
-            text("<p>By Andi Kurniawan · 6 min read · August 2026</p>", "#CBD5E1", "left", 15,
-                 extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
+            widget("jkit_post_title", {"sg_title_html_tag": "h1"}),
+            widget("jkit_post_terms", {}),
         ], 100),
-    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w2"], 0.85)))
+    ], bg=WHITE, pad_top=70, pad_bottom=20, pad_mobile=(50, 16, 0, 16)))
 
-    # CONTENT
+    # FEATURED IMAGE + CONTENT (dynamic)
     els.append(section([
         col([
-            text("<p>We analyzed the patterns that separate high-converting landing pages from the rest. Over the last year, we audited more than a hundred pages across industries — and the results were remarkably consistent.</p>"
-                 "<p>The pages that convert share a handful of traits: a single clear headline, one primary call to action, social proof placed early, and a friction-free form. The pages that don't, tend to try to do too much at once.</p>"
-                 "<p>This is a demo single-post layout for the Agenzy kit. Replace this content with your own article — and for a fully dynamic single-post template, apply it via Elementor Theme Builder (Pro).</p>"),
+            widget("jkit_post_featured_image", {}),
+            widget("jkit_post_content", {}),
         ], 75),
-    ], bg=WHITE, pad_top=80, pad_bottom=80, settings={"flex_justify_content": "center"}))
+    ], bg=WHITE, pad_top=0, pad_bottom=60, settings={"flex_justify_content": "center"}, pad_mobile=(0, 16, 40, 16)))
+
+    # AUTHOR BOX
+    els.append(section([
+        col([widget("jkit_post_author", {})], 75),
+    ], bg=LIGHT, pad_top=60, pad_bottom=60, settings={"flex_justify_content": "center"}))
 
     # CTA
     els.append(cta_box("Enjoyed this article?", "There's more where that came from. One email a month, no spam.", "Subscribe"))
-    return page("Single Post (Demo)", els)
+    return page("Single Post", els)
 
 def contact():
     els = []
@@ -996,7 +991,7 @@ def contact():
             text("<p>Tell us about your project. We usually reply within one business day.</p>", "#CBD5E1", "left", 18,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
-    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["office"], 0.85)))
+    ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["office"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
     info = [
         ("fas fa-map-marker-alt", "Visit Us", "Jl. Sudirman Kav. 52-53, Jakarta Selatan, Indonesia"),
@@ -1045,18 +1040,18 @@ def p404():
             text("<p style='text-align:center;'>The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>", "#CBD5E1", "center", 17),
             btn("Back to Home", "#", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36),
         ], 70, center=True),
-    ], bg=None, pad_top=140, pad_bottom=140, overlay=dark_hero_bg(U["meeting"], 0.92)))
+    ], bg=None, pad_top=140, pad_bottom=140, overlay=dark_hero_bg(U["meeting"], 0.92), pad_mobile=(50, 16, 50, 16)))
 
     return page("404", els)
 
 def header_section():
-    # Free-only header (logo + CTA) — inserted as a section on each page
+    # Header — logo + Jeg nav menu (dynamic)
     return {
         "content": [
             section([
-                col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 50, center=True),
-                col([btn("Start a Project", "#contact", "right", ACCENT, WHITE, ACCENT2, pt=12, pl=28, radius=8)], 50, center=True),
-            ], bg=WHITE, pad_top=20, pad_bottom=20,
+                col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 40, center=True),
+                col([widget("jkit_nav_menu", {"sg_menu_direction": "horizontal"})], 60, center=True),
+            ], bg=WHITE, pad_top=16, pad_bottom=16,
                settings={"border_border": "solid", "border_width": dim(0, 0, 1, 0, False), "border_color": BORDER}),
         ],
         "page_settings": [],
