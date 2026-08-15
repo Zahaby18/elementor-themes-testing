@@ -183,14 +183,13 @@ def card_col(widgets, bg=WHITE, radius=16, anim=None, anim_delay=0):
     return col(widgets, 33.3333, settings=s, anim=anim, anim_delay=anim_delay)
 
 def btn_row(buttons):
-    """Buttons side by side (inner flex container row)."""
-    cols = [col([b], 50, center=True) for b in buttons]
+    """Buttons side by side — directly in a flex row container (matching Elementor 4.x structure)."""
     inner = {"id": eid(), "elType": "container", "isInner": True,
              "settings": {"container_type": "flex", "content_width": "full",
                           "flex_direction": "row", "flex_direction_tablet": "row",
                           "flex_direction_mobile": "column", "flex_wrap": "nowrap",
                           "flex_justify_content": "flex-start", "flex_align_items": "center",
-                          **flex_gap(12, 12, 10)}, "elements": cols}
+                          **flex_gap(12, 12, 10)}, "elements": buttons}
     return inner
 
 def sec_head(eyebrow_, title_, sub_=None, align="center"):
@@ -228,6 +227,7 @@ def btn(text_, url="#", align="left", bg=ACCENT, fg=WHITE, hover_bg=ACCENT2, pt=
         "text": text_,
         "link": {"url": url, "is_external": "", "nofollow": "", "custom_attributes": ""},
         "align": align,
+        "size": "sm",
         "background_color": bg,
         "button_text_color": fg,
         "hover_color": fg,
@@ -620,20 +620,32 @@ def home():
         col([accordion(faq, anim="fadeInUp")], 80),
     ], bg=WHITE, pad_top=0, pad_bottom=100, settings={"flex_justify_content": "center"}))
 
-    # CTA
-    els.append(section([
-        col([
-            heading("Have a project in mind?", "h2", WHITE, "center", 38, "700", 1.25, tablet=30, mobile=26,
-                    extra={"_animation": "fadeInUp"}),
-            spacer(14, 10),
-            text("<p style='text-align:center;'>Let's talk about what we can build together. Free consultation, no strings attached.</p>", "#CBD5E1", "center", 17, "400", 1.7,
-                 extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}),
-            spacer(22, 14),
-            btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36,
-                extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 200, "sizes": []}}),
-        ], 100, center=True),
-    ], gradient=("#4F46E5", "#7C3AED", 135), pad_top=90, pad_bottom=90, anchor="contact",
-       settings={"border_radius": dim(24, 24, 24, 24, True)}))
+    # CTA — rounded gradient box (inner container, so radius applies to content box not full width)
+    cta_box = {"id": eid(), "elType": "container", "isInner": True,
+               "settings": {
+                   "container_type": "flex", "content_width": "full",
+                   "flex_direction": "column", "flex_direction_tablet": "column",
+                   "flex_direction_mobile": "column", "flex_wrap": "nowrap",
+                   "flex_justify_content": "center", "flex_align_items": "center",
+                   "background_background": "gradient",
+                   "background_color": "#4F46E5", "background_color_b": "#7C3AED",
+                   "background_gradient_type": "linear",
+                   "background_gradient_angle": {"unit": "deg", "size": 135, "sizes": []},
+                   "border_radius": dim(24, 24, 24, 24, True),
+                   "padding": dim(80, 40, 80, 40, False),
+                   "padding_tablet": dim(60, 30, 60, 30, False),
+                   "padding_mobile": dim(50, 24, 50, 24, False),
+                   **flex_gap(16, 14, 12),
+               },
+               "elements": [
+                   heading("Have a project in mind?", "h2", WHITE, "center", 38, "700", 1.25, tablet=30, mobile=26,
+                           extra={"_animation": "fadeInUp"}),
+                   text("<p style='text-align:center;'>Let's talk about what we can build together. Free consultation, no strings attached.</p>", "#CBD5E1", "center", 17, "400", 1.7,
+                        extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 100, "sizes": []}}),
+                   btn("Let's Talk", "#contact", "center", WHITE, INK, "#E2E8F0", pt=16, pl=36,
+                       extra={"_animation": "fadeInUp", "_animation_delay": {"unit": "px", "size": 200, "sizes": []}}),
+               ]}
+    els.append(container([cta_box], pad_top=90, pad_bottom=90, anchor="contact"))
 
     return page("Home", els)
 
