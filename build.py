@@ -353,9 +353,9 @@ def testimonial_card(content_, name_, job_, avatar, anim=None, anim_delay=0):
         "padding": dim(34, 28, 34, 28, False),
     }
     person = inner_row([
+        col([img(avatar, name_, 100, 50)], 18),
         col([heading(name_, "h5", INK, "left", 16, "600", 1.3),
              text(f"<p>{job_}</p>", MUTED, "left", 13, "400", 1.5)], 60),
-        col([img(avatar, name_, 100, 50)], 40),
     ], justify="flex-end", align="center", gap=12)
     qextra = {}
     if anim:
