@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "id": "5ofcfqu",
+      "id": "74tl1ka",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -89,7 +89,7 @@
       },
       "elements": [
         {
-          "id": "cwdjudq",
+          "id": "iqzobg3",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -139,7 +139,7 @@
           },
           "elements": [
             {
-              "id": "tzrb4q5",
+              "id": "6nqojbf",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -186,7 +186,7 @@
               }
             },
             {
-              "id": "ey688im",
+              "id": "l14exnv",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -227,7 +227,7 @@
               }
             },
             {
-              "id": "o39737l",
+              "id": "9ipd1if",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -263,7 +263,7 @@
               },
               "elements": [
                 {
-                  "id": "tvzleoy",
+                  "id": "zdogbiz",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -326,7 +326,7 @@
                   }
                 },
                 {
-                  "id": "xrzx39x",
+                  "id": "5yrwur2",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -404,7 +404,7 @@
           "isInner": true
         },
         {
-          "id": "um4v486",
+          "id": "abm7m95",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -454,7 +454,7 @@
           },
           "elements": [
             {
-              "id": "ovupfkn",
+              "id": "xq5cmtr",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -501,7 +501,7 @@
       "isInner": false
     },
     {
-      "id": "1x71ih4",
+      "id": "yssubpz",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -568,7 +568,7 @@
       },
       "elements": [
         {
-          "id": "4bfqofe",
+          "id": "g48iwcx",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -618,7 +618,7 @@
           },
           "elements": [
             {
-              "id": "591zmr6",
+              "id": "283nms1",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -659,7 +659,7 @@
       "isInner": false
     },
     {
-      "id": "jeq8prz",
+      "id": "5g3wlqb",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -727,7 +727,7 @@
       },
       "elements": [
         {
-          "id": "qgabgnc",
+          "id": "u8phoa0",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -777,7 +777,7 @@
           },
           "elements": [
             {
-              "id": "8kv69il",
+              "id": "0iaj2j8",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -813,7 +813,7 @@
               }
             },
             {
-              "id": "yqmepyv",
+              "id": "n1g4lon",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -860,7 +860,7 @@
               }
             },
             {
-              "id": "xwbk0t7",
+              "id": "kwyk8xi",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -907,7 +907,7 @@
       "isInner": false
     },
     {
-      "id": "rs1nmu8",
+      "id": "ef84psa",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -974,7 +974,7 @@
       },
       "elements": [
         {
-          "id": "6zhnsnc",
+          "id": "slt8w8z",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1074,7 +1074,7 @@
           },
           "elements": [
             {
-              "id": "43lmc3y",
+              "id": "mukqeav",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1135,7 +1135,7 @@
           "isInner": true
         },
         {
-          "id": "v319w6i",
+          "id": "73b57ai",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1235,7 +1235,7 @@
           },
           "elements": [
             {
-              "id": "59tncx4",
+              "id": "zinp0vr",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1301,7 +1301,7 @@
           "isInner": true
         },
         {
-          "id": "z5xojo4",
+          "id": "2kmjqzq",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1401,7 +1401,7 @@
           },
           "elements": [
             {
-              "id": "slkiz5e",
+              "id": "7c8em4f",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1470,7 +1470,7 @@
       "isInner": false
     },
     {
-      "id": "snu9b1k",
+      "id": "eybyz57",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -1537,7 +1537,7 @@
       },
       "elements": [
         {
-          "id": "ek3u2rz",
+          "id": "12wb83a",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1637,7 +1637,7 @@
           },
           "elements": [
             {
-              "id": "n30eym1",
+              "id": "nywghb4",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1698,7 +1698,7 @@
           "isInner": true
         },
         {
-          "id": "af6r79a",
+          "id": "iepa3wr",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1798,7 +1798,7 @@
           },
           "elements": [
             {
-              "id": "bm2i8vb",
+              "id": "6sbdmg8",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -1864,7 +1864,7 @@
           "isInner": true
         },
         {
-          "id": "otv28qd",
+          "id": "i6c4oe4",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -1964,7 +1964,7 @@
           },
           "elements": [
             {
-              "id": "7e2qcv9",
+              "id": "s36j52t",
               "elType": "widget",
               "widgetType": "icon-box",
               "settings": {
@@ -2033,7 +2033,7 @@
       "isInner": false
     },
     {
-      "id": "gtbxtbm",
+      "id": "pikelaw",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2100,7 +2100,7 @@
       },
       "elements": [
         {
-          "id": "2qxzwys",
+          "id": "x1hrzhz",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2150,7 +2150,7 @@
           },
           "elements": [
             {
-              "id": "m4xp9vc",
+              "id": "ovsd2k7",
               "elType": "widget",
               "widgetType": "image",
               "settings": {
@@ -2189,7 +2189,7 @@
           "isInner": true
         },
         {
-          "id": "j6up9d3",
+          "id": "glupw6p",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2239,7 +2239,7 @@
           },
           "elements": [
             {
-              "id": "47nhlds",
+              "id": "sntd97p",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2275,7 +2275,7 @@
               }
             },
             {
-              "id": "2wb766l",
+              "id": "96xh3l8",
               "elType": "widget",
               "widgetType": "spacer",
               "settings": {
@@ -2292,7 +2292,7 @@
               }
             },
             {
-              "id": "xuxmc2a",
+              "id": "z7ts1es",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -2339,7 +2339,7 @@
               }
             },
             {
-              "id": "gl3fmjf",
+              "id": "3mp0mhf",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -2380,13 +2380,13 @@
               }
             },
             {
-              "id": "mw8giuz",
+              "id": "ulwq1o8",
               "elType": "widget",
               "widgetType": "icon-list",
               "settings": {
                 "icon_list": [
                   {
-                    "_id": "5od28xp",
+                    "_id": "fuszk1e",
                     "text": "Senior talent on every project",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2400,7 +2400,7 @@
                     }
                   },
                   {
-                    "_id": "czcn1h5",
+                    "_id": "gpb5cy6",
                     "text": "Transparent pricing, no surprises",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2414,7 +2414,7 @@
                     }
                   },
                   {
-                    "_id": "fptke2a",
+                    "_id": "v1l5sqe",
                     "text": "Launch in weeks, not months",
                     "selected_icon": {
                       "value": "fas fa-check",
@@ -2451,7 +2451,7 @@
               }
             },
             {
-              "id": "gifdjsj",
+              "id": "pfjb46t",
               "elType": "widget",
               "widgetType": "button",
               "settings": {
@@ -2520,7 +2520,7 @@
       "isInner": false
     },
     {
-      "id": "tjxiojj",
+      "id": "i87yw14",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -2594,7 +2594,7 @@
       },
       "elements": [
         {
-          "id": "fd2k40h",
+          "id": "7vugeud",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2644,7 +2644,7 @@
           },
           "elements": [
             {
-              "id": "lijlxdy",
+              "id": "1hnfk2p",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2677,7 +2677,7 @@
           "isInner": true
         },
         {
-          "id": "b1xko6v",
+          "id": "dxsb5iv",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2727,7 +2727,7 @@
           },
           "elements": [
             {
-              "id": "jp3v8kt",
+              "id": "8wbpqwk",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2765,7 +2765,7 @@
           "isInner": true
         },
         {
-          "id": "7beqqc1",
+          "id": "7ljm9n4",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2815,7 +2815,7 @@
           },
           "elements": [
             {
-              "id": "xxoj366",
+              "id": "2dqy8hz",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2853,7 +2853,7 @@
           "isInner": true
         },
         {
-          "id": "cgcm1ay",
+          "id": "b5qht7a",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -2903,7 +2903,7 @@
           },
           "elements": [
             {
-              "id": "meh14lg",
+              "id": "vwopgpm",
               "elType": "widget",
               "widgetType": "counter",
               "settings": {
@@ -2944,7 +2944,7 @@
       "isInner": false
     },
     {
-      "id": "fq1pqr3",
+      "id": "2jzbeg3",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3011,7 +3011,7 @@
       },
       "elements": [
         {
-          "id": "mczv0hz",
+          "id": "ot3bk82",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3061,7 +3061,7 @@
           },
           "elements": [
             {
-              "id": "4r0d6sv",
+              "id": "wnpvdpf",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3097,7 +3097,7 @@
               }
             },
             {
-              "id": "c4l3a43",
+              "id": "xx6eu6m",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -3150,7 +3150,7 @@
       "isInner": false
     },
     {
-      "id": "sx2l6b0",
+      "id": "asyh1ra",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -3219,7 +3219,7 @@
       },
       "elements": [
         {
-          "id": "f137rs6",
+          "id": "8nhc8oq",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3305,7 +3305,7 @@
           },
           "elements": [
             {
-              "id": "yrdp5k2",
+              "id": "jk9h7em",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -3324,7 +3324,7 @@
               }
             },
             {
-              "id": "vozdmid",
+              "id": "06rwtpc",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3360,7 +3360,7 @@
               }
             },
             {
-              "id": "ri902q7",
+              "id": "l5nrefl",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3396,7 +3396,7 @@
               },
               "elements": [
                 {
-                  "id": "b36yz3u",
+                  "id": "5h7wc7n",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3446,7 +3446,7 @@
                   },
                   "elements": [
                     {
-                      "id": "zpri60i",
+                      "id": "3q7iilb",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -3476,7 +3476,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "x3ww60r",
+                  "id": "yh4h1wu",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3526,7 +3526,7 @@
                   },
                   "elements": [
                     {
-                      "id": "9yhl0tg",
+                      "id": "am7m0fv",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -3562,7 +3562,7 @@
                       }
                     },
                     {
-                      "id": "3xaeomz",
+                      "id": "yixdi1q",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -3605,7 +3605,7 @@
           "isInner": true
         },
         {
-          "id": "c5fs82p",
+          "id": "lw900i7",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -3691,7 +3691,7 @@
           },
           "elements": [
             {
-              "id": "c7zsh8g",
+              "id": "ssnlk9v",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -3710,7 +3710,7 @@
               }
             },
             {
-              "id": "1663n2v",
+              "id": "wy2uh9i",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -3751,7 +3751,7 @@
               }
             },
             {
-              "id": "ivdp3fv",
+              "id": "in948pd",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3787,7 +3787,7 @@
               },
               "elements": [
                 {
-                  "id": "ec0tmmc",
+                  "id": "cnaf0q7",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3837,7 +3837,7 @@
                   },
                   "elements": [
                     {
-                      "id": "0xw4ptu",
+                      "id": "sxbyjge",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -3867,7 +3867,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "oxcs840",
+                  "id": "6jpjehu",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -3917,7 +3917,7 @@
                   },
                   "elements": [
                     {
-                      "id": "jva55nh",
+                      "id": "i7s9wx5",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -3953,7 +3953,7 @@
                       }
                     },
                     {
-                      "id": "u9yp4gd",
+                      "id": "ado0g5l",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -3996,7 +3996,7 @@
           "isInner": true
         },
         {
-          "id": "0k8y6vc",
+          "id": "qmw1pll",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4082,7 +4082,7 @@
           },
           "elements": [
             {
-              "id": "zqsy96y",
+              "id": "sprbldw",
               "elType": "widget",
               "widgetType": "icon",
               "settings": {
@@ -4101,7 +4101,7 @@
               }
             },
             {
-              "id": "11udxgy",
+              "id": "b25uiwu",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4142,7 +4142,7 @@
               }
             },
             {
-              "id": "8yp7mrm",
+              "id": "ianccn9",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -4178,7 +4178,7 @@
               },
               "elements": [
                 {
-                  "id": "twjetu0",
+                  "id": "pn1stua",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -4228,7 +4228,7 @@
                   },
                   "elements": [
                     {
-                      "id": "6e0ru1x",
+                      "id": "s1pfosq",
                       "elType": "widget",
                       "widgetType": "image",
                       "settings": {
@@ -4258,7 +4258,7 @@
                   "isInner": true
                 },
                 {
-                  "id": "r4oo64r",
+                  "id": "6pg15e2",
                   "elType": "container",
                   "settings": {
                     "container_type": "flex",
@@ -4308,7 +4308,7 @@
                   },
                   "elements": [
                     {
-                      "id": "e9v10nb",
+                      "id": "jswff9u",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -4344,7 +4344,7 @@
                       }
                     },
                     {
-                      "id": "5eoc67l",
+                      "id": "3t8qwso",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -4390,7 +4390,7 @@
       "isInner": false
     },
     {
-      "id": "9a04uan",
+      "id": "0zop50a",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4458,7 +4458,7 @@
       },
       "elements": [
         {
-          "id": "aog9yaa",
+          "id": "sbf6z73",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4508,7 +4508,7 @@
           },
           "elements": [
             {
-              "id": "vgg89ip",
+              "id": "zanr9wy",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4544,7 +4544,7 @@
               }
             },
             {
-              "id": "i3tdcii",
+              "id": "r5d0ylg",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -4591,7 +4591,7 @@
               }
             },
             {
-              "id": "fkx109v",
+              "id": "f6jfa2z",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -4638,7 +4638,7 @@
       "isInner": false
     },
     {
-      "id": "xu7e262",
+      "id": "173dnr1",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4705,7 +4705,7 @@
       },
       "elements": [
         {
-          "id": "vwy64i5",
+          "id": "ks8s7w9",
           "elType": "container",
           "settings": {
             "container_type": "flex",
@@ -4755,34 +4755,68 @@
           },
           "elements": [
             {
-              "id": "3yyxe6y",
+              "id": "eg8yx6r",
               "elType": "widget",
-              "widgetType": "accordion",
+              "widgetType": "nested-accordion",
               "settings": {
-                "tabs": [
+                "items": [
                   {
-                    "_id": "0i9kw14",
-                    "tab_title": "How much does a project cost?",
-                    "tab_content": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>"
+                    "item_title": "How much does a project cost?",
+                    "_id": "9ve5730",
+                    "element_css_id": ""
                   },
                   {
-                    "_id": "bsoly9d",
-                    "tab_title": "How long does it take to launch?",
-                    "tab_content": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>"
+                    "item_title": "How long does it take to launch?",
+                    "_id": "myz3qyh",
+                    "element_css_id": ""
                   },
                   {
-                    "_id": "r7bvwpg",
-                    "tab_title": "Do you work with existing brands?",
-                    "tab_content": "<p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p>"
+                    "item_title": "Do you work with existing brands?",
+                    "_id": "22p37lu",
+                    "element_css_id": ""
                   },
                   {
-                    "_id": "vg8ix9k",
-                    "tab_title": "What happens after launch?",
-                    "tab_content": "<p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p>"
+                    "item_title": "What happens after launch?",
+                    "_id": "pf1by0c",
+                    "element_css_id": ""
                   }
                 ],
-                "title_color": "#0F172A",
-                "tab_active_color": "#4F46E5",
+                "accordion_item_title_position_horizontal": "stretch",
+                "accordion_item_title_icon_position": "end",
+                "accordion_item_title_space_between": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "accordion_border_normal_border": "solid",
+                "accordion_border_normal_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "accordion_border_normal_color": "#ECECEC",
+                "accordion_border_radius": {
+                  "unit": "px",
+                  "top": "30",
+                  "right": "30",
+                  "bottom": "30",
+                  "left": "30",
+                  "isLinked": true
+                },
+                "accordion_padding": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "accordion_background_normal_background": "classic",
+                "accordion_background_normal_color": "#FFFFFF",
+                "normal_title_color": "#0F172A",
                 "title_typography_typography": "custom",
                 "title_typography_font_family": "Inter",
                 "title_typography_font_size": {
@@ -4790,8 +4824,46 @@
                   "size": 16,
                   "sizes": []
                 },
-                "title_typography_font_weight": "600",
-                "content_color": "#475569",
+                "title_typography_font_weight": "700",
+                "title_tag": "div",
+                "accordion_item_title_icon": {
+                  "value": "fas fa-plus",
+                  "library": "fa-solid"
+                },
+                "accordion_item_title_icon_active": {
+                  "value": "fas fa-minus",
+                  "library": "fa-solid"
+                },
+                "icon_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "default_state": "expanded",
+                "max_items_expended": "one",
+                "n_accordion_animation_duration": {
+                  "unit": "ms",
+                  "size": 400,
+                  "sizes": []
+                },
+                "content_border_border": "none",
+                "content_border_width": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": false
+                },
+                "content_padding": {
+                  "unit": "px",
+                  "top": "20",
+                  "right": "20",
+                  "bottom": "20",
+                  "left": "20",
+                  "isLinked": true
+                },
+                "content_background_color": "#FFFFFF",
                 "content_typography_typography": "custom",
                 "content_typography_font_family": "Inter",
                 "content_typography_font_size": {
@@ -4801,28 +4873,205 @@
                 },
                 "content_typography_line_height": {
                   "unit": "em",
-                  "size": 1.7,
+                  "size": 1.6,
                   "sizes": []
                 },
-                "border_color": "#E2E8F0",
-                "border_width": {
-                  "unit": "px",
-                  "size": 1,
-                  "sizes": []
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "10",
-                  "right": "10",
-                  "bottom": "10",
-                  "left": "10",
-                  "isLinked": true
-                },
-                "title_background": "#FFFFFF",
-                "tab_active_background": "#FFFFFF",
-                "content_background_color": "#FFFFFF",
                 "_animation": "fadeInUp"
-              }
+              },
+              "elements": [
+                {
+                  "id": "07kd3o7",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "container_type": "flex",
+                    "flex_direction": "column",
+                    "flex_wrap": "nowrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "9i5kdjb",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>",
+                        "text_color": "#475569",
+                        "align": "left",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6,
+                          "sizes": []
+                        },
+                        "typography_text_transform": "",
+                        "typography_font_style": "normal",
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        },
+                        "typography_word_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "oiura8r",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "container_type": "flex",
+                    "flex_direction": "column",
+                    "flex_wrap": "nowrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "r0ndt54",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>",
+                        "text_color": "#475569",
+                        "align": "left",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6,
+                          "sizes": []
+                        },
+                        "typography_text_transform": "",
+                        "typography_font_style": "normal",
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        },
+                        "typography_word_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "iqxwxtp",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "container_type": "flex",
+                    "flex_direction": "column",
+                    "flex_wrap": "nowrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "79smps0",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions.</p>",
+                        "text_color": "#475569",
+                        "align": "left",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6,
+                          "sizes": []
+                        },
+                        "typography_text_transform": "",
+                        "typography_font_style": "normal",
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        },
+                        "typography_word_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "ynz1q49",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "container_type": "flex",
+                    "flex_direction": "column",
+                    "flex_wrap": "nowrap"
+                  },
+                  "elements": [
+                    {
+                      "id": "za1xcce",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month.</p>",
+                        "text_color": "#475569",
+                        "align": "left",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "400",
+                        "typography_line_height": {
+                          "unit": "em",
+                          "size": 1.6,
+                          "sizes": []
+                        },
+                        "typography_text_transform": "",
+                        "typography_font_style": "normal",
+                        "typography_letter_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        },
+                        "typography_word_spacing": {
+                          "unit": "px",
+                          "size": 0,
+                          "sizes": []
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "isInner": true
@@ -4831,7 +5080,7 @@
       "isInner": false
     },
     {
-      "id": "yqojsyq",
+      "id": "aap0j94",
       "elType": "container",
       "settings": {
         "container_type": "flex",
@@ -4897,7 +5146,7 @@
       },
       "elements": [
         {
-          "id": "ujbuqji",
+          "id": "o123e3v",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4974,7 +5223,7 @@
           },
           "elements": [
             {
-              "id": "q4k4gri",
+              "id": "cu0rqko",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -5021,7 +5270,7 @@
               }
             },
             {
-              "id": "quz3453",
+              "id": "evura8l",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
@@ -5062,7 +5311,7 @@
               }
             },
             {
-              "id": "3dmp6v3",
+              "id": "xwlx0ez",
               "elType": "widget",
               "widgetType": "button",
               "settings": {

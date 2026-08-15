@@ -410,6 +410,53 @@ def accordion(items, anim=None, anim_delay=0):
             s["_animation_delay"] = {"unit": "px", "size": anim_delay, "sizes": []}
     return widget("accordion", s)
 
+def faq_accordion(items, anim=None):
+    """Elementor 4.x Nested Accordion with curamedica styling (radius 30, border #ECECEC, +/- icon, one-open)."""
+    item_settings = [{"item_title": q, "_id": eid(), "element_css_id": ""} for q, a in items]
+    children = []
+    for q, a in items:
+        child = {"id": eid(), "elType": "container", "isInner": True,
+                 "settings": {"content_width": "full", "container_type": "flex",
+                              "flex_direction": "column", "flex_wrap": "nowrap"},
+                 "elements": [text(f"<p>{a}</p>", BODY, "left", 15, "400", 1.6)]}
+        children.append(child)
+    s = {
+        "items": item_settings,
+        "accordion_item_title_position_horizontal": "stretch",
+        "accordion_item_title_icon_position": "end",
+        "accordion_item_title_space_between": {"unit": "px", "size": 10, "sizes": []},
+        "accordion_border_normal_border": "solid",
+        "accordion_border_normal_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": False},
+        "accordion_border_normal_color": "#ECECEC",
+        "accordion_border_radius": dim(30, 30, 30, 30, True),
+        "accordion_padding": dim(20, 20, 20, 20, True),
+        "accordion_background_normal_background": "classic",
+        "accordion_background_normal_color": "#FFFFFF",
+        "normal_title_color": INK,
+        "title_typography_typography": "custom",
+        "title_typography_font_family": FONT,
+        "title_typography_font_size": size(16),
+        "title_typography_font_weight": "700",
+        "title_tag": "div",
+        "accordion_item_title_icon": {"value": "fas fa-plus", "library": "fa-solid"},
+        "accordion_item_title_icon_active": {"value": "fas fa-minus", "library": "fa-solid"},
+        "icon_size": size(15),
+        "default_state": "expanded",
+        "max_items_expended": "one",
+        "n_accordion_animation_duration": {"unit": "ms", "size": 400, "sizes": []},
+        "content_border_border": "none",
+        "content_border_width": {"unit": "px", "top": "0", "right": "1", "bottom": "1", "left": "1", "isLinked": False},
+        "content_padding": dim(20, 20, 20, 20, True),
+        "content_background_color": "#FFFFFF",
+        "content_typography_typography": "custom",
+        "content_typography_font_family": FONT,
+        "content_typography_font_size": size(15),
+        "content_typography_line_height": {"unit": "em", "size": 1.6, "sizes": []},
+    }
+    if anim:
+        s["_animation"] = anim
+    return widget("nested-accordion", s, elements=children)
+
 def img(url, alt="", width=100, radius=12, shadow_=None, align="center", anim=None, anim_delay=0):
     s = {
         "image": {"url": url, "id": 0, "alt": alt},
@@ -624,7 +671,7 @@ def home():
         col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else — just ask us."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="faq", pad_mobile=(50, 16, 10, 16)))
     els.append(section([
-        col([accordion(faq, anim="fadeInUp")], 80),
+        col([faq_accordion(faq, anim="fadeInUp")], 80),
     ], bg=WHITE, pad_top=0, pad_bottom=100, settings={"flex_justify_content": "center"}, pad_mobile=(0, 10, 50, 10)))
 
     # CTA — rounded gradient box (inner container, so radius applies to content box not full width)
