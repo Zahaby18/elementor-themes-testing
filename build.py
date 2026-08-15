@@ -584,12 +584,9 @@ def home():
             eyebrow("About Us", "left"), spacer(12, 8),
             heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
                     extra={"_animation": "fadeInLeft"}),
-            spacer(12, 8),
             text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>",
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
-            spacer(16, 10),
             icon_list(["Senior talent on every project", "Transparent pricing, no surprises", "Launch in weeks, not months"]),
-            spacer(24, 16),
             btn("More About Us", "#about", "left"),
         ], 50, center=True),
     ], bg=LIGHT, pad_top=100, pad_bottom=100))
