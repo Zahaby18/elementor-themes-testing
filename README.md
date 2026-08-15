@@ -41,22 +41,23 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 
 ## ⚠️ Plugin yang Dibutuhkan (gratis)
 
-Kit ini pakai **Elementor Free** + **Happy Elementor Addons** (free) untuk fitur dinamis.
+Kit ini pakai **Elementor Free** + 2 plugin gratis:
 
-**Happy Elementor Addons** (1 plugin gratis, nutup semua):
-- **Theme Builder** (free) → single post, archive, header, footer global
-- **Widget dinamis** → `ha-archive-posts` (blog grid), `ha-post-title`, `ha-post-content`, `ha-post-featured-image`, `ha-navigation-menu`, dll.
+| Plugin | Buat apa |
+|---|---|
+| **Jeg Elementor Kit** (free) | Blog grid (`jkit_post_block` — jalan di halaman) + nav menu (`jkit_nav_menu`) |
+| **Happy Elementor Addons** (free) | **Theme Builder** (single post, archive, header, footer global) + widget dinamis (`ha-post-title`, `ha-post-content`, dll) |
 
-> ✅ Happy Addons **aman** untuk import (nggak hang, beda sama Royal Elementor Addons).
+> ✅ Keduanya **aman** untuk import (nggak hang — Royal Elementor Addons yang bermasalah, hindari).
 
 **Cara pakai (2 langkah):**
-1. Install & aktifkan **Happy Elementor Addons** (free) → import kit seperti biasa
+1. Install & aktifkan **Jeg Elementor Kit** + **Happy Elementor Addons** (gratis) → import kit
 2. Bikin template dinamis via **Happy Addons → Theme Builder**:
-   - **Archive** → `ha-archive-posts` (blog grid)
    - **Single** → `ha-post-title` + `ha-post-featured-image` + `ha-post-content`
    - **Header/Footer** → assign global
+   - (Blog grid di halaman `blog.json` udah dinamis via Jeg `jkit_post_block`)
 
-> ℹ️ Halaman di kit (Home/About/Services/Portfolio/Blog/Contact/404) import langsung. Template dinamis (archive/single/header/footer) dibuat via Theme Builder Happy Addons — karena pakai konteks Theme Builder, bukan template page biasa.
+> ℹ️ Halaman di kit (Home/About/Services/Portfolio/Blog/Contact/404) import langsung. Template single/header/footer global dibuat via Theme Builder Happy Addons.
 - **Responsive**: mobile-first — padding, typography, dan grid sudah di-set untuk tablet & mobile.
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat — gambar demo bakal tetap kebaca dari URL.*
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
