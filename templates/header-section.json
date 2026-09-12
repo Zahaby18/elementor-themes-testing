@@ -323,7 +323,7 @@
                   "sizes": []
                 },
                 "eael_simple_menu_hamburger_icon_color": "#4F46E5",
-                "eael_simple_menu_menu": 5,
+                "eael_simple_menu_menu": "",
                 "eael_simple_menu_preset": "preset-1",
                 "eael_simple_menu_layout": "horizontal",
                 "eael_simple_menu_hamburger_disable_selected_menu": "no",
