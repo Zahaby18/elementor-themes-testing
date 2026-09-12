@@ -1,7 +1,6 @@
 [
   {
-    "id": "61073885",
-    "elType": "container",
+    "id": "3fdaccc0",
     "settings": {
       "boxed_width": {
         "unit": "px",
@@ -72,13 +71,11 @@
         "isLinked": false
       },
       "border_color": "#E2E8F0",
-      "container_type": "flex",
-      "content_width": "boxed"
+      "ha_cmc_text": "Happy Addons"
     },
     "elements": [
       {
-        "id": "175471d4",
-        "elType": "container",
+        "id": "175bd0cc",
         "settings": {
           "content_width": "full",
           "width": {
@@ -123,45 +120,11 @@
             "sizes": [],
             "isLinked": true
           },
-          "container_type": "flex",
-          "border_width": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          },
-          "padding": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          },
-          "padding_tablet": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          },
-          "padding_mobile": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          }
+          "ha_cmc_text": "Happy Addons"
         },
         "elements": [
           {
-            "id": "28c526ed",
-            "elType": "widget",
-            "widgetType": "icon-box",
+            "id": "266fdec7",
             "settings": {
               "selected_icon": {
                 "value": "fas fa-layer-group",
@@ -169,8 +132,6 @@
               },
               "position": "left",
               "view": "stacked",
-              "title_text": "",
-              "description_text": "",
               "primary_color": "#4F46E5",
               "secondary_color": "#FFFFFF",
               "hover_primary_color": "#4338CA",
@@ -208,24 +169,21 @@
                 "sizes": []
               },
               "position_mobile": "inline-start",
-              "shape": "circle",
-              "title_size": "h3",
-              "content_vertical_alignment": "top",
-              "icon_space": {
-                "unit": "px",
-                "size": 15,
-                "sizes": []
-              }
+              "title_text": "",
+              "description_text": "",
+              "ha_cmc_text": "Happy Addons"
             },
             "elements": [],
-            "isInner": false
+            "isInner": false,
+            "widgetType": "icon-box",
+            "elType": "widget"
           }
         ],
-        "isInner": true
+        "isInner": true,
+        "elType": "container"
       },
       {
-        "id": "26bef6e9",
-        "elType": "container",
+        "id": "30b14724",
         "settings": {
           "content_width": "full",
           "width": {
@@ -270,45 +228,11 @@
             "sizes": [],
             "isLinked": true
           },
-          "container_type": "flex",
-          "border_width": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          },
-          "padding": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          },
-          "padding_tablet": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          },
-          "padding_mobile": {
-            "unit": "px",
-            "top": "",
-            "right": "",
-            "bottom": "",
-            "left": "",
-            "isLinked": true
-          }
+          "ha_cmc_text": "Happy Addons"
         },
         "elements": [
           {
-            "id": "e6d2be9",
-            "elType": "widget",
-            "widgetType": "eael-simple-menu",
+            "id": "3ef077d1",
             "settings": {
               "eael_simple_menu_background": "#FFFFFF",
               "eael_simple_menu_item_alignment": "eael-simple-menu-align-right",
@@ -325,262 +249,35 @@
               },
               "eael_simple_menu_hamburger_icon_color": "#4F46E5",
               "eael_simple_menu_menu": "",
-              "eael_simple_menu_preset": "preset-1",
-              "eael_simple_menu_layout": "horizontal",
-              "eael_simple_menu_hamburger_disable_selected_menu": "no",
-              "eael_simple_menu_hamburger_alignment": "right",
-              "eael_simple_menu_full_width": "no",
-              "eael_simple_menu_link_width": "full-width",
-              "eael_simple_menu_hamburger_icon": {
-                "value": "fas fa-bars",
-                "library": "fa-solid"
-              },
-              "eael_simple_menu_dropdown": "tablet",
-              "eael_simple_menu_border_width": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_border_width_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_border_width_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_box_shadow_box_shadow": {
-                "horizontal": 0,
-                "vertical": 0,
-                "blur": 10,
-                "spread": 0,
-                "color": "rgba(0,0,0,0.5)"
-              },
-              "eael_simple_menu_box_shadow_box_shadow_position": " ",
-              "eael_simple_menu_item_padding": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_item_padding_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_item_padding_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_item_alignment_right": "eael-simple-menu-align-right",
-              "eael_simple_menu_item_alignment_center": "eael-simple-menu-align-center",
               "eael_simple_menu_item_typography_typography": "custom",
               "eael_simple_menu_item_typography_font_family": "Inter",
               "eael_simple_menu_item_typography_font_weight": "600",
-              "eael_simple_menu_item_indicator": {
-                "value": "fas fa-angle-down",
-                "library": "fa-solid"
-              },
-              "eael_simple_menu_item_indicator_size": {
-                "unit": "px",
-                "size": "15",
-                "sizes": []
-              },
-              "eael_simple_menu_item_indicator_color_hover": "#f44336",
-              "eael_simple_menu_item_indicator_background_hover": "#ffffff",
-              "eael_simple_menu_item_indicator_border_hover": "#f44336",
-              "eael_simple_menu_item_indicator_color_active": "#f44336",
-              "eael_simple_menu_item_indicator_background_active": "#ffffff",
-              "eael_simple_menu_item_indicator_border_active": "#f44336",
-              "eael_simple_menu_hamburger_padding": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_hamburger_padding_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_hamburger_padding_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
               "eael_simple_menu_hamburger_top_level_item_color": "#4F46E5",
               "eael_simple_menu_hamburger_top_level_item_background": "#FFFFFF",
               "eael_simple_menu_hamburger_top_level_item_color_hover": "#FFFFFF",
               "eael_simple_menu_hamburger_top_level_item_bg_hover": "#4F46E5",
               "eael_simple_menu_hamburger_top_level_item_color_active": "#FFFFFF",
               "eael_simple_menu_hamburger_top_level_item_bg_active": "#4F46E5",
-              "eael_simple_menu_hamburger_dropdown_item_padding": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_hamburger_dropdown_item_padding_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_hamburger_dropdown_item_padding_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
               "eael_simple_menu_hamburger_dropdown_item_color": "#4F46E5",
               "eael_simple_menu_hamburger_dropdown_item_background": "#FFFFFF",
               "eael_simple_menu_hamburger_dropdown_item_color_hover": "#FFFFFF",
               "eael_simple_menu_hamburger_dropdown_item_bg_hover": "#4F46E5",
-              "eael_simple_menu_dropdown_animation": "eael-simple-menu-dropdown-animate-to-top",
-              "eael_simple_menu_dropdown_border_width": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_border_width_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_border_width_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_border_radius": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_border_radius_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_border_radius_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_padding": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_padding_tablet": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_padding_mobile": {
-                "unit": "px",
-                "top": "",
-                "right": "",
-                "bottom": "",
-                "left": "",
-                "isLinked": true
-              },
-              "eael_simple_menu_dropdown_box_shadow_box_shadow": {
-                "horizontal": 0,
-                "vertical": 0,
-                "blur": 10,
-                "spread": 0,
-                "color": "rgba(0,0,0,0.5)"
-              },
-              "eael_simple_menu_dropdown_box_shadow_box_shadow_position": " ",
-              "eael_simple_menu_dropdown_item_alignment": "eael-simple-menu-dropdown-align-left",
-              "eael_simple_menu_dropdown_item_padding": {
-                "unit": "px",
-                "size": 20,
-                "sizes": []
-              },
-              "eael_simple_menu_dropdown_item_divider_color": "#f2f2f2",
               "eael_simple_menu_dropdown_item_typography_typography": "custom",
               "eael_simple_menu_dropdown_item_typography_font_family": "Inter",
               "eael_simple_menu_dropdown_item_typography_font_weight": "600",
-              "eael_simple_menu_dropdown_item_indicator": {
-                "value": "fas fa-angle-down",
-                "library": "fa-solid"
-              },
-              "eael_simple_menu_dropdown_item_indicator_size": {
-                "unit": "px",
-                "size": "12",
-                "sizes": []
-              },
-              "eael_simple_menu_dropdown_item_indicator_color_hover": "#f44336",
-              "eael_simple_menu_dropdown_item_indicator_background_hover": "#ffffff",
-              "eael_simple_menu_dropdown_item_indicator_border_hover": "#f44336"
+              "ha_cmc_text": "Happy Addons"
             },
             "elements": [],
-            "isInner": false
+            "isInner": false,
+            "widgetType": "eael-simple-menu",
+            "elType": "widget"
           }
         ],
-        "isInner": true
+        "isInner": true,
+        "elType": "container"
       }
     ],
-    "isInner": false
+    "isInner": false,
+    "elType": "container"
   }
 ]
