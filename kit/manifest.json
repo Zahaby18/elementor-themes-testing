@@ -1,0 +1,59 @@
+{
+  "title": "Agenzy Digital Agency Template Kit",
+  "description": "A clean, fully responsive digital agency website kit built with Elementor Free widgets. Ten ready pages, no paid addon required.",
+  "version": "1.0.0",
+  "content": {
+    "page": {
+      "home": {
+        "title": "Home",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "about": {
+        "title": "About",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "services": {
+        "title": "Services",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "blog": {
+        "title": "Blog",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "single": {
+        "title": "Single Post",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "contact": {
+        "title": "Contact",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "404": {
+        "title": "404",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "header": {
+        "title": "Header Section",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      },
+      "footer": {
+        "title": "Footer Section",
+        "doc_type": "wp-page",
+        "thumbnail": false
+      }
+    }
+  }
+}

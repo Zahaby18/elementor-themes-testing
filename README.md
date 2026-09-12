@@ -23,11 +23,11 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 ## Cara Pakai (Import)
 
 1. **Download kit**: clone repo ini atau ambil `kit.zip` (hasil build).
-2. **Login WP admin** → menu **Templates → Saved Templates**.
-3. **Upload `kit.zip`** lewat tombol **Import Templates** → Elementor mengekstrak zip dan membaca semua file di `templates/`, lalu menambahkannya ke daftar Saved Templates.
-4. Buka halaman baru → edit dengan **Elementor** → klik ikon folder → tab **My Templates** → pilih template → **Insert**.
+2. **Login WP admin** → menu **Elementor → Tools → Import / Export Kit**.
+3. **Upload `kit.zip`** di tab **Import** → Elementor membaca `manifest.json` di root zip + semua file di `content/page/`, lalu membuat 10 halaman otomatis.
+4. Buka **Pages → All Pages**, tiap halaman sudah berisi layout lengkap, tinggal diedit di Elementor.
 
-> Header/footer template adalah *section*, jadi sisipkan via My Templates ke setiap halaman, atau biarkan theme-mu yang handle header/footer (direkomendasikan: theme ringan seperti **Hello** atau **GeneratePress**).
+> Header dan footer ikut ke-import sebagai dua halaman terpisah (**Header Section**, **Footer Section**). Untuk dipasang global di seluruh site, pakai **Happy Addons → Theme Builder**.
 
 ## Spesifikasi
 
@@ -55,14 +55,14 @@ Kit ini pakai **Elementor Free** + 2 plugin gratis:
    - **Header/Footer** → assign global
    - (Blog grid di halaman `blog.json` udah dinamis via EA `eael-post-grid`)
 
-> Halaman di kit (Home/About/Services/Portfolio/Blog/Contact/404) import langsung. Template single/header/footer global dibuat via Theme Builder Happy Addons.
+> Halaman di kit (Home/About/Services/Portfolio/Blog/Contact/404) plus Header Section dan Footer Section dibuat otomatis saat import. Layout single post global dibuat via Theme Builder Happy Addons.
 - **Responsive**: mobile-first, padding, typography, dan grid sudah di-set untuk tablet & mobile.
-- **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Ganti dengan aset milikmu di editor. *Tips: saat import, matikan opsi "Import Images" agar Media Library nggak penuh placeholder/duplikat, gambar demo bakal tetap kebaca dari URL.*
+- **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Saat import, Elementor menyalin URL gambar tersebut ke Media Library kamu. Ganti dengan aset milikmu di editor.
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
 
 ## Demo Content (10 Post)
 
-Dua cara generate **10 post demo + featured image** (buat blog grid `jkit_post_block`):
+Dua cara generate **10 post demo + featured image** (buat blog grid `eael-post-grid`):
 
 **Cara gampang (plugin):** upload `agenzy-demo-posts.zip` via **Plugins → Add New → Upload Plugin** → Install → **Activate**. 10 post langsung ke-generate. Setelah itu boleh deactivate & hapus plugin-nya (post tetap ada).
 
@@ -76,20 +76,20 @@ wp eval-file demo-posts.php
 ## Struktur Repo
 
 ```
-├── build.py              # Generator template (Python, tanpa dependency)
-├── build.sh              # Rebuild JSON + zip → kit.zip
-├── content/
-│   └── manifest.json     # Metadata kit (dibaca Elementor saat import)
-├── templates/            # Template JSON (dibaca Elementor saat import)
+├── build.py              # Generator (Python, tanpa dependency)
+├── build.sh              # Rebuild templates + kit → kit.zip
+├── templates/            # Sumber tiap template JSON
 │   ├── home.json
 │   ├── about.json
 │   ├── services.json
 │   ├── portfolio.json
 │   ├── blog.json
+│   ├── single.json
 │   ├── contact.json
 │   ├── 404.json
 │   ├── header-section.json
 │   └── footer-section.json
+├── kit/                  # Paket siap import (manifest.json + content/page/)
 └── kit.zip               # Hasil build, file yang di-upload ke Elementor
 ```
 

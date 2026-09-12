@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Agenzy Elementor template kit generator.
-Builds templates/*.json + content/manifest.json (Elementor Free-friendly).
+Builds templates/*.json (source) and kit/ (the importable Elementor kit).
 Run: python3 build.py  (then zip with build.sh)
 """
-import json, os
+import json, os, shutil
 
 INK    = "#0F172A"   # slate-900
 BODY   = "#475569"   # slate-600
@@ -1158,12 +1158,23 @@ def validate_structure(templates):
         walk(data['content'], name, True)
     return errors
 
+PAGES = [
+    ("home", "Home", "home.json"),
+    ("about", "About", "about.json"),
+    ("services", "Services", "services.json"),
+    ("portfolio", "Portfolio", "portfolio.json"),
+    ("blog", "Blog", "blog.json"),
+    ("single", "Single Post", "single.json"),
+    ("contact", "Contact", "contact.json"),
+    ("404", "404", "404.json"),
+    ("header", "Header Section", "header-section.json"),
+    ("footer", "Footer Section", "footer-section.json"),
+]
+
 def main():
     out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)))
     tdir = os.path.join(out_dir, "templates")
-    cdir = os.path.join(out_dir, "content")
     os.makedirs(tdir, exist_ok=True)
-    os.makedirs(cdir, exist_ok=True)
 
     templates = {
         "home.json": home(),
@@ -1193,30 +1204,38 @@ def main():
             os.remove(os.path.join(tdir, old))
             print(f"  removed stale {old}")
 
-    manifest_templates = []
     for fname, data in templates.items():
         with open(os.path.join(tdir, fname), "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        manifest_templates.append({
-            "source": f"templates/{fname}",
-            "type": data["type"],
-            "title": data["title"],
-            "thumbnail": "",
-        })
         print(f"  wrote templates/{fname}  ({len(json.dumps(data)):,} bytes)")
+
+    # Build the importable kit: manifest.json at the archive root plus
+    # content/page/*.json. Elementor reads exactly this layout on import.
+    kit_dir = os.path.join(out_dir, "kit")
+    if os.path.isdir(kit_dir):
+        shutil.rmtree(kit_dir)
+    page_dir = os.path.join(kit_dir, "content", "page")
+    os.makedirs(page_dir, exist_ok=True)
 
     manifest = {
         "title": "Agenzy Digital Agency Template Kit",
-        "description": "A clean, simple, fully responsive digital agency website kit built with Elementor Free widgets only. No extra plugins needed. Includes 7 pages plus header & footer sections.",
-        "preview": "",
-        "templates": manifest_templates,
-        "categories": ["business", "agency"],
-        "keywords": ["digital agency", "agency", "business", "portfolio", "responsive"],
-        "settings": {},
+        "description": "A clean, fully responsive digital agency website kit built with Elementor Free widgets. Ten ready pages, no paid addon required.",
+        "version": "1.0.0",
+        "content": {
+            "page": {
+                pid: {"title": title, "doc_type": "wp-page", "thumbnail": False}
+                for pid, title, _src in PAGES
+            },
+        },
     }
-    with open(os.path.join(cdir, "manifest.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(kit_dir, "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
-    print(f"  wrote content/manifest.json ({len(json.dumps(manifest)):,} bytes)")
+    print("  wrote kit/manifest.json")
+
+    for pid, _title, src in PAGES:
+        with open(os.path.join(page_dir, f"{pid}.json"), "w", encoding="utf-8") as f:
+            json.dump(templates[src], f, ensure_ascii=False, indent=2)
+        print(f"  wrote kit/content/page/{pid}.json  ({len(json.dumps(templates[src])):,} bytes)")
     print("DONE")
 
 if __name__ == "__main__":
