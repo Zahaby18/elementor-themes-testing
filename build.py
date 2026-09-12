@@ -6,7 +6,6 @@ Run: python3 build.py  (then zip with build.sh)
 """
 import json, os
 
-# ---------------------------------------------------------------- design tokens
 INK    = "#0F172A"   # slate-900
 BODY   = "#475569"   # slate-600
 MUTED  = "#64748B"   # slate-500
@@ -39,7 +38,6 @@ U = {
     "w6": RAW + "img09.jpg",
 }
 
-# ---------------------------------------------------------------- helpers
 _id_counter = 0
 
 def eid():
@@ -77,7 +75,6 @@ def widget(wtype, settings, elements=None):
         w["elements"] = elements
     return w
 
-# ---------------------------------------------------------------- element builders
 def flex_gap(px, tablet=20, mobile=16):
     g = {"unit": "px", "column": px, "row": px, "sizes": [], "isLinked": True}
     return {"gap": g, "gap_tablet": {"unit": "px", "column": tablet, "row": tablet, "sizes": [], "isLinked": True},
@@ -629,7 +626,6 @@ def cta_box(heading_text, sub_text, btn_text, colors=("#4F46E5", "#7C3AED"), btn
            ]}
     return container([box], pad_top=90, pad_bottom=90, pad_mobile=pad_mobile)
 
-# ---------------------------------------------------------------- templates
 def home():
     els = []
     # HERO
@@ -1130,7 +1126,6 @@ def footer_section():
         "type": "section",
     }
 
-# ---------------------------------------------------------------- build
 def validate_structure(templates):
     """Elementor schema: containers only; widgets must have widgetType; inner-container widths per row must sum <= 100%."""
     errors = []
@@ -1189,7 +1184,7 @@ def main():
         for e in errors:
             print("  -", e)
         raise SystemExit(1)
-    print("structure OK ✅")
+    print("structure OK")
 
     # remove stale template files from previous builds
     keep = set(templates.keys())
