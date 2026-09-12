@@ -30,10 +30,10 @@ In WordPress Admin go to Plugins > Add New.
 Search and install Elementor, Essential Addons for Elementor, and Happy Elementor Addons.
 Activate all three plugins.
 
-Step 2. Import the kit
-In WordPress Admin go to Templates > Kit Library.
-Click Import Kit and upload agenzy-elementor-kit.zip.
-Wait until the import process finishes.
+Step 2. Import the templates
+In WordPress Admin go to Templates > Saved Templates.
+Click Import Templates and upload agenzy-elementor-kit.zip.
+Elementor extracts the file and adds every template to your Saved Templates list.
 
 Step 3. Insert a page template
 Create a new page and click Edit with Elementor.
