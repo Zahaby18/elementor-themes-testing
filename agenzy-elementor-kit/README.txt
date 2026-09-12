@@ -30,18 +30,18 @@ In WordPress Admin go to Plugins > Add New.
 Search and install Elementor, Essential Addons for Elementor, and Happy Elementor Addons.
 Activate all three plugins.
 
-Step 2. Import the templates
-In WordPress Admin go to Templates > Saved Templates.
-Click Import Templates and upload agenzy-elementor-kit.zip.
-Elementor extracts the file and adds every template to your Saved Templates list.
+Step 2. Import the kit
+In WordPress Admin go to Elementor > Tools > Import / Export Kit.
+Open the Import tab and upload agenzy-elementor-kit.zip.
+Elementor creates all ten pages for you. You will find them under Pages > All Pages.
 
-Step 3. Insert a page template
-Create a new page and click Edit with Elementor.
-Click the folder icon, open the My Templates tab, choose a template, then click Insert.
+Step 3. Edit the pages
+Open any page and click Edit with Elementor.
+Replace the placeholder text and images with your own, then click Update.
 
 Step 4. Set up the header and footer
-The header and footer are provided as sections.
-Insert them into your pages, or use a lightweight theme such as Hello or GeneratePress to handle the layout automatically.
+The header and footer ship as two pages named Header Section and Footer Section.
+Open them to reuse the design, or build a global header and footer with Happy Addons > Theme Builder.
 
 Step 5. Add demo content (optional)
 In WordPress Admin go to Plugins > Add New > Upload Plugin.
@@ -50,27 +50,27 @@ It creates 10 sample posts with featured images for the blog grid.
 You can deactivate and delete the plugin afterwards. The posts stay on your site.
 
 
-TEMPLATES INCLUDED
+PAGES INCLUDED
 
-Home page
-About page
-Services page
-Portfolio page
-Blog page
-Single post layout
-Contact page
-404 page
-Header section
-Footer section
+Home
+About
+Services
+Portfolio
+Blog
+Single Post
+Contact
+404
+Header Section
+Footer Section
 
 
 GOOD TO KNOW
 
 Every image loads from a public CDN, so each page looks complete right after import.
-During the import you can turn off the Import Images option to keep your Media Library clean.
+The blog page uses a dynamic post grid, so it fills automatically with your own posts.
 The contact form uses a shortcode, so you can plug in any free form plugin such as WPForms Lite or Contact Form 7.
 Every colour, font, and text can be edited inside Elementor.
-The blog page uses a dynamic post grid, so it fills automatically with your own posts.
+The kit does not import site settings, so your existing global fonts and colours stay untouched.
 
 
 SUPPORT
