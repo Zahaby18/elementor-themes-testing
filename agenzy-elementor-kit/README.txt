@@ -2,17 +2,15 @@ AGENZY ELEMENTOR TEMPLATE KIT
 Digital Agency Website Kit for Elementor
 Version 1.0
 
-=====================================================
+
 WHAT IS INCLUDED
-=====================================================
 
 1. agenzy-elementor-kit.zip    The complete template kit. This is the file you import into Elementor.
 2. agenzy-demo-posts.zip       Optional. Generates 10 sample posts for the blog grid.
 3. README.txt                  This file.
 
-=====================================================
+
 REQUIRED PLUGINS
-=====================================================
 
 Install and activate these free plugins BEFORE you import the kit:
 
@@ -24,9 +22,8 @@ The kit uses free widgets only. No paid addon is required.
 
 Important: avoid Royal Elementor Addons. That plugin causes the import process to hang.
 
-=====================================================
+
 INSTALLATION GUIDE
-=====================================================
 
 Step 1. Install the plugins
 In WordPress Admin go to Plugins > Add New.
@@ -52,9 +49,8 @@ Upload agenzy-demo-posts.zip, install it, then activate it.
 It creates 10 sample posts with featured images for the blog grid.
 You can deactivate and delete the plugin afterwards. The posts stay on your site.
 
-=====================================================
+
 TEMPLATES INCLUDED
-=====================================================
 
 Home page
 About page
@@ -67,9 +63,8 @@ Contact page
 Header section
 Footer section
 
-=====================================================
+
 GOOD TO KNOW
-=====================================================
 
 Every image loads from a public CDN, so each page looks complete right after import.
 During the import you can turn off the Import Images option to keep your Media Library clean.
@@ -77,9 +72,8 @@ The contact form uses a shortcode, so you can plug in any free form plugin such 
 Every colour, font, and text can be edited inside Elementor.
 The blog page uses a dynamic post grid, so it fills automatically with your own posts.
 
-=====================================================
+
 SUPPORT
-=====================================================
 
 For help, contact us through the marketplace where you purchased this kit.
 Please include your purchase receipt for faster support.
