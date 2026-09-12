@@ -72,6 +72,16 @@ The contact form uses a shortcode, so you can plug in any free form plugin such 
 Every colour, font, and text can be edited inside Elementor.
 The kit does not import site settings, so your existing global fonts and colours stay untouched.
 
+A short flash on first load
+
+Depending on your Elementor setup you may notice a very brief flash of unstyled content while a page loads. It comes from the way Elementor delivers its CSS and it is not specific to this kit. Any kit that uses addon widgets behaves the same way. The flash lasts well under a second and the final result is always correct.
+
+If you prefer to remove it, any of these will do:
+
+1. Go to Elementor > Settings > Advanced and set CSS Print Method to Internal Embedding.
+2. Go to Elementor > Site Settings and enable a page transition or a preloader.
+3. If you use a caching plugin, exclude this path from every deferred or optimized CSS option: wp-content/plugins/elementor/assets/css/
+
 
 SUPPORT
 
