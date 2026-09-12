@@ -23,8 +23,8 @@ Template kit Elementor **free-friendly** untuk website digital agency: clean, si
 ## Cara Pakai (Import)
 
 1. **Download kit**: clone repo ini atau ambil `kit.zip` (hasil build).
-2. **Login WP admin** → menu **Templates → Kit Library** (atau **Templates → Saved Templates → Import Templates**).
-3. **Upload `kit.zip`** → Elementor membaca `content/manifest.json` + semua template.
+2. **Login WP admin** → menu **Templates → Saved Templates**.
+3. **Upload `kit.zip`** lewat tombol **Import Templates** → Elementor mengekstrak zip dan membaca semua file di `templates/`, lalu menambahkannya ke daftar Saved Templates.
 4. Buka halaman baru → edit dengan **Elementor** → klik ikon folder → tab **My Templates** → pilih template → **Insert**.
 
 > Header/footer template adalah *section*, jadi sisipkan via My Templates ke setiap halaman, atau biarkan theme-mu yang handle header/footer (direkomendasikan: theme ringan seperti **Hello** atau **GeneratePress**).
