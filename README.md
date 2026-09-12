@@ -59,6 +59,7 @@ Kit ini pakai **Elementor Free** + 2 plugin gratis:
 - **Responsive**: mobile-first, padding, typography, dan grid sudah di-set untuk tablet & mobile.
 - **Gambar**: demo images disimpan di `assets/img/` (di-host via **jsDelivr CDN** agar stabil & cepat dari server mana pun). Saat import, Elementor menyalin URL gambar tersebut ke Media Library kamu. Ganti dengan aset milikmu di editor.
 - **Form kontak**: kit tidak menyertakan form (widget Form = Pro). Gunakan **Shortcode widget** + plugin form gratis (WPForms Lite / Contact Form 7).
+- **Flash singkat saat load**: sebagian CSS widget addon dikirim sebagai file terpisah, jadi bisa muncul satu frame tanpa styling. Set **Elementor → Settings → Advanced → CSS Print Method** ke **Internal Embedding** kalau mau hilang.
 
 ## Demo Content (10 Post)
 
