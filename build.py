@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Agenzy — Digital Agency Elementor Template Kit generator.
+Agenzy Elementor template kit generator.
 Builds templates/*.json + content/manifest.json (Elementor Free-friendly).
 Run: python3 build.py  (then zip with build.sh)
 """
@@ -195,7 +195,7 @@ def card_col(widgets, bg=WHITE, radius=20, anim=None, anim_delay=0):
     return col(widgets, 33.3333, settings=s, anim=anim, anim_delay=anim_delay)
 
 def btn_row(buttons):
-    """Buttons side by side — directly in a flex row container (matching Elementor 4.x structure)."""
+    """Buttons side by side, directly in a flex row container (matching Elementor 4.x structure)."""
     inner = {"id": eid(), "elType": "container", "isInner": True,
              "settings": {"container_type": "flex", "content_width": "full",
                           "flex_direction": "row", "flex_direction_tablet": "row",
@@ -633,7 +633,7 @@ def home():
         col([
             heading("We Build Digital Products That Grow Your Business", "h1", WHITE, "left", 52, "800", 1.15,
                     tablet=40, mobile=32, extra={"_animation": "fadeInLeft"}),
-            text("<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>",
+            text("<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love, from strategy to launch and beyond.</p>",
                  "#CBD5E1", "left", 18, "400", 1.7,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             btn_row([btn("Explore Services", "#services", "left"), ghost_btn("Start a Project", "#contact", "left")]),
@@ -643,14 +643,14 @@ def home():
 
     # TRUST BAR
     els.append(section([
-        col([text("<p style='text-align:center;'>Trusted by 50+ startups and growing teams — from Jakarta to Singapore</p>",
+        col([text("<p style='text-align:center;'>Trusted by 50+ startups and growing teams, from Jakarta to Singapore</p>",
                   MUTED, "center", 15, "500", 1.5)], 100)
     ], bg=LIGHT, pad_top=28, pad_bottom=28, pad_mobile=(10, 16, 10, 16)))
 
     # SERVICES (3 sections = 3 rows: heading, row 1, row 2)
     services = [
         ("fas fa-bullseye", "Digital Strategy", "Market research, positioning, and roadmaps that turn your business goals into a clear plan of action."),
-        ("fas fa-pencil-ruler", "UI/UX Design", "Research-driven interfaces that look sharp and convert — web, mobile, and product design."),
+        ("fas fa-pencil-ruler", "UI/UX Design", "Research-driven interfaces that look sharp and convert: web, mobile, and product design."),
         ("fas fa-code", "Web Development", "Fast, secure, and scalable websites and web apps built with modern technology."),
         ("fas fa-chart-line", "SEO & Growth", "Technical SEO, content strategy, and performance marketing that compound over time."),
         ("fas fa-palette", "Brand Identity", "Logos, guidelines, and visual systems that make your brand impossible to ignore."),
@@ -658,7 +658,7 @@ def home():
     ]
     srv_widgets = [icon_box(i, t, d, link="#services", anim="fadeInUp", anim_delay=(idx % 3) * 100) for idx, (i, t, d) in enumerate(services)]
     els.append(section([
-        col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth — everything your digital presence needs under one roof."), 100),
+        col(sec_head("What We Do", "Services built to move the needle", "From first idea to ongoing growth: everything your digital presence needs under one roof."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="services", pad_mobile=(50, 16, 0, 16)))
     els.append(section([
         card_col([srv_widgets[0]]),
@@ -678,7 +678,7 @@ def home():
             eyebrow("About Us", "left"), spacer(12, 8),
             heading("A team that treats your product like our own", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
                     extra={"_animation": "fadeInLeft"}),
-            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>",
+            text("<p>We're a compact team of strategists, designers, and engineers. No account managers in between. You talk directly to the people building your product.</p>",
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             icon_list(["Senior talent on every project", "Transparent pricing, no surprises", "Launch in weeks, not months"]),
             btn("More About Us", "#about", "left"),
@@ -697,30 +697,30 @@ def home():
         col(sec_head("Testimonials", "What our clients say"), 100),
     ], bg=LIGHT, pad_top=100, pad_bottom=30))
     els.append(section([
-        testimonial_card("Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.",
+        testimonial_card("Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened, which is rare in this industry.",
                          "Rina Amelia", "CEO, Tokokita", U["p1"], anim="fadeInUp", anim_delay=0, width_tablet=48),
         testimonial_card("The best agency we've worked with. Clear communication, on-time delivery, and design that our customers compliment constantly.",
                          "Bima Pratama", "Founder, Nusantara Studio", U["p2"], anim="fadeInUp", anim_delay=100, width_tablet=48),
-        testimonial_card("They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.",
+        testimonial_card("They didn't just build our site. They improved our SEO, cut load time in half, and taught our team to manage it ourselves.",
                          "Sari Wijaya", "Marketing Lead, GreenFood", U["p3"], anim="fadeInUp", anim_delay=200),
     ], bg=LIGHT, pad_top=0, pad_bottom=100, anchor="testimonials",
        settings={"flex_wrap_tablet": "wrap", "flex_justify_content_tablet": "space-between"}))
 
     # FAQ (2 sections: heading + accordion)
     faq = [
-        ("How much does a project cost?", "Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees."),
-        ("How long does it take to launch?", "A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness."),
+        ("How much does a project cost?", "Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins, and there are no hidden fees."),
+        ("How long does it take to launch?", "A landing page can go live in 1 to 2 weeks. Full websites and web apps typically take 4 to 8 weeks depending on scope and content readiness."),
         ("Do you work with existing brands?", "Absolutely. We regularly take over existing websites, redesign them, or simply optimize what's already there for speed and conversions."),
         ("What happens after launch?", "We don't disappear. Support, maintenance, and growth retainer options keep your product healthy and improving month after month."),
     ]
     els.append(section([
-        col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else — just ask us."), 100),
+        col(sec_head("FAQ", "Frequently asked questions", "Quick answers. Anything else, just ask us."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, anchor="faq", pad_mobile=(50, 16, 10, 16)))
     els.append(section([
         col([faq_accordion(faq, anim="fadeInUp")], 80),
     ], bg=WHITE, pad_top=0, pad_bottom=100, settings={"flex_justify_content": "center"}, pad_mobile=(0, 10, 50, 10)))
 
-    # CTA — rounded gradient box (inner container, so radius applies to content box not full width)
+    # CTA: rounded gradient box (inner container, so radius applies to content box not full width)
     cta_box = {"id": eid(), "elType": "container", "isInner": True,
                "settings": {
                    "container_type": "flex", "content_width": "full",
@@ -768,7 +768,7 @@ def about():
             eyebrow("Our Story", "left"), spacer(12, 8),
             heading("Started with three laptops and a stubborn belief", "h2", INK, "left", 36, "700", 1.25, tablet=28, mobile=24,
                     extra={"_animation": "fadeInLeft"}),
-            text("<p>Agenzy began in 2019 when three friends decided freelancing alone wasn't enough — clients deserved a team that could take an idea from whiteboard to world. Today we're a 20-person studio shipping products across three continents.</p>"
+            text("<p>Agenzy began in 2019 when three friends decided freelancing alone wasn't enough. Clients deserved a team that could take an idea from whiteboard to world. Today we're a 20-person studio shipping products across three continents.</p>"
                  "<p>We stay deliberately small. Small enough that every project gets senior attention, big enough to deliver on time, every time.</p>",
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 50, center=True),
@@ -778,7 +778,7 @@ def about():
     vals = [
         ("fas fa-handshake", "Transparency", "Open pricing, honest timelines, and a shared dashboard so you always know what's happening."),
         ("fas fa-gem", "Quality First", "We'd rather ship one great product than five mediocre ones. Craft is non-negotiable."),
-        ("fas fa-lightbulb", "Bold Thinking", "Safe is boring. We bring ideas, not just execution — and we're not afraid to challenge the brief."),
+        ("fas fa-lightbulb", "Bold Thinking", "Safe is boring. We bring ideas, not just execution, and we're not afraid to challenge the brief."),
     ]
     val_widgets = [icon_box(i, t, d, anim="fadeInUp", anim_delay=idx * 100) for idx, (i, t, d) in enumerate(vals)]
     els.append(section([
@@ -823,7 +823,7 @@ def services():
         col([
             heading("Our Services", "h1", WHITE, "left", 44, "800", 1.2, tablet=34, mobile=28,
                     extra={"_animation": "fadeInLeft"}),
-            text("<p>Everything your business needs to win online — designed, built, and grown by one team.</p>", "#CBD5E1", "left", 18,
+            text("<p>Everything your business needs to win online, designed, built, and grown by one team.</p>", "#CBD5E1", "left", 18,
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["planning"], 0.85), pad_mobile=(50, 16, 50, 16)))
@@ -833,7 +833,7 @@ def services():
         ("fas fa-pencil-ruler", "UI/UX Design", "Interfaces that balance beauty and usability. Prototyped, tested, and iterated with real users."),
         ("fas fa-code", "Web Development", "Lightning-fast websites and web apps on modern stacks. Clean code, easy to hand over."),
         ("fas fa-chart-line", "SEO & Growth", "Technical audits, content engines, and performance marketing that deliver compounding results."),
-        ("fas fa-palette", "Brand Identity", "From logo to full brand guidelines — a visual identity your audience will remember."),
+        ("fas fa-palette", "Brand Identity", "From logo to full brand guidelines, a visual identity your audience will remember."),
         ("fas fa-hashtag", "Content & Social", "Editorial calendars, writing, and social management that keep your brand consistently loud."),
     ]
     srv_widgets = [icon_box(i, t, d, link="#contact", anim="fadeInUp", anim_delay=(idx % 3) * 100) for idx, (i, t, d) in enumerate(services)]
@@ -887,7 +887,7 @@ def services():
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
     # CTA
-    els.append(cta_box("Not sure which service you need?", "Book a free 30-minute call — we'll point you in the right direction.", "Book a Free Call"))
+    els.append(cta_box("Not sure which service you need?", "Book a free 30-minute call and we'll point you in the right direction.", "Book a Free Call"))
     return page("Services", els)
 
 def portfolio():
@@ -904,7 +904,7 @@ def portfolio():
 
     # PROJECTS
     els.append(section([
-        col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands — built for clients who cared about the details."), 100),
+        col(sec_head("Selected Projects", "Recent work", "Websites, apps, and brands, built for clients who cared about the details."), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
     els.append(section([
         col([img(U["w1"], "Project 1", 100, 12, shadow(), anim="fadeInUp")], 33.3333),
@@ -917,7 +917,7 @@ def portfolio():
         col([img(U["w6"], "Project 6", 100, 12, shadow(), anim="fadeInUp", anim_delay=200)], 33.3333),
     ], bg=WHITE, pad_top=0, pad_bottom=40, pad_mobile=(0, 16, 50, 16)))
     els.append(section([
-        col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>", MUTED, "center", 15),
+        col([text("<p style='text-align:center;'>Want the full case studies? Drop us a line, happy to share metrics and process.</p>", MUTED, "center", 15),
              btn("Request Case Studies", "#contact", "center")], 100),
     ], bg=WHITE, pad_top=0, pad_bottom=100, pad_mobile=(0, 16, 50, 16)))
 
@@ -938,7 +938,7 @@ def blog():
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w1"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
-    # LATEST ARTICLES — Essential Addons Post Grid (dynamic)
+    # LATEST ARTICLES: Essential Addons Post Grid (dynamic)
     els.append(section([
         col(sec_head("Latest Articles", "From the blog"), 100),
     ], bg=WHITE, pad_top=100, pad_bottom=30, pad_mobile=(50, 16, 0, 16)))
@@ -974,7 +974,7 @@ def blog():
 
 def single():
     els = []
-    # HERO — post title + meta (dynamic Happy Addons)
+    # HERO: post title + meta (dynamic Happy Addons)
     els.append(section([
         col([
             widget("ha-post-title", {
@@ -1001,7 +1001,7 @@ def single():
         ], 100),
     ], bg=None, pad_top=110, pad_bottom=110, overlay=dark_hero_bg(U["w2"], 0.85), pad_mobile=(50, 16, 50, 16)))
 
-    # CONTENT — post content (dynamic)
+    # CONTENT: post content (dynamic)
     els.append(section([
         col([widget("ha-post-content", {})], 75),
     ], bg=WHITE, pad_top=80, pad_bottom=80, settings={"flex_justify_content": "center"}, pad_mobile=(0, 16, 50, 16)))
@@ -1040,7 +1040,7 @@ def contact():
             eyebrow("Get In Touch", "left"), spacer(12, 8),
             heading("Let's build something great together", "h2", INK, "left", 34, "700", 1.25, tablet=28, mobile=24,
                     extra={"_animation": "fadeInLeft"}),
-            text("<p>Free 30-minute consultation. We'll listen first, then give you honest advice — even if that means telling you we're not the right fit.</p>",
+            text("<p>Free 30-minute consultation. We'll listen first, then give you honest advice, even if that means telling you we're not the right fit.</p>",
                  extra={"_animation": "fadeInLeft", "_animation_delay": {"unit": "px", "size": 120, "sizes": []}}),
             icon_list([
                 "hello@agenzy.studio",
@@ -1056,7 +1056,7 @@ def contact():
     ], bg=WHITE, pad_top=100, pad_bottom=100))
 
     # CTA
-    els.append(cta_box("Prefer a form?", "Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget — it takes one minute.", "Get in Touch",
+    els.append(cta_box("Prefer a form?", "Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget. It takes one minute.", "Get in Touch",
                        colors=("#0F172A", "#1E1B4B")))
     return page("Contact", els)
 
@@ -1074,7 +1074,7 @@ def p404():
     return page("404", els)
 
 def header_section():
-    # Header — logo + Happy Addons nav menu
+    # Header: logo + Happy Addons nav menu
     return {
         "content": [
             section([
@@ -1113,7 +1113,7 @@ def footer_section():
     ], 30)
     bottom = col([
         divider(color="#1E293B", width_pct=100),
-        text("<p style='text-align:center;'>© 2026 Agenzy. All rights reserved. — Made with the Agenzy Elementor Kit.</p>", "#64748B", "center", 14),
+        text("<p style='text-align:center;'>© 2026 Agenzy. All rights reserved. Made with the Agenzy Elementor Kit.</p>", "#64748B", "center", 14),
     ], 100)
     return {
         "content": [
@@ -1206,7 +1206,7 @@ def main():
         print(f"  wrote templates/{fname}  ({len(json.dumps(data)):,} bytes)")
 
     manifest = {
-        "title": "Agenzy — Digital Agency Template Kit",
+        "title": "Agenzy Digital Agency Template Kit",
         "description": "A clean, simple, fully responsive digital agency website kit built with Elementor Free widgets only. No extra plugins needed. Includes 7 pages plus header & footer sections.",
         "preview": "",
         "templates": manifest_templates,

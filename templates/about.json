@@ -543,7 +543,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Agenzy began in 2019 when three friends decided freelancing alone wasn't enough — clients deserved a team that could take an idea from whiteboard to world. Today we're a 20-person studio shipping products across three continents.</p><p>We stay deliberately small. Small enough that every project gets senior attention, big enough to deliver on time, every time.</p>",
+                "editor": "<p>Agenzy began in 2019 when three friends decided freelancing alone wasn't enough. Clients deserved a team that could take an idea from whiteboard to world. Today we're a 20-person studio shipping products across three continents.</p><p>We stay deliberately small. Small enough that every project gets senior attention, big enough to deliver on time, every time.</p>",
                 "text_color": "#475569",
                 "align": "left",
                 "typography_typography": "custom",
@@ -1283,7 +1283,7 @@
                   "library": "fa-solid"
                 },
                 "title_text": "Bold Thinking",
-                "description_text": "Safe is boring. We bring ideas, not just execution — and we're not afraid to challenge the brief.",
+                "description_text": "Safe is boring. We bring ideas, not just execution, and we're not afraid to challenge the brief.",
                 "position": "top",
                 "view": "stacked",
                 "primary_color": "#4F46E5",

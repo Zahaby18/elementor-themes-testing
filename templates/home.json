@@ -190,7 +190,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love — from strategy to launch and beyond.</p>",
+                "editor": "<p>Agenzy is a full-service digital agency helping startups and brands design, build, and scale products people love, from strategy to launch and beyond.</p>",
                 "text_color": "#CBD5E1",
                 "align": "left",
                 "typography_typography": "custom",
@@ -622,7 +622,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>Trusted by 50+ startups and growing teams — from Jakarta to Singapore</p>",
+                "editor": "<p style='text-align:center;'>Trusted by 50+ startups and growing teams, from Jakarta to Singapore</p>",
                 "text_color": "#64748B",
                 "align": "center",
                 "typography_typography": "custom",
@@ -864,7 +864,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>From first idea to ongoing growth — everything your digital presence needs under one roof.</p>",
+                "editor": "<p>From first idea to ongoing growth: everything your digital presence needs under one roof.</p>",
                 "text_color": "#475569",
                 "align": "center",
                 "typography_typography": "custom",
@@ -1244,7 +1244,7 @@
                   "library": "fa-solid"
                 },
                 "title_text": "UI/UX Design",
-                "description_text": "Research-driven interfaces that look sharp and convert — web, mobile, and product design.",
+                "description_text": "Research-driven interfaces that look sharp and convert: web, mobile, and product design.",
                 "position": "top",
                 "view": "stacked",
                 "primary_color": "#4F46E5",
@@ -2343,7 +2343,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>We're a compact team of strategists, designers, and engineers. No account managers in between — you talk directly to the people building your product.</p>",
+                "editor": "<p>We're a compact team of strategists, designers, and engineers. No account managers in between. You talk directly to the people building your product.</p>",
                 "text_color": "#475569",
                 "align": "left",
                 "typography_typography": "custom",
@@ -3328,7 +3328,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><em>Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened — rare in this industry.</em></p>",
+                "editor": "<p><em>Agenzy rebuilt our platform in eight weeks. Conversion went up 40% and the team actually listened, which is rare in this industry.</em></p>",
                 "text_color": "#475569",
                 "align": "left",
                 "typography_typography": "custom",
@@ -4105,7 +4105,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p><em>They didn't just build our site — they improved our SEO, cut load time in half, and taught our team to manage it ourselves.</em></p>",
+                "editor": "<p><em>They didn't just build our site. They improved our SEO, cut load time in half, and taught our team to manage it ourselves.</em></p>",
                 "text_color": "#475569",
                 "align": "left",
                 "typography_typography": "custom",
@@ -4595,7 +4595,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Quick answers. Anything else — just ask us.</p>",
+                "editor": "<p>Quick answers. Anything else, just ask us.</p>",
                 "text_color": "#475569",
                 "align": "center",
                 "typography_typography": "custom",
@@ -4895,7 +4895,7 @@
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins — no hidden fees.</p>",
+                        "editor": "<p>Every project is scoped individually. Typical website projects start at a fixed package, and we always give you a clear quote before any work begins, and there are no hidden fees.</p>",
                         "text_color": "#475569",
                         "align": "left",
                         "typography_typography": "custom",
@@ -4943,7 +4943,7 @@
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<p>A landing page can go live in 1–2 weeks. Full websites and web apps typically take 4–8 weeks depending on scope and content readiness.</p>",
+                        "editor": "<p>A landing page can go live in 1 to 2 weeks. Full websites and web apps typically take 4 to 8 weeks depending on scope and content readiness.</p>",
                         "text_color": "#475569",
                         "align": "left",
                         "typography_typography": "custom",

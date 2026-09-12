@@ -778,7 +778,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>© 2026 Agenzy. All rights reserved. — Made with the Agenzy Elementor Kit.</p>",
+                "editor": "<p style='text-align:center;'>© 2026 Agenzy. All rights reserved. Made with the Agenzy Elementor Kit.</p>",
                 "text_color": "#64748B",
                 "align": "center",
                 "typography_typography": "custom",

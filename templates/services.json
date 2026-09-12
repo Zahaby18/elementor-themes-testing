@@ -190,7 +190,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Everything your business needs to win online — designed, built, and grown by one team.</p>",
+                "editor": "<p>Everything your business needs to win online, designed, built, and grown by one team.</p>",
                 "text_color": "#CBD5E1",
                 "align": "left",
                 "typography_typography": "custom",
@@ -1340,7 +1340,7 @@
                   "library": "fa-solid"
                 },
                 "title_text": "Brand Identity",
-                "description_text": "From logo to full brand guidelines — a visual identity your audience will remember.",
+                "description_text": "From logo to full brand guidelines, a visual identity your audience will remember.",
                 "position": "top",
                 "view": "stacked",
                 "primary_color": "#4F46E5",
@@ -3149,7 +3149,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>Book a free 30-minute call — we'll point you in the right direction.</p>",
+                "editor": "<p style='text-align:center;'>Book a free 30-minute call and we'll point you in the right direction.</p>",
                 "text_color": "#CBD5E1",
                 "align": "center",
                 "typography_typography": "custom",

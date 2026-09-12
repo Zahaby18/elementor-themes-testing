@@ -999,7 +999,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Free 30-minute consultation. We'll listen first, then give you honest advice — even if that means telling you we're not the right fit.</p>",
+                "editor": "<p>Free 30-minute consultation. We'll listen first, then give you honest advice, even if that means telling you we're not the right fit.</p>",
                 "text_color": "#475569",
                 "align": "left",
                 "typography_typography": "custom",
@@ -1466,7 +1466,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget — it takes one minute.</p>",
+                "editor": "<p style='text-align:center;'>Add any form plugin (e.g. WPForms, Contact Form 7) and paste its shortcode into a Shortcode widget. It takes one minute.</p>",
                 "text_color": "#CBD5E1",
                 "align": "center",
                 "typography_typography": "custom",

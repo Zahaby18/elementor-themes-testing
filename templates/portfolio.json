@@ -437,7 +437,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p>Websites, apps, and brands — built for clients who cared about the details.</p>",
+                "editor": "<p>Websites, apps, and brands, built for clients who cared about the details.</p>",
                 "text_color": "#475569",
                 "align": "center",
                 "typography_typography": "custom",
@@ -1295,7 +1295,7 @@
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
-                "editor": "<p style='text-align:center;'>Want the full case studies? Drop us a line — happy to share metrics and process.</p>",
+                "editor": "<p style='text-align:center;'>Want the full case studies? Drop us a line, happy to share metrics and process.</p>",
                 "text_color": "#64748B",
                 "align": "center",
                 "typography_typography": "custom",
