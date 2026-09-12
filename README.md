@@ -43,8 +43,8 @@ Kit ini pakai **Elementor Free** + 2 plugin gratis:
 
 | Plugin | Buat apa |
 |---|---|
-| **Essential Addons for Elementor** (free) | Blog grid (`eael-post-grid`, jalan di halaman) |
-| **Happy Elementor Addons** (free) | **Theme Builder** (single, header, footer global) + widget dinamis (`ha-post-title`, `ha-post-content`, `ha-navigation-menu`, dll) |
+| **Essential Addons for Elementor** (free) | Blog grid (`eael-post-grid`) + menu header (`eael-simple-menu`) |
+| **Happy Elementor Addons** (free) | **Theme Builder** (single, header, footer global) + widget dinamis (`ha-post-title`, `ha-post-content`, dll) |
 
 > Keduanya **aman** untuk import (nggak hang, Royal Elementor Addons yang bermasalah, hindari).
 

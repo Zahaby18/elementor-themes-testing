@@ -1074,15 +1074,12 @@ def p404():
     return page("404", els)
 
 def header_section():
-    # Header: logo + Happy Addons nav menu
+    # Authored in the Elementor editor; stored as-is in src/header-section.json.
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src", "header-section.json")
+    with open(src, encoding="utf-8") as f:
+        content = json.load(f)
     return {
-        "content": [
-            section([
-                col([icon_box("fas fa-layer-group", "Agenzy", "", icon_color=ACCENT, position="left", align="left")], 40, center=True),
-                col([widget("ha-navigation-menu", {})], 60, center=True),
-            ], bg=WHITE, pad_top=16, pad_bottom=16,
-               settings={"border_border": "solid", "border_width": dim(0, 0, 1, 0, False), "border_color": BORDER}),
-        ],
+        "content": content,
         "page_settings": [],
         "version": "0.4",
         "title": "Header",
